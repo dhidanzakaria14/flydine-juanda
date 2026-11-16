@@ -1,0 +1,701 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1794794776180,231,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-1,text,true,,92104,209,1,1,http://127.0.0.1:8000/,228,0,17
+1794794776417,383,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-1,text,true,,94773,2054,2,2,http://127.0.0.1:8000,198,0,2
+1794794776417,198,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-1,text,true,,1891,1115,2,2,http://127.0.0.1:8000/cart/add,198,0,2
+1794794776617,183,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-1,text,true,,92882,939,2,2,http://127.0.0.1:8000,182,0,1
+1794794776690,325,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-2,text,true,,92104,209,2,2,http://127.0.0.1:8000/,323,0,1
+1794794776802,800,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-1,text,true,,53091,2215,3,3,http://127.0.0.1:8000/tracking?order=ORD-HQJWFY,422,0,5
+1794794776802,422,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-1,text,true,,1917,1251,3,3,http://127.0.0.1:8000/checkout,422,0,5
+1794794777225,377,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-1,text,true,,51174,964,3,3,http://127.0.0.1:8000/tracking?order=ORD-HQJWFY,376,0,1
+1794794777289,502,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-3,text,true,,92104,209,2,2,http://127.0.0.1:8000/,501,0,1
+1794794777016,964,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-2,text,true,,94773,2054,3,3,http://127.0.0.1:8000,391,0,2
+1794794777016,391,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-2,text,true,,1891,1115,3,3,http://127.0.0.1:8000/cart/add,391,0,2
+1794794777407,573,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-2,text,true,,92882,939,3,3,http://127.0.0.1:8000,572,0,1
+1794794777887,438,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-4,text,true,,92104,209,3,3,http://127.0.0.1:8000/,436,0,1
+1794794777792,937,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-3,text,true,,94773,2054,4,4,http://127.0.0.1:8000,362,0,1
+1794794777792,362,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-3,text,true,,1891,1115,4,4,http://127.0.0.1:8000/cart/add,362,0,1
+1794794778154,575,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-3,text,true,,92882,939,4,4,http://127.0.0.1:8000,574,0,2
+1794794778486,604,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-5,text,true,,92104,209,5,5,http://127.0.0.1:8000/,602,0,1
+1794794777982,1294,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-2,text,true,,53091,2215,5,5,http://127.0.0.1:8000/tracking?order=ORD-5W1CY1,536,0,2
+1794794777982,536,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-2,text,true,,1917,1251,5,5,http://127.0.0.1:8000/checkout,536,0,2
+1794794778518,758,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-2,text,true,,51174,964,5,5,http://127.0.0.1:8000/tracking?order=ORD-5W1CY1,756,0,2
+1794794778326,1329,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-4,text,true,,94773,2054,4,4,http://127.0.0.1:8000,581,0,1
+1794794778326,581,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-4,text,true,,1891,1115,4,4,http://127.0.0.1:8000/cart/add,581,0,1
+1794794778907,748,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-4,text,true,,92882,939,4,4,http://127.0.0.1:8000,746,0,1
+1794794779086,752,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-6,text,true,,92104,209,5,5,http://127.0.0.1:8000/,751,0,1
+1794794778730,1478,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-3,text,true,,53091,2215,5,5,http://127.0.0.1:8000/tracking?order=ORD-NKA8JZ,729,0,2
+1794794778730,729,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-3,text,true,,1917,1251,5,5,http://127.0.0.1:8000/checkout,729,0,2
+1794794779460,748,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-3,text,true,,51174,964,5,5,http://127.0.0.1:8000/tracking?order=ORD-NKA8JZ,747,0,1
+1794794779691,898,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-7,text,true,,92104,209,5,5,http://127.0.0.1:8000/,896,0,1
+1794794779091,1830,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-5,text,true,,94773,2054,6,6,http://127.0.0.1:8000,934,0,1
+1794794779091,934,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-5,text,true,,1891,1115,6,6,http://127.0.0.1:8000/cart/add,934,0,1
+1794794780025,896,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-5,text,true,,92882,939,6,6,http://127.0.0.1:8000,894,0,1
+1794794780286,823,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-8,text,true,,92104,209,6,6,http://127.0.0.1:8000/,821,0,1
+1794794779656,1672,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-4,text,true,,53091,2215,6,6,http://127.0.0.1:8000/tracking?order=ORD-EEXKEL,746,0,3
+1794794779656,746,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-4,text,true,,1917,1251,6,6,http://127.0.0.1:8000/checkout,746,0,3
+1794794780402,926,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-4,text,true,,51174,964,6,6,http://127.0.0.1:8000/tracking?order=ORD-EEXKEL,925,0,1
+1794794779839,1853,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-6,text,true,,94773,2054,6,6,http://127.0.0.1:8000,909,0,1
+1794794779839,909,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-6,text,true,,1891,1115,6,6,http://127.0.0.1:8000/cart/add,909,0,1
+1794794780748,944,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-6,text,true,,92882,939,6,6,http://127.0.0.1:8000,942,0,1
+1794794780888,992,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-9,text,true,,92104,209,6,6,http://127.0.0.1:8000/,991,0,1
+1794794781486,990,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-10,text,true,,92104,209,7,7,http://127.0.0.1:8000/,988,0,1
+1794794780590,2057,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-7,text,true,,94773,2054,7,7,http://127.0.0.1:8000,919,0,1
+1794794780590,919,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-7,text,true,,1891,1115,7,7,http://127.0.0.1:8000/cart/add,919,0,1
+1794794781509,1138,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-7,text,true,,92882,939,7,7,http://127.0.0.1:8000,1137,0,1
+1794794782086,1110,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-11,text,true,,92104,209,8,8,http://127.0.0.1:8000/,1108,0,1
+1794794780922,2472,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-5,text,true,,53091,2215,9,9,http://127.0.0.1:8000/tracking?order=ORD-XFXWNQ,1167,0,1
+1794794780922,1167,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-5,text,true,,1917,1251,9,9,http://127.0.0.1:8000/checkout,1167,0,1
+1794794782090,1304,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-5,text,true,,51174,964,9,9,http://127.0.0.1:8000/tracking?order=ORD-XFXWNQ,1302,0,0
+1794794781110,2478,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-8,text,true,,94773,2054,8,8,http://127.0.0.1:8000,1171,0,1
+1794794781110,1171,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-8,text,true,,1891,1115,8,8,http://127.0.0.1:8000/cart/add,1171,0,1
+1794794782281,1307,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-8,text,true,,92882,939,8,8,http://127.0.0.1:8000,1305,0,1
+1794794782686,1463,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-12,text,true,,92104,209,9,9,http://127.0.0.1:8000/,1461,0,1
+1794794781693,2651,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-6,text,true,,53091,2215,9,9,http://127.0.0.1:8000/tracking?order=ORD-3C1ORK,1143,0,2
+1794794781693,1143,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-6,text,true,,1917,1251,9,9,http://127.0.0.1:8000/checkout,1143,0,2
+1794794782836,1508,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-6,text,true,,51174,964,9,9,http://127.0.0.1:8000/tracking?order=ORD-3C1ORK,1506,0,1
+1794794781881,2650,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-9,text,true,,94773,2054,9,9,http://127.0.0.1:8000,1109,0,1
+1794794781881,1109,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-9,text,true,,1891,1115,9,9,http://127.0.0.1:8000/cart/add,1109,0,1
+1794794782991,1540,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-9,text,true,,92882,939,9,9,http://127.0.0.1:8000,1539,0,1
+1794794783286,1594,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-13,text,true,,92104,209,9,9,http://127.0.0.1:8000/,1593,0,1
+1794794782477,2792,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-10,text,true,,94773,2054,10,10,http://127.0.0.1:8000,1293,0,1
+1794794782477,1293,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-10,text,true,,1891,1115,10,10,http://127.0.0.1:8000/cart/add,1293,0,1
+1794794783770,1499,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-10,text,true,,92882,939,10,10,http://127.0.0.1:8000,1496,0,1
+1794794783887,1584,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-14,text,true,,92104,209,10,10,http://127.0.0.1:8000/,1582,0,0
+1794794782648,3044,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-7,text,true,,53091,2215,11,11,http://127.0.0.1:8000/tracking?order=ORD-S5SB28,1302,0,2
+1794794782648,1302,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-7,text,true,,1917,1251,11,11,http://127.0.0.1:8000/checkout,1302,0,2
+1794794783950,1742,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-7,text,true,,51174,964,11,11,http://127.0.0.1:8000/tracking?order=ORD-S5SB28,1739,0,1
+1794794784486,1597,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-15,text,true,,92104,209,10,10,http://127.0.0.1:8000/,1596,0,1
+1794794783197,3294,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-11,text,true,,94773,2054,11,11,http://127.0.0.1:8000,1501,0,2
+1794794783197,1501,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-11,text,true,,1891,1115,11,11,http://127.0.0.1:8000/cart/add,1501,0,2
+1794794784699,1792,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-11,text,true,,92882,939,11,11,http://127.0.0.1:8000,1791,0,1
+1794794783589,3243,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-8,text,true,,53091,2215,11,11,http://127.0.0.1:8000/tracking?order=ORD-DBEA2I,1482,0,1
+1794794783589,1482,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-8,text,true,,1917,1251,11,11,http://127.0.0.1:8000/checkout,1482,0,1
+1794794785071,1761,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-8,text,true,,51174,964,11,11,http://127.0.0.1:8000/tracking?order=ORD-DBEA2I,1759,0,2
+1794794785087,1924,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-16,text,true,,92104,209,11,11,http://127.0.0.1:8000/,1923,0,1
+1794794785687,1885,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-17,text,true,,92104,209,12,12,http://127.0.0.1:8000/,1879,0,1
+1794794784151,3603,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-12,text,true,,94773,2054,12,12,http://127.0.0.1:8000,1735,0,1
+1794794784151,1735,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-12,text,true,,1891,1115,12,12,http://127.0.0.1:8000/cart/add,1735,0,1
+1794794785887,1867,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-12,text,true,,92882,939,12,12,http://127.0.0.1:8000,1865,0,1
+1794794786286,1826,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-18,text,true,,92104,209,13,13,http://127.0.0.1:8000/,1824,0,2
+1794794784532,3756,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-9,text,true,,53091,2215,13,13,http://127.0.0.1:8000/tracking?order=ORD-MSP1ZN,1754,0,1
+1794794784532,1754,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-9,text,true,,1917,1251,13,13,http://127.0.0.1:8000/checkout,1754,0,1
+1794794786288,2000,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-9,text,true,,51174,964,13,13,http://127.0.0.1:8000/tracking?order=ORD-MSP1ZN,1998,0,1
+1794794784881,3788,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-13,text,true,,94773,2054,12,12,http://127.0.0.1:8000,1777,0,1
+1794794784881,1777,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-13,text,true,,1891,1115,12,12,http://127.0.0.1:8000/cart/add,1777,0,1
+1794794786659,2010,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-13,text,true,,92882,939,12,12,http://127.0.0.1:8000,2008,0,1
+1794794786886,1968,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-19,text,true,,92104,209,13,13,http://127.0.0.1:8000/,1967,0,1
+1794794785270,3934,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-10,text,true,,53091,2215,13,13,http://127.0.0.1:8000/tracking?order=ORD-QM4LDM,1936,0,3
+1794794785270,1936,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-10,text,true,,1917,1251,13,13,http://127.0.0.1:8000/checkout,1936,0,3
+1794794787207,1997,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-10,text,true,,51174,964,13,13,http://127.0.0.1:8000/tracking?order=ORD-QM4LDM,1995,0,1
+1794794785472,3919,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-14,text,true,,94773,2054,13,13,http://127.0.0.1:8000,1894,0,2
+1794794785472,1894,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-14,text,true,,1891,1115,13,13,http://127.0.0.1:8000/cart/add,1894,0,2
+1794794787368,2023,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-14,text,true,,92882,939,13,13,http://127.0.0.1:8000,2021,0,1
+1794794787487,2093,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-20,text,true,,92104,209,13,13,http://127.0.0.1:8000/,2091,0,1
+1794794786084,4043,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-15,text,true,,94773,2054,14,14,http://127.0.0.1:8000,1829,0,1
+1794794786084,1829,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-15,text,true,,1891,1115,14,14,http://127.0.0.1:8000/cart/add,1829,0,1
+1794794787914,2213,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-15,text,true,,92882,939,14,14,http://127.0.0.1:8000,2212,0,1
+1794794788088,2242,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-21,text,true,,92104,209,14,14,http://127.0.0.1:8000/,2241,0,1
+1794794786493,4184,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-11,text,true,,53091,2215,15,15,http://127.0.0.1:8000/tracking?order=ORD-TSFOBP,1987,0,1
+1794794786493,1987,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-11,text,true,,1917,1251,15,15,http://127.0.0.1:8000/checkout,1987,0,1
+1794794788480,2197,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-11,text,true,,51174,964,15,15,http://127.0.0.1:8000/tracking?order=ORD-TSFOBP,2196,0,2
+1794794788687,2381,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-22,text,true,,92104,209,14,14,http://127.0.0.1:8000/,2379,0,1
+1794794787013,4438,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-16,text,true,,94773,2054,15,15,http://127.0.0.1:8000,2022,0,1
+1794794787013,2022,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-16,text,true,,1891,1115,15,15,http://127.0.0.1:8000/cart/add,2022,0,1
+1794794789036,2415,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-16,text,true,,92882,939,15,15,http://127.0.0.1:8000,2413,0,1
+1794794789286,2351,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-23,text,true,,92104,209,15,15,http://127.0.0.1:8000/,2348,0,1
+1794794787574,4710,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-17,text,true,,94773,2054,16,16,http://127.0.0.1:8000,2175,0,1
+1794794787574,2175,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-17,text,true,,1891,1115,16,16,http://127.0.0.1:8000/cart/add,2175,0,1
+1794794789749,2535,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-17,text,true,,92882,939,16,16,http://127.0.0.1:8000,2533,0,1
+1794794789886,2578,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-24,text,true,,92104,209,17,17,http://127.0.0.1:8000/,2576,0,1
+1794794787756,4890,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-12,text,true,,53091,2215,17,17,http://127.0.0.1:8000/tracking?order=ORD-DHJRHG,2176,0,1
+1794794787756,2176,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-12,text,true,,1917,1251,17,17,http://127.0.0.1:8000/checkout,2176,0,1
+1794794789932,2714,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-12,text,true,,51174,964,17,17,http://127.0.0.1:8000/tracking?order=ORD-DHJRHG,2712,0,2
+1794794790487,2792,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-25,text,true,,92104,209,17,17,http://127.0.0.1:8000/,2791,0,1
+1794794788113,5354,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-18,text,true,,94773,2054,17,17,http://127.0.0.1:8000,2381,0,2
+1794794788113,2381,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-18,text,true,,1891,1115,17,17,http://127.0.0.1:8000/cart/add,2381,0,2
+1794794790495,2972,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-18,text,true,,92882,939,17,17,http://127.0.0.1:8000,2970,0,1
+1794794788670,5007,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-13,text,true,,53091,2215,18,18,http://127.0.0.1:8000/tracking?order=ORD-DPLZTE,2213,0,2
+1794794788670,2213,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-13,text,true,,1917,1251,18,18,http://127.0.0.1:8000/checkout,2213,0,2
+1794794790883,2794,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-13,text,true,,51174,964,18,18,http://127.0.0.1:8000/tracking?order=ORD-DPLZTE,2791,0,2
+1794794791087,2976,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-26,text,true,,92104,209,17,17,http://127.0.0.1:8000/,2975,0,0
+1794794788855,5390,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-19,text,true,,94773,2054,18,18,http://127.0.0.1:8000,2397,0,1
+1794794788855,2397,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-19,text,true,,1891,1115,18,18,http://127.0.0.1:8000/cart/add,2397,0,1
+1794794791252,2993,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-19,text,true,,92882,939,18,18,http://127.0.0.1:8000,2990,0,1
+1794794791687,3077,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-27,text,true,,92104,209,19,19,http://127.0.0.1:8000/,3076,0,1
+1794794789391,5563,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-14,text,true,,53091,2215,19,19,http://127.0.0.1:8000/tracking?order=ORD-NF7AKD,2470,0,3
+1794794789391,2470,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-14,text,true,,1917,1251,19,19,http://127.0.0.1:8000/checkout,2470,0,3
+1794794791862,3092,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-14,text,true,,51174,964,19,19,http://127.0.0.1:8000/tracking?order=ORD-NF7AKD,3091,0,1
+1794794789581,5564,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-20,text,true,,94773,2054,18,18,http://127.0.0.1:8000,2497,0,1
+1794794789581,2497,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-20,text,true,,1891,1115,18,18,http://127.0.0.1:8000/cart/add,2497,0,1
+1794794792078,3067,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-20,text,true,,92882,939,18,18,http://127.0.0.1:8000,3065,0,2
+1794794792287,3220,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-28,text,true,,92104,209,19,19,http://127.0.0.1:8000/,3219,0,1
+1794794792885,2987,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-29,text,true,,92104,209,19,19,http://127.0.0.1:8000/,2986,0,1
+1794794790130,5930,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-15,text,true,,53091,2215,20,20,http://127.0.0.1:8000/tracking?order=ORD-XG5DAB,2760,0,2
+1794794790130,2760,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-15,text,true,,1917,1251,20,20,http://127.0.0.1:8000/checkout,2760,0,2
+1794794792891,3169,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-15,text,true,,51174,964,20,20,http://127.0.0.1:8000/tracking?order=ORD-XG5DAB,3168,0,1
+1794794790331,5894,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-21,text,true,,94773,2054,19,19,http://127.0.0.1:8000,2749,0,1
+1794794790331,2749,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-21,text,true,,1891,1115,19,19,http://127.0.0.1:8000/cart/add,2749,0,1
+1794794793080,3145,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-21,text,true,,92882,939,19,19,http://127.0.0.1:8000,3144,0,1
+1794794793486,3299,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-30,text,true,,92104,209,20,20,http://127.0.0.1:8000/,3297,0,0
+1794794791069,5906,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-22,text,true,,94773,2054,20,20,http://127.0.0.1:8000,2798,0,1
+1794794791069,2798,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-22,text,true,,1891,1115,20,20,http://127.0.0.1:8000/cart/add,2798,0,1
+1794794793868,3107,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-22,text,true,,92882,939,20,20,http://127.0.0.1:8000,3106,0,0
+1794794794085,3246,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-31,text,true,,92104,209,21,21,http://127.0.0.1:8000/,3245,0,1
+1794794791451,6266,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-16,text,true,,53090,2214,22,22,http://127.0.0.1:8000/tracking?order=ORD-AAEURJ,2983,0,2
+1794794791451,2983,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-16,text,true,,1917,1250,22,22,http://127.0.0.1:8000/checkout,2983,0,2
+1794794794434,3283,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-16,text,true,,51173,964,22,22,http://127.0.0.1:8000/tracking?order=ORD-AAEURJ,3281,0,1
+1794794791638,6248,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-23,text,true,,94773,2054,21,21,http://127.0.0.1:8000,2952,0,1
+1794794791638,2952,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-23,text,true,,1891,1115,21,21,http://127.0.0.1:8000/cart/add,2952,0,1
+1794794794591,3295,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-23,text,true,,92882,939,21,21,http://127.0.0.1:8000,3293,0,1
+1794794794686,3373,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-32,text,true,,92104,209,21,21,http://127.0.0.1:8000/,3372,0,1
+1794794795286,3309,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-33,text,true,,92104,209,22,22,http://127.0.0.1:8000/,3308,0,1
+1794794792284,6500,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-17,text,true,,53091,2215,22,22,http://127.0.0.1:8000/tracking?order=ORD-WGH70T,3044,0,2
+1794794792284,3044,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-17,text,true,,1917,1251,22,22,http://127.0.0.1:8000/checkout,3044,0,2
+1794794795328,3456,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-17,text,true,,51174,964,22,22,http://127.0.0.1:8000/tracking?order=ORD-WGH70T,3454,0,2
+1794794792464,6716,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-24,text,true,,94773,2054,22,22,http://127.0.0.1:8000,3209,0,1
+1794794792464,3209,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-24,text,true,,1891,1115,22,22,http://127.0.0.1:8000/cart/add,3209,0,1
+1794794795673,3507,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-24,text,true,,92882,939,22,22,http://127.0.0.1:8000,3505,0,1
+1794794795885,3660,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-34,text,true,,92104,209,23,23,http://127.0.0.1:8000/,3658,0,1
+1794794793281,6638,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-25,text,true,,94773,2054,23,23,http://127.0.0.1:8000,3116,0,1
+1794794793281,3116,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-25,text,true,,1891,1115,23,23,http://127.0.0.1:8000/cart/add,3116,0,1
+1794794796399,3520,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-25,text,true,,92882,939,23,23,http://127.0.0.1:8000,3519,0,0
+1794794796487,3605,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-35,text,true,,92104,209,24,24,http://127.0.0.1:8000/,3603,0,1
+1794794793468,6816,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-18,text,true,,53091,2215,24,24,http://127.0.0.1:8000/tracking?order=ORD-XEV6OE,3134,0,1
+1794794793468,3134,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-18,text,true,,1917,1251,24,24,http://127.0.0.1:8000/checkout,3134,0,1
+1794794796603,3681,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-18,text,true,,51174,964,24,24,http://127.0.0.1:8000/tracking?order=ORD-XEV6OE,3680,0,1
+1794794797088,3752,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-36,text,true,,92104,209,24,24,http://127.0.0.1:8000/,3750,0,1
+1794794794064,6976,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-26,text,true,,94773,2054,24,24,http://127.0.0.1:8000,3091,0,1
+1794794794064,3091,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-26,text,true,,1891,1115,24,24,http://127.0.0.1:8000/cart/add,3091,0,1
+1794794797156,3884,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-26,text,true,,92882,939,24,24,http://127.0.0.1:8000,3883,0,1
+1794794794246,7174,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-19,text,true,,53091,2215,25,25,http://127.0.0.1:8000/tracking?order=ORD-VTN2TQ,3270,0,2
+1794794794246,3270,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-19,text,true,,1917,1251,25,25,http://127.0.0.1:8000/checkout,3270,0,2
+1794794797517,3903,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-19,text,true,,51174,964,25,25,http://127.0.0.1:8000/tracking?order=ORD-VTN2TQ,3901,0,1
+1794794797687,3926,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-37,text,true,,92104,209,24,24,http://127.0.0.1:8000/,3924,0,1
+1794794794766,7395,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-27,text,true,,94773,2054,25,25,http://127.0.0.1:8000,3474,0,2
+1794794794766,3474,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-27,text,true,,1891,1115,25,25,http://127.0.0.1:8000/cart/add,3474,0,2
+1794794798242,3919,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-27,text,true,,92882,939,25,25,http://127.0.0.1:8000,3917,0,0
+1794794798287,4079,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-38,text,true,,92104,209,25,25,http://127.0.0.1:8000/,4078,0,1
+1794794795145,7409,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-20,text,true,,53091,2215,26,26,http://127.0.0.1:8000/tracking?order=ORD-SWTXJE,3280,0,2
+1794794795145,3280,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-20,text,true,,1917,1251,26,26,http://127.0.0.1:8000/checkout,3280,0,2
+1794794798427,4127,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-20,text,true,,51174,964,26,26,http://127.0.0.1:8000/tracking?order=ORD-SWTXJE,4126,0,1
+1794794798887,4016,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-39,text,true,,92104,209,25,25,http://127.0.0.1:8000/,4015,0,1
+1794794795508,7579,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-28,text,true,,94773,2054,26,26,http://127.0.0.1:8000,3473,0,1
+1794794795508,3473,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-28,text,true,,1891,1115,26,26,http://127.0.0.1:8000/cart/add,3473,0,1
+1794794798983,4104,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-28,text,true,,92882,939,26,26,http://127.0.0.1:8000,4102,0,1
+1794794795873,7587,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-29,text,true,,94773,2054,26,26,http://127.0.0.1:8000,3488,0,1
+1794794795873,3488,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-29,text,true,,1891,1115,26,26,http://127.0.0.1:8000/cart/add,3488,0,1
+1794794799362,4098,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-29,text,true,,92882,939,26,26,http://127.0.0.1:8000,4096,0,1
+1794794799487,4146,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-40,text,true,,92104,209,26,26,http://127.0.0.1:8000/,4144,0,1
+1794794796226,7768,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-21,text,true,,53091,2215,27,27,http://127.0.0.1:8000/tracking?order=ORD-YHV6LX,3510,0,2
+1794794796226,3510,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-21,text,true,,1917,1251,27,27,http://127.0.0.1:8000/checkout,3510,0,2
+1794794799736,4258,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-21,text,true,,51174,964,27,27,http://127.0.0.1:8000/tracking?order=ORD-YHV6LX,4256,0,2
+1794794800088,4333,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-41,text,true,,92104,209,27,27,http://127.0.0.1:8000/,4331,0,1
+1794794796787,7968,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-30,text,true,,94773,2054,27,27,http://127.0.0.1:8000,3676,0,1
+1794794796787,3676,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-30,text,true,,1891,1115,27,27,http://127.0.0.1:8000/cart/add,3676,0,1
+1794794800463,4292,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-30,text,true,,92882,939,27,27,http://127.0.0.1:8000,4291,0,1
+1794794796977,7963,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-22,text,true,,53091,2215,28,28,http://127.0.0.1:8000/tracking?order=ORD-ZLJYEY,3674,0,2
+1794794796977,3674,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-22,text,true,,1917,1251,28,28,http://127.0.0.1:8000/checkout,3674,0,2
+1794794800651,4289,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-22,text,true,,51174,964,28,28,http://127.0.0.1:8000/tracking?order=ORD-ZLJYEY,4287,0,1
+1794794800687,4443,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-42,text,true,,92104,209,27,27,http://127.0.0.1:8000/,4441,0,1
+1794794797333,8342,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-31,text,true,,94773,2054,28,28,http://127.0.0.1:8000,3888,0,1
+1794794797333,3888,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-31,text,true,,1891,1115,28,28,http://127.0.0.1:8000/cart/add,3888,0,1
+1794794801221,4454,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-31,text,true,,92882,939,28,28,http://127.0.0.1:8000,4452,0,1
+1794794801288,4577,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-43,text,true,,92104,209,28,28,http://127.0.0.1:8000/,4576,0,1
+1794794797888,8354,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-23,text,true,,53091,2215,29,29,http://127.0.0.1:8000/tracking?order=ORD-3J0EKR,3914,0,1
+1794794797888,3914,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-23,text,true,,1917,1251,29,29,http://127.0.0.1:8000/checkout,3914,0,1
+1794794801802,4440,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-23,text,true,,51174,964,29,29,http://127.0.0.1:8000/tracking?order=ORD-3J0EKR,4438,0,1
+1794794801886,4537,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-44,text,true,,92104,209,28,28,http://127.0.0.1:8000/,4535,0,1
+1794794798061,8561,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-32,text,true,,94773,2054,28,28,http://127.0.0.1:8000,3921,0,1
+1794794798061,3921,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-32,text,true,,1891,1115,28,28,http://127.0.0.1:8000/cart/add,3921,0,1
+1794794801983,4639,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-32,text,true,,92882,939,28,28,http://127.0.0.1:8000,4637,0,1
+1794794802487,4693,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-45,text,true,,92104,209,29,29,http://127.0.0.1:8000/,4691,0,1
+1794794798597,8752,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-33,text,true,,94773,2054,30,30,http://127.0.0.1:8000,4124,0,1
+1794794798597,4124,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-33,text,true,,1891,1115,30,30,http://127.0.0.1:8000/cart/add,4124,0,1
+1794794802721,4628,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-33,text,true,,92882,939,30,30,http://127.0.0.1:8000,4626,0,1
+1794794803088,4600,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-46,text,true,,92104,209,30,30,http://127.0.0.1:8000/,4598,0,1
+1794794799181,8879,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-24,text,true,,53091,2215,31,31,http://127.0.0.1:8000/tracking?order=ORD-LUIA2K,4107,0,2
+1794794799181,4107,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-24,text,true,,1917,1251,31,31,http://127.0.0.1:8000/checkout,4107,0,2
+1794794803288,4772,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-24,text,true,,51174,964,31,31,http://127.0.0.1:8000/tracking?order=ORD-LUIA2K,4771,0,1
+1794794803685,4980,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-47,text,true,,92104,209,31,31,http://127.0.0.1:8000/,4979,0,1
+1794794799547,9320,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-34,text,true,,94773,2054,31,31,http://127.0.0.1:8000,4263,0,1
+1794794799547,4263,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-34,text,true,,1891,1115,31,31,http://127.0.0.1:8000/cart/add,4263,0,1
+1794794803810,5057,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-34,text,true,,92882,939,31,31,http://127.0.0.1:8000,5055,0,1
+1794794799920,9119,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-25,text,true,,53091,2215,31,31,http://127.0.0.1:8000/tracking?order=ORD-TYDYBQ,4275,0,1
+1794794799920,4275,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-25,text,true,,1917,1251,31,31,http://127.0.0.1:8000/checkout,4275,0,1
+1794794804195,4844,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-25,text,true,,51174,964,31,31,http://127.0.0.1:8000/tracking?order=ORD-TYDYBQ,4842,0,2
+1794794804291,4960,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-48,text,true,,92104,209,31,31,http://127.0.0.1:8000/,4958,0,2
+1794794800093,9540,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-35,text,true,,94773,2054,31,31,http://127.0.0.1:8000,4492,0,1
+1794794800093,4492,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-35,text,true,,1891,1115,31,31,http://127.0.0.1:8000/cart/add,4492,0,1
+1794794804585,5048,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-35,text,true,,92882,939,31,31,http://127.0.0.1:8000,5047,0,1
+1794794804887,5167,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-49,text,true,,92104,209,32,32,http://127.0.0.1:8000/,5166,0,1
+1794794800841,9577,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-36,text,true,,94773,2054,33,33,http://127.0.0.1:8000,4457,0,1
+1794794800841,4457,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-36,text,true,,1891,1115,33,33,http://127.0.0.1:8000/cart/add,4457,0,1
+1794794805299,5119,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-36,text,true,,92882,939,33,33,http://127.0.0.1:8000,5116,0,1
+1794794805486,5137,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-50,text,true,,92104,209,33,33,http://127.0.0.1:8000/,5135,0,1
+1794794801041,9791,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-26,text,true,,53091,2215,33,33,http://127.0.0.1:8000/tracking?order=ORD-A7WKIH,4451,0,1
+1794794801041,4451,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-26,text,true,,1917,1251,33,33,http://127.0.0.1:8000/checkout,4451,0,1
+1794794805493,5339,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-26,text,true,,51174,964,33,33,http://127.0.0.1:8000/tracking?order=ORD-A7WKIH,5337,0,1
+1794794801613,9811,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-37,text,true,,94773,2054,33,33,http://127.0.0.1:8000,4431,0,1
+1794794801613,4431,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-37,text,true,,1891,1115,33,33,http://127.0.0.1:8000/cart/add,4431,0,1
+1794794806044,5380,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-37,text,true,,92882,939,33,33,http://127.0.0.1:8000,5378,0,1
+1794794806087,5520,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-51,text,true,,92104,209,34,34,http://127.0.0.1:8000/,5518,0,1
+1794794806686,5515,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-52,text,true,,92104,209,35,35,http://127.0.0.1:8000/,5513,0,1
+1794794802161,10226,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-27,text,true,,94207,2190,35,35,http://127.0.0.1:8000,4647,0,2
+1794794802161,4647,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-27,text,true,,1891,1251,35,35,http://127.0.0.1:8000/checkout,4647,0,2
+1794794806808,5579,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-27,text,true,,92316,939,35,35,http://127.0.0.1:8000,5577,0,1
+1794794802367,10204,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-38,text,true,,94773,2054,34,34,http://127.0.0.1:8000,4627,0,1
+1794794802367,4627,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-38,text,true,,1891,1115,34,34,http://127.0.0.1:8000/cart/add,4627,0,1
+1794794806994,5577,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-38,text,true,,92882,939,34,34,http://127.0.0.1:8000,5575,0,1
+1794794807286,5652,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-53,text,true,,92104,209,35,35,http://127.0.0.1:8000/,5649,0,1
+1794794802905,10413,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-39,text,true,,94773,2054,36,36,http://127.0.0.1:8000,4611,0,1
+1794794802905,4611,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-39,text,true,,1891,1115,36,36,http://127.0.0.1:8000/cart/add,4611,0,1
+1794794807517,5801,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-39,text,true,,92882,939,36,36,http://127.0.0.1:8000,5800,0,1
+1794794803088,10594,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-28,text,true,,53091,2215,36,36,http://127.0.0.1:8000/tracking?order=ORD-A5YZIZ,4788,0,1
+1794794803088,4788,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-28,text,true,,1917,1251,36,36,http://127.0.0.1:8000/checkout,4788,0,1
+1794794807877,5805,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-28,text,true,,51174,964,36,36,http://127.0.0.1:8000/tracking?order=ORD-A5YZIZ,5802,0,1
+1794794807886,5980,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-54,text,true,,92104,209,35,35,http://127.0.0.1:8000/,5976,0,1
+1794794803461,10597,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-29,text,true,,53091,2215,36,36,http://127.0.0.1:8000/tracking?order=ORD-JVN6DF,4796,0,2
+1794794803461,4796,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-29,text,true,,1917,1251,36,36,http://127.0.0.1:8000/checkout,4796,0,2
+1794794808257,5801,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-29,text,true,,51174,964,36,36,http://127.0.0.1:8000/tracking?order=ORD-JVN6DF,5798,0,2
+1794794803634,10623,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-40,text,true,,94773,2054,35,35,http://127.0.0.1:8000,4826,0,1
+1794794803634,4826,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-40,text,true,,1891,1115,35,35,http://127.0.0.1:8000/cart/add,4826,0,1
+1794794808461,5796,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-40,text,true,,92882,939,35,35,http://127.0.0.1:8000,5794,0,0
+1794794808489,5988,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-55,text,true,,92104,209,35,35,http://127.0.0.1:8000/,5986,0,0
+1794794809086,6016,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-56,text,true,,92104,209,37,37,http://127.0.0.1:8000/,6014,0,1
+1794794804422,11069,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-41,text,true,,94773,2054,37,37,http://127.0.0.1:8000,5037,0,1
+1794794804422,5037,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-41,text,true,,1891,1115,37,37,http://127.0.0.1:8000/cart/add,5037,0,1
+1794794809459,6032,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-41,text,true,,92882,939,37,37,http://127.0.0.1:8000,6030,0,1
+1794794809688,6240,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-57,text,true,,92104,209,38,38,http://127.0.0.1:8000/,6239,0,2
+1794794804756,11375,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-30,text,true,,53091,2215,38,38,http://127.0.0.1:8000/tracking?order=ORD-4G8GTX,5104,0,1
+1794794804756,5104,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-30,text,true,,1917,1251,38,38,http://127.0.0.1:8000/checkout,5104,0,1
+1794794809861,6270,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-30,text,true,,51174,964,38,38,http://127.0.0.1:8000/tracking?order=ORD-4G8GTX,6268,0,1
+1794794805131,11408,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-42,text,true,,94773,2054,38,38,http://127.0.0.1:8000,5088,0,1
+1794794805131,5088,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-42,text,true,,1891,1115,38,38,http://127.0.0.1:8000/cart/add,5088,0,1
+1794794810219,6320,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-42,text,true,,92882,939,38,38,http://127.0.0.1:8000,6318,0,1
+1794794810288,6457,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-58,text,true,,92104,209,38,38,http://127.0.0.1:8000/,6454,0,0
+1794794810887,6395,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-59,text,true,,92104,209,39,39,http://127.0.0.1:8000/,6392,0,1
+1794794805676,11812,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-31,text,true,,53089,2213,40,40,http://127.0.0.1:8000/tracking?order=ORD-XG7MGL,5382,0,1
+1794794805676,5382,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-31,text,true,,1917,1249,40,40,http://127.0.0.1:8000/checkout,5382,0,1
+1794794811058,6430,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-31,text,true,,51172,964,40,40,http://127.0.0.1:8000/tracking?order=ORD-XG7MGL,6427,0,1
+1794794805866,11832,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-43,text,true,,94773,2054,39,39,http://127.0.0.1:8000,5369,0,1
+1794794805866,5369,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-43,text,true,,1891,1115,39,39,http://127.0.0.1:8000/cart/add,5369,0,1
+1794794811236,6462,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-43,text,true,,92882,939,39,39,http://127.0.0.1:8000,6459,0,1
+1794794811489,6620,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-60,text,true,,92104,209,40,40,http://127.0.0.1:8000/,6618,0,1
+1794794806423,12074,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-44,text,true,,94773,2054,40,40,http://127.0.0.1:8000,5374,0,2
+1794794806423,5374,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-44,text,true,,1891,1115,40,40,http://127.0.0.1:8000/cart/add,5374,0,2
+1794794811798,6699,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-44,text,true,,92882,939,40,40,http://127.0.0.1:8000,6697,0,1
+1794794806622,12091,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-32,text,true,,53091,2215,41,41,http://127.0.0.1:8000/tracking?order=ORD-YTGJGD,5377,0,1
+1794794806622,5377,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-32,text,true,,1917,1251,41,41,http://127.0.0.1:8000/checkout,5377,0,1
+1794794812001,6712,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-32,text,true,,51174,964,41,41,http://127.0.0.1:8000/tracking?order=ORD-YTGJGD,6710,0,2
+1794794812087,6817,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-61,text,true,,92104,209,40,40,http://127.0.0.1:8000/,6815,0,1
+1794794812687,6832,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-62,text,true,,92104,209,41,41,http://127.0.0.1:8000/,6830,0,2
+1794794807180,12554,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-45,text,true,,94773,2054,41,41,http://127.0.0.1:8000,5569,0,1
+1794794807180,5569,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-45,text,true,,1891,1115,41,41,http://127.0.0.1:8000/cart/add,5569,0,1
+1794794812751,6983,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-45,text,true,,92882,939,41,41,http://127.0.0.1:8000,6979,0,1
+1794794807350,12838,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-33,text,true,,53091,2215,42,42,http://127.0.0.1:8000/tracking?order=ORD-Q1XQCM,5780,0,1
+1794794807350,5780,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-33,text,true,,1917,1251,42,42,http://127.0.0.1:8000/checkout,5780,0,1
+1794794813132,7056,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-33,text,true,,51174,964,42,42,http://127.0.0.1:8000/tracking?order=ORD-Q1XQCM,7054,0,1
+1794794813287,7091,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-63,text,true,,92104,209,41,41,http://127.0.0.1:8000/,7090,0,1
+1794794807689,13086,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-46,text,true,,94773,2054,42,42,http://127.0.0.1:8000,5812,0,1
+1794794807689,5812,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-46,text,true,,1891,1115,42,42,http://127.0.0.1:8000/cart/add,5812,0,1
+1794794813502,7273,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-46,text,true,,92882,939,42,42,http://127.0.0.1:8000,7271,0,1
+1794794813887,7312,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-64,text,true,,92104,209,43,43,http://127.0.0.1:8000/,7310,0,1
+1794794814489,7342,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-65,text,true,,92104,209,44,44,http://127.0.0.1:8000/,7340,0,1
+1794794808666,13361,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-47,text,true,,94773,2054,44,44,http://127.0.0.1:8000,6021,0,1
+1794794808666,6021,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-47,text,true,,1891,1115,44,44,http://127.0.0.1:8000/cart/add,6021,0,1
+1794794814688,7339,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-47,text,true,,92882,939,44,44,http://127.0.0.1:8000,7336,0,3
+1794794808867,13373,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-34,text,true,,53091,2215,44,44,http://127.0.0.1:8000/tracking?order=ORD-JSBQPY,6037,0,2
+1794794808867,6037,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-34,text,true,,1917,1251,44,44,http://127.0.0.1:8000/checkout,6037,0,2
+1794794814905,7335,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-34,text,true,,51174,964,44,44,http://127.0.0.1:8000/tracking?order=ORD-JSBQPY,7334,0,5
+1794794815085,7340,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-66,text,true,,92104,209,44,44,http://127.0.0.1:8000/,7338,0,1
+1794794809253,13555,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-48,text,true,,94773,2054,44,44,http://127.0.0.1:8000,6044,0,1
+1794794809253,6044,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-48,text,true,,1891,1115,44,44,http://127.0.0.1:8000/cart/add,6044,0,1
+1794794815298,7510,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-48,text,true,,92882,939,44,44,http://127.0.0.1:8000,7509,0,2
+1794794815693,7567,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-67,text,true,,92104,209,45,45,http://127.0.0.1:8000/,7565,0,2
+1794794809634,13816,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-35,text,true,,53091,2215,45,45,http://127.0.0.1:8000/tracking?order=ORD-ZZPNGF,6080,0,1
+1794794809634,6080,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-35,text,true,,1917,1251,45,45,http://127.0.0.1:8000/checkout,6080,0,1
+1794794815716,7734,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-35,text,true,,51174,964,45,45,http://127.0.0.1:8000/tracking?order=ORD-ZZPNGF,7732,0,1
+1794794816288,7562,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-68,text,true,,92104,209,45,45,http://127.0.0.1:8000/,7560,0,0
+1794794810059,13995,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-49,text,true,,94773,2054,45,45,http://127.0.0.1:8000,6265,0,1
+1794794810059,6265,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-49,text,true,,1891,1115,45,45,http://127.0.0.1:8000/cart/add,6265,0,1
+1794794816326,7728,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-49,text,true,,92882,939,45,45,http://127.0.0.1:8000,7726,0,1
+1794794816887,7754,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-69,text,true,,92104,209,46,46,http://127.0.0.1:8000/,7753,0,1
+1794794810419,14424,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-36,text,true,,53091,2215,47,47,http://127.0.0.1:8000/tracking?order=ORD-KRYVLQ,6504,0,1
+1794794810419,6505,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-36,text,true,,1917,1251,47,47,http://127.0.0.1:8000/checkout,6504,0,1
+1794794816925,7918,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-36,text,true,,51174,964,47,47,http://127.0.0.1:8000/tracking?order=ORD-KRYVLQ,7917,0,1
+1794794810624,14414,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-50,text,true,,94773,2054,46,46,http://127.0.0.1:8000,6465,0,1
+1794794810624,6465,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-50,text,true,,1891,1115,46,46,http://127.0.0.1:8000/cart/add,6465,0,1
+1794794817090,7948,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-50,text,true,,92882,939,46,46,http://127.0.0.1:8000,7946,0,2
+1794794817485,7942,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-70,text,true,,92104,209,47,47,http://127.0.0.1:8000/,7940,0,1
+1794794811426,14410,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-37,text,true,,53091,2215,47,47,http://127.0.0.1:8000/tracking?order=ORD-XMR4CY,6479,0,1
+1794794811426,6479,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-37,text,true,,1917,1251,47,47,http://127.0.0.1:8000/checkout,6479,0,1
+1794794817906,7930,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-37,text,true,,51174,964,47,47,http://127.0.0.1:8000/tracking?order=ORD-XMR4CY,7928,0,0
+1794794818086,7970,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-71,text,true,,92104,209,47,47,http://127.0.0.1:8000/,7968,0,1
+1794794811609,14868,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-51,text,true,,94773,2054,47,47,http://127.0.0.1:8000,6687,0,1
+1794794811609,6687,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-51,text,true,,1891,1115,47,47,http://127.0.0.1:8000/cart/add,6687,0,1
+1794794818296,8181,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-51,text,true,,92882,939,47,47,http://127.0.0.1:8000,8179,0,1
+1794794818686,8185,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-72,text,true,,92104,209,48,48,http://127.0.0.1:8000/,8183,0,2
+1794794812204,15066,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-52,text,true,,94773,2054,49,49,http://127.0.0.1:8000,6891,0,1
+1794794812204,6891,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-52,text,true,,1891,1115,49,49,http://127.0.0.1:8000/cart/add,6891,0,1
+1794794819096,8174,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-52,text,true,,92882,939,49,49,http://127.0.0.1:8000,8172,0,1
+1794794819287,8216,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-73,text,true,,92104,209,49,49,http://127.0.0.1:8000/,8215,0,2
+1794794812573,15237,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-38,text,true,,53091,2215,50,50,http://127.0.0.1:8000/tracking?order=ORD-IIXKR9,6740,0,2
+1794794812573,6740,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-38,text,true,,1917,1251,50,50,http://127.0.0.1:8000/checkout,6740,0,2
+1794794819314,8496,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-38,text,true,,51174,964,50,50,http://127.0.0.1:8000/tracking?order=ORD-IIXKR9,8494,0,2
+1794794819887,8518,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-74,text,true,,92104,209,50,50,http://127.0.0.1:8000/,8516,0,0
+1794794812940,15665,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-53,text,true,,94773,2054,50,50,http://127.0.0.1:8000,7032,0,2
+1794794812940,7032,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-53,text,true,,1891,1115,50,50,http://127.0.0.1:8000/cart/add,7032,0,2
+1794794819972,8633,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-53,text,true,,92882,939,50,50,http://127.0.0.1:8000,8630,0,1
+1794794820487,8576,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-75,text,true,,92104,209,51,51,http://127.0.0.1:8000/,8573,0,1
+1794794813320,15963,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-39,text,true,,53091,2215,51,51,http://127.0.0.1:8000/tracking?order=ORD-OGSTHU,7283,0,2
+1794794813320,7283,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-39,text,true,,1917,1251,51,51,http://127.0.0.1:8000/checkout,7283,0,2
+1794794820603,8680,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-39,text,true,,51174,964,51,51,http://127.0.0.1:8000/tracking?order=ORD-OGSTHU,8678,0,1
+1794794813869,15821,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-54,text,true,,94773,2054,51,51,http://127.0.0.1:8000,7114,0,1
+1794794813869,7114,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-54,text,true,,1891,1115,51,51,http://127.0.0.1:8000/cart/add,7114,0,1
+1794794820984,8706,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-54,text,true,,92882,939,51,51,http://127.0.0.1:8000,8705,0,0
+1794794821086,8828,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-76,text,true,,92104,209,51,51,http://127.0.0.1:8000/,8826,0,1
+1794794814259,16085,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-40,text,true,,53091,2215,52,52,http://127.0.0.1:8000/tracking?order=ORD-4YTVQH,7165,0,2
+1794794814259,7165,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-40,text,true,,1917,1251,52,52,http://127.0.0.1:8000/checkout,7165,0,2
+1794794821424,8920,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-40,text,true,,51174,964,52,52,http://127.0.0.1:8000/tracking?order=ORD-4YTVQH,8919,0,2
+1794794814479,16074,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-55,text,true,,94773,2054,51,51,http://127.0.0.1:8000,7141,0,1
+1794794814479,7141,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-55,text,true,,1891,1115,51,51,http://127.0.0.1:8000/cart/add,7141,0,1
+1794794821620,8933,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-55,text,true,,92882,939,51,51,http://127.0.0.1:8000,8932,0,1
+1794794821687,9070,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-77,text,true,,92104,209,52,52,http://127.0.0.1:8000/,9068,0,2
+1794794822288,9048,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-78,text,true,,92104,209,53,53,http://127.0.0.1:8000/,9047,0,1
+1794794815103,16599,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-56,text,true,,94773,2054,53,53,http://127.0.0.1:8000,7501,0,2
+1794794815103,7501,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-56,text,true,,1891,1115,53,53,http://127.0.0.1:8000/cart/add,7501,0,2
+1794794822604,9098,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-56,text,true,,92882,939,53,53,http://127.0.0.1:8000,9096,0,1
+1794794822885,9174,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-79,text,true,,92104,209,54,54,http://127.0.0.1:8000/,9173,0,1
+1794794815493,16747,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-41,text,true,,53091,2215,54,54,http://127.0.0.1:8000/tracking?order=ORD-EZ5ZNA,7547,0,2
+1794794815493,7547,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-41,text,true,,1917,1251,54,54,http://127.0.0.1:8000/checkout,7547,0,2
+1794794823040,9200,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-41,text,true,,51174,964,54,54,http://127.0.0.1:8000/tracking?order=ORD-EZ5ZNA,9198,0,1
+1794794823486,9117,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-80,text,true,,92104,209,54,54,http://127.0.0.1:8000/,9115,0,1
+1794794815930,16859,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-57,text,true,,94773,2054,54,54,http://127.0.0.1:8000,7719,0,1
+1794794815930,7719,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-57,text,true,,1891,1115,54,54,http://127.0.0.1:8000/cart/add,7719,0,1
+1794794823649,9140,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-57,text,true,,92882,939,54,54,http://127.0.0.1:8000,9139,0,1
+1794794824086,9310,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-81,text,true,,92104,209,55,55,http://127.0.0.1:8000/,9308,0,1
+1794794816540,17040,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-42,text,true,,53091,2215,55,55,http://127.0.0.1:8000/tracking?order=ORD-9YHKZK,7728,0,2
+1794794816540,7728,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-42,text,true,,1917,1251,55,55,http://127.0.0.1:8000/checkout,7728,0,2
+1794794824269,9311,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-42,text,true,,51174,964,55,55,http://127.0.0.1:8000/tracking?order=ORD-9YHKZK,9309,0,1
+1794794816747,17021,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-58,text,true,,94773,2054,55,55,http://127.0.0.1:8000,7718,0,1
+1794794816747,7718,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-58,text,true,,1891,1115,55,55,http://127.0.0.1:8000/cart/add,7718,0,1
+1794794824465,9303,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-58,text,true,,92882,939,55,55,http://127.0.0.1:8000,9301,0,1
+1794794824686,9444,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-82,text,true,,92104,209,55,55,http://127.0.0.1:8000/,9443,0,1
+1794794817283,17227,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-59,text,true,,94773,2054,56,56,http://127.0.0.1:8000,7947,0,1
+1794794817283,7947,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-59,text,true,,1891,1115,56,56,http://127.0.0.1:8000/cart/add,7947,0,1
+1794794825230,9280,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-59,text,true,,92882,939,56,56,http://127.0.0.1:8000,9278,0,2
+1794794825289,9410,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-83,text,true,,92104,209,56,56,http://127.0.0.1:8000/,9408,0,0
+1794794817699,17360,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-43,text,true,,53091,2215,57,57,http://127.0.0.1:8000/tracking?order=ORD-RYAJA5,7919,0,1
+1794794817699,7919,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-43,text,true,,1917,1251,57,57,http://127.0.0.1:8000/checkout,7919,0,1
+1794794825619,9440,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-43,text,true,,51174,964,57,57,http://127.0.0.1:8000/tracking?order=ORD-RYAJA5,9438,0,1
+1794794825886,9367,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-84,text,true,,92104,209,56,56,http://127.0.0.1:8000/,9365,0,0
+1794794818109,17574,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-60,text,true,,94773,2054,57,57,http://127.0.0.1:8000,8158,0,1
+1794794818109,8158,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-60,text,true,,1891,1115,57,57,http://127.0.0.1:8000/cart/add,8158,0,1
+1794794826268,9415,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-60,text,true,,92882,939,57,57,http://127.0.0.1:8000,9413,0,1
+1794794826485,9579,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-85,text,true,,92104,209,57,57,http://127.0.0.1:8000/,9578,0,1
+1794794818497,17755,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-44,text,true,,53091,2215,57,57,http://127.0.0.1:8000/tracking?order=ORD-0Y22ZA,8167,0,1
+1794794818497,8167,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-44,text,true,,1917,1251,57,57,http://127.0.0.1:8000/checkout,8167,0,1
+1794794826665,9587,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-44,text,true,,51174,964,57,57,http://127.0.0.1:8000/tracking?order=ORD-0Y22ZA,9586,0,1
+1794794818905,17709,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-61,text,true,,94773,2054,56,56,http://127.0.0.1:8000,8176,0,1
+1794794818905,8176,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-61,text,true,,1891,1115,56,56,http://127.0.0.1:8000/cart/add,8176,0,1
+1794794827083,9531,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-61,text,true,,92882,939,56,56,http://127.0.0.1:8000,9530,0,1
+1794794827086,9721,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-86,text,true,,92104,209,56,56,http://127.0.0.1:8000/,9720,0,1
+1794794827686,9651,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-87,text,true,,92104,209,56,56,http://127.0.0.1:8000/,9650,0,1
+1794794819519,18014,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-62,text,true,,94773,2054,56,56,http://127.0.0.1:8000,8492,0,1
+1794794819519,8492,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-62,text,true,,1891,1115,56,56,http://127.0.0.1:8000/cart/add,8492,0,1
+1794794828012,9521,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-62,text,true,,92882,939,56,56,http://127.0.0.1:8000,9519,0,1
+1794794819734,17973,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-45,text,true,,53091,2215,56,56,http://127.0.0.1:8000/tracking?order=ORD-XLVTIH,8486,0,2
+1794794819734,8486,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-45,text,true,,1917,1251,56,56,http://127.0.0.1:8000/checkout,8486,0,2
+1794794828221,9486,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-45,text,true,,51174,964,56,56,http://127.0.0.1:8000/tracking?order=ORD-XLVTIH,9485,0,2
+1794794828287,9598,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-88,text,true,,92104,209,55,55,http://127.0.0.1:8000/,9596,0,1
+1794794820379,18047,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-63,text,true,,94773,2054,55,55,http://127.0.0.1:8000,8439,0,1
+1794794820379,8439,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-63,text,true,,1891,1115,55,55,http://127.0.0.1:8000/cart/add,8439,0,1
+1794794828819,9607,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-63,text,true,,92882,939,55,55,http://127.0.0.1:8000,9605,0,2
+1794794828888,9730,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-89,text,true,,92104,209,55,55,http://127.0.0.1:8000/,9728,0,1
+1794794829489,9509,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-90,text,true,,92104,209,55,55,http://127.0.0.1:8000/,9507,0,1
+1794794820775,18408,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-46,text,true,,53091,2215,55,55,http://127.0.0.1:8000/tracking?order=ORD-RNMM6H,8714,0,1
+1794794820775,8714,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-46,text,true,,1917,1251,55,55,http://127.0.0.1:8000/checkout,8714,0,1
+1794794829491,9692,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-46,text,true,,51174,964,55,55,http://127.0.0.1:8000/tracking?order=ORD-RNMM6H,9690,0,0
+1794794830087,9632,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-91,text,true,,92104,209,54,54,http://127.0.0.1:8000/,9631,0,1
+1794794821200,18683,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-64,text,true,,94773,2054,54,54,http://127.0.0.1:8000,8950,0,1
+1794794821200,8950,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-64,text,true,,1891,1115,54,54,http://127.0.0.1:8000/cart/add,8950,0,1
+1794794830152,9731,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-64,text,true,,92882,939,54,54,http://127.0.0.1:8000,9729,0,1
+1794794830688,9558,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-92,text,true,,92104,209,54,54,http://127.0.0.1:8000/,9557,0,1
+1794794821832,18791,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-65,text,true,,94773,2054,54,54,http://127.0.0.1:8000,9116,0,2
+1794794821832,9116,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-65,text,true,,1891,1115,54,54,http://127.0.0.1:8000/cart/add,9116,0,2
+1794794830949,9674,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-65,text,true,,92882,939,54,54,http://127.0.0.1:8000,9673,0,1
+1794794822028,18785,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-47,text,true,,53091,2215,54,54,http://127.0.0.1:8000/tracking?order=ORD-TNI3QW,9115,0,2
+1794794822028,9115,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-47,text,true,,1917,1251,54,54,http://127.0.0.1:8000/checkout,9115,0,2
+1794794831144,9669,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-47,text,true,,51174,964,54,54,http://127.0.0.1:8000/tracking?order=ORD-TNI3QW,9667,0,1
+1794794831286,9715,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-93,text,true,,92104,209,53,53,http://127.0.0.1:8000/,9713,0,1
+1794794822426,18951,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-66,text,true,,94773,2054,53,53,http://127.0.0.1:8000,9089,0,1
+1794794822426,9089,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-66,text,true,,1891,1115,53,53,http://127.0.0.1:8000/cart/add,9089,0,1
+1794794831517,9860,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-66,text,true,,92882,939,53,53,http://127.0.0.1:8000,9859,0,0
+1794794822809,18927,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-48,text,true,,94207,2190,53,53,http://127.0.0.1:8000,9062,0,1
+1794794822809,9062,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-48,text,true,,1891,1251,53,53,http://127.0.0.1:8000/checkout,9062,0,1
+1794794831872,9864,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-48,text,true,,92316,939,53,53,http://127.0.0.1:8000,9863,0,1
+1794794831887,10028,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-94,text,true,,92104,209,52,52,http://127.0.0.1:8000/,10027,0,1
+1794794823260,19027,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-67,text,true,,94773,2054,52,52,http://127.0.0.1:8000,9157,0,2
+1794794823260,9157,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-67,text,true,,1891,1115,52,52,http://127.0.0.1:8000/cart/add,9157,0,2
+1794794832419,9868,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-67,text,true,,92882,939,52,52,http://127.0.0.1:8000,9866,0,0
+1794794832487,10001,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-95,text,true,,92104,209,52,52,http://127.0.0.1:8000/,9999,0,0
+1794794823850,19207,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-68,text,true,,94773,2054,52,52,http://127.0.0.1:8000,9120,0,1
+1794794823850,9120,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-68,text,true,,1891,1115,52,52,http://127.0.0.1:8000/cart/add,9120,0,1
+1794794832971,10086,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-68,text,true,,92882,939,52,52,http://127.0.0.1:8000,10084,0,1
+1794794833086,10160,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-96,text,true,,92104,209,52,52,http://127.0.0.1:8000/,10159,0,0
+1794794824055,19395,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-49,text,true,,53091,2215,52,52,http://127.0.0.1:8000/tracking?order=ORD-EHXK6E,9123,0,1
+1794794824055,9123,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-49,text,true,,1917,1251,52,52,http://127.0.0.1:8000/checkout,9123,0,1
+1794794833180,10270,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-49,text,true,,51174,964,52,52,http://127.0.0.1:8000/tracking?order=ORD-EHXK6E,10268,0,2
+1794794833687,10112,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-97,text,true,,92104,209,51,51,http://127.0.0.1:8000/,10111,0,1
+1794794824642,19538,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-69,text,true,,94773,2054,51,51,http://127.0.0.1:8000,9304,0,1
+1794794824642,9304,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-69,text,true,,1891,1115,51,51,http://127.0.0.1:8000/cart/add,9304,0,1
+1794794833947,10233,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-69,text,true,,92882,939,51,51,http://127.0.0.1:8000,10232,0,1
+1794794834286,10256,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-98,text,true,,92104,209,51,51,http://127.0.0.1:8000/,10254,0,1
+1794794825038,19678,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-50,text,true,,53090,2214,51,51,http://127.0.0.1:8000/tracking?order=ORD-3Q8L0L,9285,0,1
+1794794825038,9285,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-50,text,true,,1917,1250,51,51,http://127.0.0.1:8000/checkout,9285,0,1
+1794794834324,10392,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-50,text,true,,51173,964,51,51,http://127.0.0.1:8000/tracking?order=ORD-3Q8L0L,10391,0,1
+1794794825428,19862,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-70,text,true,,94773,2054,50,50,http://127.0.0.1:8000,9449,0,1
+1794794825428,9449,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-70,text,true,,1891,1115,50,50,http://127.0.0.1:8000/cart/add,9449,0,1
+1794794834878,10412,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-70,text,true,,92882,939,50,50,http://127.0.0.1:8000,10411,0,0
+1794794834885,10594,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-99,text,true,,92104,209,50,50,http://127.0.0.1:8000/,10592,0,1
+1794794826057,19785,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-71,text,true,,94773,2054,50,50,http://127.0.0.1:8000,9386,0,1
+1794794826057,9386,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-71,text,true,,1891,1115,50,50,http://127.0.0.1:8000/cart/add,9386,0,1
+1794794835444,10398,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-71,text,true,,92882,939,50,50,http://127.0.0.1:8000,10397,0,1
+1794794835487,10543,01 - Akses Katalog (Ambil CSRF Token),200,OK,Concurrent Users - Checkout Flow 1-100,text,true,,92104,209,50,50,http://127.0.0.1:8000/,10542,0,1
+1794794826478,19927,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-51,text,true,,53091,2215,50,50,http://127.0.0.1:8000/tracking?order=ORD-BGBAL7,9403,0,2
+1794794826478,9403,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-51,text,true,,1917,1251,50,50,http://127.0.0.1:8000/checkout,9403,0,2
+1794794835881,10524,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-51,text,true,,51174,964,50,50,http://127.0.0.1:8000/tracking?order=ORD-BGBAL7,10522,0,1
+1794794826872,19925,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-72,text,true,,94773,2054,49,49,http://127.0.0.1:8000,9561,0,1
+1794794826872,9561,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-72,text,true,,1891,1115,49,49,http://127.0.0.1:8000/cart/add,9561,0,1
+1794794836433,10364,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-72,text,true,,92882,939,49,49,http://127.0.0.1:8000,10361,0,1
+1794794827272,20081,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-52,text,true,,53091,2215,49,49,http://127.0.0.1:8000/tracking?order=ORD-BA06TK,9710,0,2
+1794794827272,9710,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-52,text,true,,1917,1251,49,49,http://127.0.0.1:8000/checkout,9710,0,2
+1794794836982,10371,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-52,text,true,,51174,964,49,49,http://127.0.0.1:8000/tracking?order=ORD-BA06TK,10370,0,1
+1794794827505,20026,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-73,text,true,,94773,2054,48,48,http://127.0.0.1:8000,9658,0,1
+1794794827505,9658,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-73,text,true,,1891,1115,48,48,http://127.0.0.1:8000/cart/add,9658,0,1
+1794794837164,10367,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-73,text,true,,92882,939,48,48,http://127.0.0.1:8000,10365,0,0
+1794794828407,19852,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-74,text,true,,94773,2054,48,48,http://127.0.0.1:8000,9646,0,2
+1794794828407,9646,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-74,text,true,,1891,1115,48,48,http://127.0.0.1:8000/cart/add,9646,0,2
+1794794838054,10205,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-74,text,true,,92882,939,48,48,http://127.0.0.1:8000,10203,0,1
+1794794828606,19831,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-53,text,true,,53091,2215,48,48,http://127.0.0.1:8000/tracking?order=ORD-WUCQEP,9634,0,2
+1794794828606,9634,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-53,text,true,,1917,1251,48,48,http://127.0.0.1:8000/checkout,9634,0,2
+1794794838241,10196,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-53,text,true,,51174,964,48,48,http://127.0.0.1:8000/tracking?order=ORD-WUCQEP,10195,0,1
+1794794829065,19920,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-75,text,true,,94773,2054,47,47,http://127.0.0.1:8000,9729,0,2
+1794794829065,9729,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-75,text,true,,1891,1115,47,47,http://127.0.0.1:8000/cart/add,9729,0,2
+1794794838794,10191,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-75,text,true,,92882,939,47,47,http://127.0.0.1:8000,10189,0,1
+1794794829692,19647,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-54,text,true,,53090,2214,47,47,http://127.0.0.1:8000/tracking?order=ORD-MSTNNL,9666,0,2
+1794794829692,9666,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-54,text,true,,1917,1250,47,47,http://127.0.0.1:8000/checkout,9666,0,2
+1794794839358,9981,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-54,text,true,,51173,964,47,47,http://127.0.0.1:8000/tracking?order=ORD-MSTNNL,9980,0,1
+1794794829915,19606,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-76,text,true,,94773,2054,46,46,http://127.0.0.1:8000,9622,0,2
+1794794829915,9622,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-76,text,true,,1891,1115,46,46,http://127.0.0.1:8000/cart/add,9622,0,2
+1794794839537,9984,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-76,text,true,,92882,939,46,46,http://127.0.0.1:8000,9983,0,1
+1794794830555,19562,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-55,text,true,,53091,2215,46,46,http://127.0.0.1:8000/tracking?order=ORD-KBNCDW,9504,0,2
+1794794830555,9504,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-55,text,true,,1917,1251,46,46,http://127.0.0.1:8000/checkout,9504,0,2
+1794794840059,10058,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-55,text,true,,51174,964,46,46,http://127.0.0.1:8000/tracking?order=ORD-KBNCDW,10057,0,1
+1794794830759,19758,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-77,text,true,,94773,2054,45,45,http://127.0.0.1:8000,9667,0,1
+1794794830759,9667,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-77,text,true,,1891,1115,45,45,http://127.0.0.1:8000/cart/add,9667,0,1
+1794794840427,10090,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-77,text,true,,92882,939,45,45,http://127.0.0.1:8000,10089,0,0
+1794794831338,19760,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-78,text,true,,94773,2054,45,45,http://127.0.0.1:8000,9843,0,1
+1794794831338,9843,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-78,text,true,,1891,1115,45,45,http://127.0.0.1:8000/cart/add,9843,0,1
+1794794841181,9917,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-78,text,true,,92882,939,45,45,http://127.0.0.1:8000,9915,0,1
+1794794831703,19774,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-56,text,true,,53091,2215,45,45,http://127.0.0.1:8000/tracking?order=ORD-0VHZTU,9868,0,1
+1794794831703,9868,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-56,text,true,,1917,1251,45,45,http://127.0.0.1:8000/checkout,9868,0,1
+1794794841572,9905,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-56,text,true,,51174,964,45,45,http://127.0.0.1:8000/tracking?order=ORD-0VHZTU,9903,0,1
+1794794832061,19787,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-79,text,true,,94773,2054,44,44,http://127.0.0.1:8000,10019,0,1
+1794794832061,10019,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-79,text,true,,1891,1115,44,44,http://127.0.0.1:8000/cart/add,10019,0,1
+1794794842081,9767,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-79,text,true,,92882,939,44,44,http://127.0.0.1:8000,9759,0,1
+1794794832605,19842,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-80,text,true,,94773,2054,44,44,http://127.0.0.1:8000,10063,0,1
+1794794832605,10063,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-80,text,true,,1891,1115,44,44,http://127.0.0.1:8000/cart/add,10063,0,1
+1794794842669,9778,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-80,text,true,,92882,939,44,44,http://127.0.0.1:8000,9776,0,1
+1794794832791,19844,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-57,text,true,,53091,2215,44,44,http://127.0.0.1:8000/tracking?order=ORD-KOWSEW,10080,0,1
+1794794832791,10080,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-57,text,true,,1917,1251,44,44,http://127.0.0.1:8000/checkout,10080,0,1
+1794794842872,9763,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-57,text,true,,51174,964,44,44,http://127.0.0.1:8000/tracking?order=ORD-KOWSEW,9762,0,1
+1794794833397,19800,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-81,text,true,,94773,2054,43,43,http://127.0.0.1:8000,10217,0,2
+1794794833397,10217,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-81,text,true,,1891,1115,43,43,http://127.0.0.1:8000/cart/add,10217,0,2
+1794794843615,9582,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-81,text,true,,92882,939,43,43,http://127.0.0.1:8000,9581,0,1
+1794794833769,19780,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-58,text,true,,53091,2215,43,43,http://127.0.0.1:8000/tracking?order=ORD-EAW2X1,10210,0,2
+1794794833769,10210,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-58,text,true,,1917,1251,43,43,http://127.0.0.1:8000/checkout,10210,0,2
+1794794843980,9569,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-58,text,true,,51174,964,43,43,http://127.0.0.1:8000/tracking?order=ORD-EAW2X1,9567,0,1
+1794794834132,19814,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-82,text,true,,94773,2054,42,42,http://127.0.0.1:8000,10228,0,1
+1794794834132,10228,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-82,text,true,,1891,1115,42,42,http://127.0.0.1:8000/cart/add,10228,0,1
+1794794844361,9585,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-82,text,true,,92882,939,42,42,http://127.0.0.1:8000,9583,0,1
+1794794834511,19788,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-59,text,true,,53091,2215,42,42,http://127.0.0.1:8000/tracking?order=ORD-RPUEEJ,10404,0,2
+1794794834511,10404,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-59,text,true,,1917,1251,42,42,http://127.0.0.1:8000/checkout,10404,0,2
+1794794844916,9383,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-59,text,true,,51174,964,42,42,http://127.0.0.1:8000/tracking?order=ORD-RPUEEJ,9381,0,1
+1794794834701,19808,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-83,text,true,,94773,2054,41,41,http://127.0.0.1:8000,10391,0,1
+1794794834701,10391,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-83,text,true,,1891,1115,41,41,http://127.0.0.1:8000/cart/add,10391,0,1
+1794794845093,9416,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-83,text,true,,92882,939,41,41,http://127.0.0.1:8000,9413,0,1
+1794794835254,19825,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-84,text,true,,94773,2054,41,41,http://127.0.0.1:8000,10409,0,1
+1794794835254,10409,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-84,text,true,,1891,1115,41,41,http://127.0.0.1:8000/cart/add,10409,0,1
+1794794845665,9414,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-84,text,true,,92882,939,41,41,http://127.0.0.1:8000,9412,0,2
+1794794835683,19935,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-60,text,true,,53091,2215,41,41,http://127.0.0.1:8000/tracking?order=ORD-HMQP5Y,10541,0,1
+1794794835683,10541,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-60,text,true,,1917,1251,41,41,http://127.0.0.1:8000/checkout,10541,0,1
+1794794846225,9393,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-60,text,true,,51174,964,41,41,http://127.0.0.1:8000/tracking?order=ORD-HMQP5Y,9391,0,1
+1794794836064,19743,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-85,text,true,,94773,2054,40,40,http://127.0.0.1:8000,10522,0,1
+1794794836064,10522,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-85,text,true,,1891,1115,40,40,http://127.0.0.1:8000/cart/add,10522,0,1
+1794794846587,9220,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-85,text,true,,92882,939,40,40,http://127.0.0.1:8000,9219,0,1
+1794794836615,19567,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-61,text,true,,53090,2214,40,40,http://127.0.0.1:8000/tracking?order=ORD-SIFRG4,10370,0,1
+1794794836615,10370,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-61,text,true,,1917,1250,40,40,http://127.0.0.1:8000/checkout,10370,0,1
+1794794846986,9196,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-61,text,true,,51173,964,40,40,http://127.0.0.1:8000/tracking?order=ORD-SIFRG4,9195,0,1
+1794794836808,19547,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-86,text,true,,94773,2054,39,39,http://127.0.0.1:8000,10364,0,1
+1794794836808,10364,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-86,text,true,,1891,1115,39,39,http://127.0.0.1:8000/cart/add,10364,0,1
+1794794847173,9182,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-86,text,true,,92882,939,39,39,http://127.0.0.1:8000,9180,0,1
+1794794837338,19413,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-87,text,true,,94773,2054,39,39,http://127.0.0.1:8000,10358,0,1
+1794794837338,10358,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-87,text,true,,1891,1115,39,39,http://127.0.0.1:8000/cart/add,10358,0,1
+1794794847697,9054,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-87,text,true,,92882,939,39,39,http://127.0.0.1:8000,9053,0,1
+1794794837533,19391,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-62,text,true,,53089,2213,39,39,http://127.0.0.1:8000/tracking?order=ORD-H34EXX,10336,0,2
+1794794837533,10336,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-62,text,true,,1917,1249,39,39,http://127.0.0.1:8000/checkout,10336,0,2
+1794794847870,9054,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-62,text,true,,51172,964,39,39,http://127.0.0.1:8000/tracking?order=ORD-H34EXX,9052,0,1
+1794794837886,19231,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-88,text,true,,94773,2054,38,38,http://127.0.0.1:8000,10172,0,1
+1794794837886,10172,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-88,text,true,,1891,1115,38,38,http://127.0.0.1:8000/cart/add,10172,0,1
+1794794848059,9058,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-88,text,true,,92882,939,38,38,http://127.0.0.1:8000,9056,0,1
+1794794838426,19040,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-63,text,true,,53091,2215,38,38,http://127.0.0.1:8000/tracking?order=ORD-IYZ7PO,10199,0,1
+1794794838426,10199,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-63,text,true,,1917,1251,38,38,http://127.0.0.1:8000/checkout,10199,0,1
+1794794848626,8840,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-63,text,true,,51174,964,38,38,http://127.0.0.1:8000/tracking?order=ORD-IYZ7PO,8838,0,1
+1794794838619,19036,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-89,text,true,,94773,2054,37,37,http://127.0.0.1:8000,10167,0,1
+1794794838619,10167,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-89,text,true,,1891,1115,37,37,http://127.0.0.1:8000/cart/add,10167,0,1
+1794794848788,8867,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-89,text,true,,92882,939,37,37,http://127.0.0.1:8000,8865,0,0
+1794794838999,19042,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-90,text,true,,94773,2054,37,37,http://127.0.0.1:8000,10179,0,1
+1794794838999,10179,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-90,text,true,,1891,1115,37,37,http://127.0.0.1:8000/cart/add,10179,0,1
+1794794849179,8862,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-90,text,true,,92882,939,37,37,http://127.0.0.1:8000,8859,0,1
+1794794839719,18712,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-91,text,true,,94773,2054,37,37,http://127.0.0.1:8000,9988,0,2
+1794794839719,9988,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-91,text,true,,1891,1115,37,37,http://127.0.0.1:8000/cart/add,9988,0,2
+1794794849708,8723,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-91,text,true,,92882,939,37,37,http://127.0.0.1:8000,8721,0,1
+1794794839883,18722,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-64,text,true,,53091,2215,37,37,http://127.0.0.1:8000/tracking?order=ORD-QH2ULS,10042,0,2
+1794794839883,10042,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-64,text,true,,1917,1251,37,37,http://127.0.0.1:8000/checkout,10042,0,2
+1794794849926,8679,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-64,text,true,,51174,964,37,37,http://127.0.0.1:8000/tracking?order=ORD-QH2ULS,8678,0,1
+1794794840247,18544,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-92,text,true,,94773,2054,36,36,http://127.0.0.1:8000,10070,0,1
+1794794840247,10070,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-92,text,true,,1891,1115,36,36,http://127.0.0.1:8000/cart/add,10070,0,1
+1794794850319,8472,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-92,text,true,,92882,939,36,36,http://127.0.0.1:8000,8471,0,1
+1794794840624,18498,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-65,text,true,,53091,2215,36,36,http://127.0.0.1:8000/tracking?order=ORD-HKJHXG,10089,0,2
+1794794840624,10089,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-65,text,true,,1917,1251,36,36,http://127.0.0.1:8000/checkout,10089,0,2
+1794794850715,8407,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-65,text,true,,51174,964,36,36,http://127.0.0.1:8000/tracking?order=ORD-HKJHXG,8406,0,1
+1794794841001,18328,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-93,text,true,,94773,2054,35,35,http://127.0.0.1:8000,9903,0,1
+1794794841001,9903,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-93,text,true,,1891,1115,35,35,http://127.0.0.1:8000/cart/add,9903,0,1
+1794794850905,8424,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-93,text,true,,92882,939,35,35,http://127.0.0.1:8000,8422,0,1
+1794794841379,18342,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-66,text,true,,53091,2215,35,35,http://127.0.0.1:8000/tracking?order=ORD-FRMRHK,9915,0,1
+1794794841379,9915,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-66,text,true,,1917,1251,35,35,http://127.0.0.1:8000/checkout,9915,0,1
+1794794851295,8426,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-66,text,true,,51174,964,35,35,http://127.0.0.1:8000/tracking?order=ORD-FRMRHK,8425,0,0
+1794794841917,17995,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-94,text,true,,94773,2054,34,34,http://127.0.0.1:8000,9734,0,1
+1794794841917,9734,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-94,text,true,,1891,1115,34,34,http://127.0.0.1:8000/cart/add,9734,0,1
+1794794851651,8261,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-94,text,true,,92882,939,34,34,http://127.0.0.1:8000,8260,0,2
+1794794842288,18015,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-67,text,true,,53090,2214,34,34,http://127.0.0.1:8000/tracking?order=ORD-PFI72B,9782,0,2
+1794794842288,9782,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-67,text,true,,1917,1250,34,34,http://127.0.0.1:8000/checkout,9782,0,2
+1794794852071,8232,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-67,text,true,,51173,964,34,34,http://127.0.0.1:8000/tracking?order=ORD-PFI72B,8230,0,0
+1794794842490,18009,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-95,text,true,,94773,2054,33,33,http://127.0.0.1:8000,9757,0,0
+1794794842490,9757,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-95,text,true,,1891,1115,33,33,http://127.0.0.1:8000/cart/add,9757,0,0
+1794794852247,8252,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-95,text,true,,92882,939,33,33,http://127.0.0.1:8000,8250,0,1
+1794794843059,17800,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-68,text,true,,53091,2215,33,33,http://127.0.0.1:8000/tracking?order=ORD-L4NXGE,9769,0,1
+1794794843059,9769,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-68,text,true,,1917,1251,33,33,http://127.0.0.1:8000/checkout,9769,0,1
+1794794852828,8031,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-68,text,true,,51174,964,33,33,http://127.0.0.1:8000/tracking?order=ORD-L4NXGE,8030,0,1
+1794794843248,17786,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-96,text,true,,94773,2054,32,32,http://127.0.0.1:8000,9767,0,1
+1794794843248,9767,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-96,text,true,,1891,1115,32,32,http://127.0.0.1:8000/cart/add,9767,0,1
+1794794853016,8018,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-96,text,true,,92882,939,32,32,http://127.0.0.1:8000,8017,0,0
+1794794843801,17630,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-97,text,true,,94773,2054,32,32,http://127.0.0.1:8000,9561,0,1
+1794794843801,9561,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-97,text,true,,1891,1115,32,32,http://127.0.0.1:8000/cart/add,9561,0,1
+1794794853362,8069,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-97,text,true,,92882,939,32,32,http://127.0.0.1:8000,8068,0,1
+1794794844182,17424,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-69,text,true,,53091,2215,32,32,http://127.0.0.1:8000/tracking?order=ORD-MGJLTT,9577,0,1
+1794794844182,9577,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-69,text,true,,1917,1251,32,32,http://127.0.0.1:8000/checkout,9577,0,1
+1794794853759,7847,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-69,text,true,,51174,964,32,32,http://127.0.0.1:8000/tracking?order=ORD-MGJLTT,7846,0,0
+1794794844544,17451,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-98,text,true,,94773,2054,31,31,http://127.0.0.1:8000,9579,0,2
+1794794844544,9579,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-98,text,true,,1891,1115,31,31,http://127.0.0.1:8000/cart/add,9579,0,2
+1794794854123,7872,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-98,text,true,,92882,939,31,31,http://127.0.0.1:8000,7870,0,1
+1794794845292,17102,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-70,text,true,,53091,2215,31,31,http://127.0.0.1:8000/tracking?order=ORD-5BWZIL,9420,0,1
+1794794845292,9420,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-70,text,true,,1917,1251,31,31,http://127.0.0.1:8000/checkout,9420,0,1
+1794794854713,7681,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-70,text,true,,51174,964,31,31,http://127.0.0.1:8000/tracking?order=ORD-5BWZIL,7680,0,2
+1794794845480,17108,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-99,text,true,,94773,2054,30,30,http://127.0.0.1:8000,9414,0,1
+1794794845480,9414,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-99,text,true,,1891,1115,30,30,http://127.0.0.1:8000/cart/add,9414,0,1
+1794794854894,7694,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-99,text,true,,92882,939,30,30,http://127.0.0.1:8000,7693,0,1
+1794794845844,17103,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-71,text,true,,53091,2215,30,30,http://127.0.0.1:8000/tracking?order=ORD-7PYLFQ,9427,0,1
+1794794845844,9427,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-71,text,true,,1917,1251,30,30,http://127.0.0.1:8000/checkout,9427,0,1
+1794794855271,7676,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-71,text,true,,51174,964,30,30,http://127.0.0.1:8000/tracking?order=ORD-7PYLFQ,7675,0,1
+1794794846032,17106,02 - Tambah Menu ke Keranjang,200,OK,Concurrent Users - Checkout Flow 1-100,text,true,,94773,2054,29,29,http://127.0.0.1:8000,9416,0,1
+1794794846032,9416,02 - Tambah Menu ke Keranjang-0,302,Found,Concurrent Users - Checkout Flow 1-100,text,true,,1891,1115,29,29,http://127.0.0.1:8000/cart/add,9416,0,1
+1794794855448,7690,02 - Tambah Menu ke Keranjang-1,200,OK,Concurrent Users - Checkout Flow 1-100,text,true,,92882,939,29,29,http://127.0.0.1:8000,7688,0,1
+1794794846799,16700,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-72,text,true,,53091,2215,29,29,http://127.0.0.1:8000/tracking?order=ORD-AIUB33,9199,0,1
+1794794846799,9199,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-72,text,true,,1917,1251,29,29,http://127.0.0.1:8000/checkout,9199,0,1
+1794794855999,7500,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-72,text,true,,51174,964,29,29,http://127.0.0.1:8000/tracking?order=ORD-AIUB33,7499,0,1
+1794794847532,16361,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-73,text,true,,53091,2215,28,28,http://127.0.0.1:8000/tracking?order=ORD-LJC1TW,9020,0,2
+1794794847532,9020,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-73,text,true,,1917,1251,28,28,http://127.0.0.1:8000/checkout,9020,0,2
+1794794856552,7341,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-73,text,true,,51174,964,28,28,http://127.0.0.1:8000/tracking?order=ORD-LJC1TW,7339,0,1
+1794794848260,16216,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-74,text,true,,53090,2214,27,27,http://127.0.0.1:8000/tracking?order=ORD-4RTBFY,9026,0,1
+1794794848260,9026,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-74,text,true,,1917,1250,27,27,http://127.0.0.1:8000/checkout,9026,0,1
+1794794857286,7190,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-74,text,true,,51173,964,27,27,http://127.0.0.1:8000/tracking?order=ORD-4RTBFY,7188,0,1
+1794794848986,15856,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-75,text,true,,53091,2215,26,26,http://127.0.0.1:8000/tracking?order=ORD-KHCD8Q,8860,0,2
+1794794848986,8860,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-75,text,true,,1917,1251,26,26,http://127.0.0.1:8000/checkout,8860,0,2
+1794794857846,6996,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-75,text,true,,51174,964,26,26,http://127.0.0.1:8000/tracking?order=ORD-KHCD8Q,6995,0,1
+1794794849523,15684,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-76,text,true,,53091,2215,25,25,http://127.0.0.1:8000/tracking?order=ORD-ZZQYDI,8721,0,1
+1794794849523,8721,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-76,text,true,,1917,1251,25,25,http://127.0.0.1:8000/checkout,8721,0,1
+1794794858244,6963,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-76,text,true,,51174,964,25,25,http://127.0.0.1:8000/tracking?order=ORD-ZZQYDI,6961,0,1
+1794794850519,15258,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-77,text,true,,53091,2215,24,24,http://127.0.0.1:8000/tracking?order=ORD-WX4HV8,8439,0,2
+1794794850519,8439,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-77,text,true,,1917,1251,24,24,http://127.0.0.1:8000/checkout,8439,0,2
+1794794858958,6819,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-77,text,true,,51174,964,24,24,http://127.0.0.1:8000/tracking?order=ORD-WX4HV8,6818,0,1
+1794794851099,15057,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-78,text,true,,53091,2215,23,23,http://127.0.0.1:8000/tracking?order=ORD-HCEDE9,8424,0,1
+1794794851099,8424,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-78,text,true,,1917,1251,23,23,http://127.0.0.1:8000/checkout,8424,0,1
+1794794859523,6633,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-78,text,true,,51174,964,23,23,http://127.0.0.1:8000/tracking?order=ORD-HCEDE9,6631,0,1
+1794794851848,14673,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-79,text,true,,53091,2215,22,22,http://127.0.0.1:8000/tracking?order=ORD-MK8FGS,8259,0,2
+1794794851848,8259,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-79,text,true,,1917,1251,22,22,http://127.0.0.1:8000/checkout,8259,0,2
+1794794860107,6414,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-79,text,true,,51174,964,22,22,http://127.0.0.1:8000/tracking?order=ORD-MK8FGS,6413,0,1
+1794794852447,14455,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-80,text,true,,53091,2215,21,21,http://127.0.0.1:8000/tracking?order=ORD-T2XHLL,8242,0,2
+1794794852447,8242,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-80,text,true,,1917,1251,21,21,http://127.0.0.1:8000/checkout,8242,0,2
+1794794860689,6213,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-80,text,true,,51174,964,21,21,http://127.0.0.1:8000/tracking?order=ORD-T2XHLL,6212,0,1
+1794794853198,14063,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-81,text,true,,53091,2215,20,20,http://127.0.0.1:8000/tracking?order=ORD-8XDSC0,8032,0,1
+1794794853198,8032,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-81,text,true,,1917,1251,20,20,http://127.0.0.1:8000/checkout,8032,0,1
+1794794861231,6030,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-81,text,true,,51174,964,20,20,http://127.0.0.1:8000/tracking?order=ORD-8XDSC0,6029,0,0
+1794794853946,13685,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-82,text,true,,53091,2215,19,19,http://127.0.0.1:8000/tracking?order=ORD-CMFDE4,7865,0,2
+1794794853946,7865,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-82,text,true,,1917,1251,19,19,http://127.0.0.1:8000/checkout,7865,0,2
+1794794861812,5819,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-82,text,true,,51174,964,19,19,http://127.0.0.1:8000/tracking?order=ORD-CMFDE4,5816,0,1
+1794794854510,13496,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-83,text,true,,53091,2215,18,18,http://127.0.0.1:8000/tracking?order=ORD-90VJFV,7673,0,1
+1794794854510,7673,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-83,text,true,,1917,1251,18,18,http://127.0.0.1:8000/checkout,7673,0,1
+1794794862184,5822,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-83,text,true,,51174,964,18,18,http://127.0.0.1:8000/tracking?order=ORD-90VJFV,5821,0,1
+1794794855079,13293,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-84,text,true,,53091,2215,17,17,http://127.0.0.1:8000/tracking?order=ORD-F1PFAV,7710,0,1
+1794794855079,7710,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-84,text,true,,1917,1251,17,17,http://127.0.0.1:8000/checkout,7710,0,1
+1794794862790,5582,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-84,text,true,,51174,964,17,17,http://127.0.0.1:8000/tracking?order=ORD-F1PFAV,5580,0,1
+1794794855808,12908,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-85,text,true,,53091,2215,16,16,http://127.0.0.1:8000/tracking?order=ORD-QWA4TC,7506,0,2
+1794794855808,7506,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-85,text,true,,1917,1251,16,16,http://127.0.0.1:8000/checkout,7506,0,2
+1794794863316,5400,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-85,text,true,,51174,964,16,16,http://127.0.0.1:8000/tracking?order=ORD-QWA4TC,5399,0,1
+1794794856355,12549,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-86,text,true,,53091,2215,15,15,http://127.0.0.1:8000/tracking?order=ORD-OX3B4C,7354,0,1
+1794794856355,7354,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-86,text,true,,1917,1251,15,15,http://127.0.0.1:8000/checkout,7354,0,1
+1794794863710,5194,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-86,text,true,,51174,964,15,15,http://127.0.0.1:8000/tracking?order=ORD-OX3B4C,5193,0,1
+1794794856752,12323,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-87,text,true,,53091,2215,14,14,http://127.0.0.1:8000/tracking?order=ORD-SSSVP2,7340,0,1
+1794794856752,7340,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-87,text,true,,1917,1251,14,14,http://127.0.0.1:8000/checkout,7340,0,1
+1794794864094,4981,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-87,text,true,,51174,964,14,14,http://127.0.0.1:8000/tracking?order=ORD-SSSVP2,4979,0,1
+1794794857118,12154,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-88,text,true,,53091,2215,13,13,http://127.0.0.1:8000/tracking?order=ORD-IOGW7S,7175,0,1
+1794794857118,7175,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-88,text,true,,1917,1251,13,13,http://127.0.0.1:8000/checkout,7175,0,1
+1794794864294,4978,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-88,text,true,,51174,964,13,13,http://127.0.0.1:8000/tracking?order=ORD-IOGW7S,4977,0,1
+1794794857655,11802,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-89,text,true,,53091,2215,12,12,http://127.0.0.1:8000/tracking?order=ORD-NKLKX0,7002,0,2
+1794794857655,7002,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-89,text,true,,1917,1251,12,12,http://127.0.0.1:8000/checkout,7002,0,2
+1794794864658,4799,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-89,text,true,,51174,964,12,12,http://127.0.0.1:8000/tracking?order=ORD-NKLKX0,4797,0,1
+1794794858041,11597,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-90,text,true,,53090,2214,11,11,http://127.0.0.1:8000/tracking?order=ORD-NQFSWN,6981,0,2
+1794794858041,6981,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-90,text,true,,1917,1250,11,11,http://127.0.0.1:8000/checkout,6981,0,2
+1794794865024,4614,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-90,text,true,,51173,964,11,11,http://127.0.0.1:8000/tracking?order=ORD-NQFSWN,4613,0,1
+1794794858431,11423,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-91,text,true,,53091,2215,10,10,http://127.0.0.1:8000/tracking?order=ORD-NKMU7P,6971,0,1
+1794794858431,6971,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-91,text,true,,1917,1251,10,10,http://127.0.0.1:8000/checkout,6971,0,1
+1794794865403,4451,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-91,text,true,,51174,964,10,10,http://127.0.0.1:8000/tracking?order=ORD-NKMU7P,4449,0,1
+1794794858792,11248,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-92,text,true,,53091,2215,9,9,http://127.0.0.1:8000/tracking?order=ORD-LPAFMH,6798,0,1
+1794794858792,6798,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-92,text,true,,1917,1251,9,9,http://127.0.0.1:8000/checkout,6798,0,1
+1794794865591,4449,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-92,text,true,,51174,964,9,9,http://127.0.0.1:8000/tracking?order=ORD-LPAFMH,4448,0,1
+1794794859329,10886,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-93,text,true,,53091,2215,8,8,http://127.0.0.1:8000/tracking?order=ORD-GJHVLV,6638,0,2
+1794794859329,6638,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-93,text,true,,1917,1251,8,8,http://127.0.0.1:8000/checkout,6638,0,2
+1794794865968,4247,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-93,text,true,,51174,964,8,8,http://127.0.0.1:8000/tracking?order=ORD-GJHVLV,4245,0,1
+1794794859912,10511,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-94,text,true,,53091,2215,7,7,http://127.0.0.1:8000/tracking?order=ORD-UALBO9,6422,0,2
+1794794859912,6422,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-94,text,true,,1917,1251,7,7,http://127.0.0.1:8000/checkout,6422,0,2
+1794794866335,4088,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-94,text,true,,51174,964,7,7,http://127.0.0.1:8000/tracking?order=ORD-UALBO9,4086,0,1
+1794794860499,10108,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-95,text,true,,53091,2215,6,6,http://127.0.0.1:8000/tracking?order=ORD-Y0QOYO,6215,0,1
+1794794860499,6215,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-95,text,true,,1917,1251,6,6,http://127.0.0.1:8000/checkout,6215,0,1
+1794794866715,3892,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-95,text,true,,51174,964,6,6,http://127.0.0.1:8000/tracking?order=ORD-Y0QOYO,3890,0,1
+1794794861035,9763,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-96,text,true,,53091,2215,5,5,http://127.0.0.1:8000/tracking?order=ORD-QSY6D7,6057,0,1
+1794794861035,6057,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-96,text,true,,1917,1251,5,5,http://127.0.0.1:8000/checkout,6057,0,1
+1794794867094,3704,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-96,text,true,,51174,964,5,5,http://127.0.0.1:8000/tracking?order=ORD-QSY6D7,3702,0,1
+1794794861433,9553,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-97,text,true,,53091,2215,4,4,http://127.0.0.1:8000/tracking?order=ORD-0JRXTS,6008,0,1
+1794794861433,6008,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-97,text,true,,1917,1251,4,4,http://127.0.0.1:8000/checkout,6008,0,1
+1794794867441,3545,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-97,text,true,,51174,964,4,4,http://127.0.0.1:8000/tracking?order=ORD-0JRXTS,3544,0,1
+1794794861996,9179,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-98,text,true,,53091,2215,3,3,http://127.0.0.1:8000/tracking?order=ORD-NCCLKU,5840,0,2
+1794794861996,5840,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-98,text,true,,1917,1251,3,3,http://127.0.0.1:8000/checkout,5840,0,2
+1794794867837,3338,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-98,text,true,,51174,964,3,3,http://127.0.0.1:8000/tracking?order=ORD-NCCLKU,3337,0,0
+1794794862590,8777,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-99,text,true,,53091,2215,2,2,http://127.0.0.1:8000/tracking?order=ORD-7VTUED,5620,0,1
+1794794862590,5620,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-99,text,true,,1917,1251,2,2,http://127.0.0.1:8000/checkout,5620,0,1
+1794794868210,3157,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-99,text,true,,51174,964,2,2,http://127.0.0.1:8000/tracking?order=ORD-7VTUED,3155,0,1
+1794794863139,8436,03 - Checkout Pesanan Mandiri,200,OK,Concurrent Users - Checkout Flow 1-100,text,true,,53091,2215,1,1,http://127.0.0.1:8000/tracking?order=ORD-63BUCU,5396,0,1
+1794794863139,5397,03 - Checkout Pesanan Mandiri-0,302,Found,Concurrent Users - Checkout Flow 1-100,text,true,,1917,1251,1,1,http://127.0.0.1:8000/checkout,5396,0,1
+1794794868536,3039,03 - Checkout Pesanan Mandiri-1,200,OK,Concurrent Users - Checkout Flow 1-100,text,true,,51174,964,1,1,http://127.0.0.1:8000/tracking?order=ORD-63BUCU,3037,0,0
