@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id" class="h-full">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,9 @@
     <style nonce="{{ $cspNonce ?? '' }}">
         [x-cloak] { display: none !important; }
     </style>
+    <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
 </head>
 <body class="bg-[#f8fafc] text-slate-800 flex h-full overflow-hidden antialiased font-sans" x-data="{ sidebarOpen: false }">
 

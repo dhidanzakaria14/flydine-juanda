@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -10,7 +10,10 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
+        <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
+</head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')

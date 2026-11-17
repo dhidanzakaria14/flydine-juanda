@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,9 @@
             -moz-appearance: textfield !important;
         }
     </style>
+    <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
 </head>
 <body class="text-slate-800 min-h-screen selection:bg-[#005ea2] selection:text-white bg-slate-50/60 antialiased flex flex-col">
 
@@ -167,11 +170,11 @@
                                     @endif
                                     @if($tenant && $tenant->isAirside())
                                     <span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-amber-50 text-amber-800 border border-amber-200">
-                                        🛫 Airside • Boarding Lounge
+                                        ðŸ›« Airside â€¢ Boarding Lounge
                                     </span>
                                     @else
                                     <span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                        🏢 Landside • Area Publik
+                                        ðŸ¢ Landside â€¢ Area Publik
                                     </span>
                                     @endif
                                 </div>
@@ -229,7 +232,7 @@
                                             <div class="flex flex-wrap items-center gap-1.5 mt-1">
                                                 <template x-if="item.variants">
                                                     <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-bold bg-blue-50 text-[#005ea2] border border-blue-100">
-                                                        <span>✨</span>
+                                                        <span>âœ¨</span>
                                                         <span x-text="item.variants"></span>
                                                     </span>
                                                 </template>
@@ -258,7 +261,7 @@
                                                     :disabled="loadingItemId === id" 
                                                     class="w-7 h-7 rounded-lg bg-white text-slate-700 flex items-center justify-center text-xs font-black shadow-xs hover:bg-rose-50 hover:text-rose-600 transition-colors disabled:opacity-50 active:scale-95 cursor-pointer" 
                                                     title="Kurangi 1">
-                                                −
+                                                âˆ’
                                             </button>
                                             
                                             <!-- Direct Editable Number Input -->
@@ -337,13 +340,13 @@
                                            ? 'border-rose-200 bg-rose-50/40 opacity-75 cursor-not-allowed'
                                            : (pickupMethod === 'ambil_sendiri' ? 'border-[#005ea2] bg-blue-50/40 shadow-sm cursor-pointer' : 'border-slate-200 hover:bg-slate-50 cursor-pointer')">
                                     <input type="radio" name="pickup_method" value="ambil_sendiri" class="sr-only" x-model="pickupMethod" {{ old('pickup_method', 'ambil_sendiri') === 'ambil_sendiri' ? 'checked' : '' }} :disabled="isTenantAirside && customerType === 'pengunjung'">
-                                    <span class="text-3xl mb-2">🛍️</span>
+                                    <span class="text-3xl mb-2">ðŸ›ï¸</span>
                                     <span class="block text-sm font-black text-slate-800" :class="pickupMethod === 'ambil_sendiri' ? 'text-[#005ea2]' : ''">Ambil Sendiri di Counter</span>
                                     <template x-if="!(isTenantAirside && customerType === 'pengunjung')">
                                         <span class="block text-xs text-slate-500 font-medium mt-1">Ambil langsung di kasir restoran tanpa biaya tambahan</span>
                                     </template>
                                     <template x-if="isTenantAirside && customerType === 'pengunjung'">
-                                        <span class="block text-[11px] text-rose-600 font-bold mt-1 bg-rose-100/80 px-2.5 py-0.5 rounded-full">🔒 Area Boarding (Khusus Penumpang)</span>
+                                        <span class="block text-[11px] text-rose-600 font-bold mt-1 bg-rose-100/80 px-2.5 py-0.5 rounded-full">ðŸ”’ Area Boarding (Khusus Penumpang)</span>
                                     </template>
                                     <div x-show="pickupMethod === 'ambil_sendiri'" class="absolute top-3 right-3 text-[#005ea2]" style="{{ old('pickup_method', 'ambil_sendiri') === 'ambil_sendiri' ? '' : 'display: none;' }}">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
@@ -354,7 +357,7 @@
                                 <label class="relative flex flex-col items-center justify-center p-5 border-2 rounded-2xl transition-all duration-200 text-center" 
                                        :class="deliveryFee !== null ? (pickupMethod === 'diantar' ? 'border-[#005ea2] bg-blue-50/40 shadow-sm cursor-pointer' : 'border-slate-200 hover:bg-slate-50 cursor-pointer') : 'border-slate-100 bg-slate-50 opacity-60 cursor-not-allowed'">
                                     <input type="radio" name="pickup_method" value="diantar" class="sr-only" x-model="pickupMethod" {{ old('pickup_method') === 'diantar' ? 'checked' : '' }} :disabled="deliveryFee === null">
-                                    <span class="text-3xl mb-2">🛵</span>
+                                    <span class="text-3xl mb-2">ðŸ›µ</span>
                                     <span class="block text-sm font-black text-slate-800" :class="pickupMethod === 'diantar' ? 'text-[#005ea2]' : ''">Diantar Porter ke Gate / Lobby</span>
                                     
                                     <template x-if="deliveryFee !== null">
@@ -375,17 +378,17 @@
                                 <div class="flex items-center gap-2.5 text-xs">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#005ea2] shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
                                     <div class="text-slate-600 font-medium">
-                                        <span>Ambil di kasir <strong class="text-slate-900">{{ $tenant->name ?? 'Restoran' }}</strong> ({{ $tenant->terminal ?? 'T1' }} • {{ $tenant->floor_location ?? 'Area Keberangkatan' }}).</span>
+                                        <span>Ambil di kasir <strong class="text-slate-900">{{ $tenant->name ?? 'Restoran' }}</strong> ({{ $tenant->terminal ?? 'T1' }} â€¢ {{ $tenant->floor_location ?? 'Area Keberangkatan' }}).</span>
                                         <span class="text-slate-500">Pastikan Anda berada di gedung terminal yang sama.</span>
                                     </div>
                                 </div>
                                 @if($tenant && $tenant->isAirside())
                                     <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-extrabold bg-amber-50 text-amber-800 border border-amber-200 shrink-0 self-start sm:self-auto">
-                                        <span>🎫 Wajib Boarding Pass {{ $tenant->terminal ?? 'T1' }}</span>
+                                        <span>ðŸŽ« Wajib Boarding Pass {{ $tenant->terminal ?? 'T1' }}</span>
                                     </span>
                                 @else
                                     <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-extrabold bg-white text-slate-700 border border-slate-200 shrink-0 self-start sm:self-auto">
-                                        <span>🏢 Area Publik {{ $tenant->terminal ?? 'T1' }}</span>
+                                        <span>ðŸ¢ Area Publik {{ $tenant->terminal ?? 'T1' }}</span>
                                     </span>
                                 @endif
                             </div>
@@ -418,7 +421,7 @@
                                             <span>Terminal {{ $tenantTerminalNum }}</span>
                                         </span>
                                         <span class="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-md border {{ ($tenant && $tenant->isAirside()) ? 'bg-amber-50 text-amber-800 border-amber-200' : 'bg-emerald-50 text-emerald-700 border-emerald-200' }}">
-                                            <span>{{ ($tenant && $tenant->isAirside()) ? '🛫 Area Boarding Gate' : '🏢 Area Publik / Lobby' }}</span>
+                                            <span>{{ ($tenant && $tenant->isAirside()) ? 'ðŸ›« Area Boarding Gate' : 'ðŸ¢ Area Publik / Lobby' }}</span>
                                         </span>
                                     </div>
                                     <input type="hidden" name="delivery_terminal" value="{{ $tenantTerminalNum }}">
@@ -465,7 +468,7 @@
                                     <label class="relative flex items-center justify-center p-3.5 border-2 rounded-2xl cursor-pointer transition-all duration-200" :class="customerType === 'penumpang' ? 'border-[#005ea2] bg-blue-50/40 shadow-sm' : 'border-slate-200 hover:bg-slate-50'">
                                         <input type="radio" name="customer_type" value="penumpang" class="sr-only" x-model="customerType" @change="handleCustomerTypeChange()" {{ old('customer_type', 'penumpang') === 'penumpang' ? 'checked' : '' }}>
                                         <div class="text-center">
-                                            <span class="block text-sm font-black text-slate-800" :class="customerType === 'penumpang' ? 'text-[#005ea2]' : ''">🛫 Penumpang Pesawat</span>
+                                            <span class="block text-sm font-black text-slate-800" :class="customerType === 'penumpang' ? 'text-[#005ea2]' : ''">ðŸ›« Penumpang Pesawat</span>
                                             <span class="block text-[11px] text-slate-400 font-semibold mt-0.5">Memiliki jadwal penerbangan</span>
                                         </div>
                                     </label>
@@ -476,7 +479,7 @@
                                                : (customerType === 'pengunjung' ? 'border-[#005ea2] bg-blue-50/40 shadow-sm cursor-pointer' : 'border-slate-200 hover:bg-slate-50 cursor-pointer')">
                                         <input type="radio" name="customer_type" value="pengunjung" class="sr-only" x-model="customerType" @change="handleCustomerTypeChange()" {{ old('customer_type') === 'pengunjung' ? 'checked' : '' }} :disabled="isTenantAirside">
                                         <div class="text-center">
-                                            <span class="block text-sm font-black text-slate-800" :class="customerType === 'pengunjung' ? 'text-[#005ea2]' : ''">🚶 Pengunjung / Staf Bandara</span>
+                                            <span class="block text-sm font-black text-slate-800" :class="customerType === 'pengunjung' ? 'text-[#005ea2]' : ''">ðŸš¶ Pengunjung / Staf Bandara</span>
                                             <template x-if="!isTenantAirside">
                                                 <span class="block text-[11px] text-slate-400 font-semibold mt-0.5">Penjemput & masyarakat umum</span>
                                             </template>
@@ -587,7 +590,7 @@
                                 <!-- Info Penerbangan Dini Hari (Cross-Midnight: Besok Pagi) -->
                                 <div x-show="isCrossMidnight && !isTimeCritical" class="p-4 bg-sky-50 rounded-2xl border border-sky-200 flex items-start space-x-3 shadow-xs animate-fade-in" style="display: none;">
                                     <div class="bg-sky-100 p-2 rounded-xl shrink-0 text-sky-700 mt-0.5">
-                                        <span class="text-base">🌙</span>
+                                        <span class="text-base">ðŸŒ™</span>
                                     </div>
                                     <div>
                                         <h5 class="text-xs font-black text-sky-950 uppercase tracking-wider">Penerbangan Dini Hari (Besok)</h5>
@@ -667,7 +670,7 @@
                                                     : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border-slate-200 hover:border-slate-300'">
                                             <span x-text="chip.icon"></span>
                                             <span x-text="chip.label"></span>
-                                            <span x-show="orderNotes.includes(chip.label)" class="text-[10px] text-emerald-600 font-black">✓</span>
+                                            <span x-show="orderNotes.includes(chip.label)" class="text-[10px] text-emerald-600 font-black">âœ“</span>
                                         </button>
                                     </template>
                                 </div>
@@ -718,7 +721,7 @@
                                     </div>
                                     <h4 class="font-black text-sm text-slate-900 mb-0.5 flex items-center gap-1.5">
                                         <span>QRIS Instant</span>
-                                        <span x-show="paymentCategory === 'qris'" class="text-[#005ea2] text-xs">●</span>
+                                        <span x-show="paymentCategory === 'qris'" class="text-[#005ea2] text-xs">â—</span>
                                     </h4>
                                     <p class="text-xs text-slate-500 font-medium leading-relaxed">
                                         Scan 1 QR via BCA, Livin', BRImo, GoPay, OVO, ShopeePay, Dana.
@@ -740,7 +743,7 @@
                                     </div>
                                     <h4 class="font-black text-sm text-slate-900 mb-0.5 flex items-center gap-1.5">
                                         <span>Transfer Virtual Account</span>
-                                        <span x-show="paymentCategory === 'transfer'" class="text-[#005ea2] text-xs">●</span>
+                                        <span x-show="paymentCategory === 'transfer'" class="text-[#005ea2] text-xs">â—</span>
                                     </h4>
                                     <p class="text-xs text-slate-500 font-medium leading-relaxed">
                                         BCA, Mandiri, BRI, BNI dengan verifikasi otomatis 24 jam.
@@ -820,7 +823,7 @@
 
                             <div x-show="pickupMethod === 'diantar' && deliveryFee !== null" class="flex justify-between items-center text-slate-600" style="display: none;">
                                 <span class="flex items-center gap-1.5">
-                                    <span>🛵 Biaya Porter Gate</span>
+                                    <span>ðŸ›µ Biaya Porter Gate</span>
                                 </span>
                                 <span class="font-bold text-slate-800">Rp <span x-text="deliveryFee ? deliveryFee.toLocaleString('id-ID') : 0"></span></span>
                             </div>
@@ -949,7 +952,7 @@
             </div>
 
             <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-blue-50 text-[#005ea2] text-xs font-bold mb-3 border border-blue-100">
-                <span>✈️ Bandara Internasional Juanda</span>
+                <span>âœˆï¸ Bandara Internasional Juanda</span>
             </div>
 
             <h2 class="text-xl sm:text-3xl font-black text-slate-900 mb-2">Keranjang Belanja Anda Kosong</h2>
@@ -967,19 +970,19 @@
                 <p class="text-[11px] sm:text-xs font-black text-slate-400 uppercase tracking-widest mb-3.5">Pilihan Kategori Favorit</p>
                 <div class="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-2 sm:gap-2.5 max-w-sm sm:max-w-none mx-auto">
                     <a href="{{ route('customer.menu', ['category' => 'cepat-saji']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🍔</span>
+                        <span class="text-sm">ðŸ”</span>
                         <span class="truncate">Cepat Saji</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'minuman']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">☕</span>
+                        <span class="text-sm">â˜•</span>
                         <span class="truncate">Kopi & Minuman</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'roti-kue']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🥐</span>
+                        <span class="text-sm">ðŸ¥</span>
                         <span class="truncate">Roti & Pastry</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'makanan-berat']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🍲</span>
+                        <span class="text-sm">ðŸ²</span>
                         <span class="truncate">Tradisional</span>
                     </a>
                 </div>
@@ -1006,7 +1009,7 @@
                                x-model="quickMenuSearch"
                                placeholder="Cari menu makanan atau minuman..."
                                class="w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-semibold text-slate-800 focus:bg-white focus:border-[#005ea2] focus:outline-none">
-                        <button type="button" x-show="quickMenuSearch" @click="quickMenuSearch = ''" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-bold text-slate-400 hover:text-slate-600 cursor-pointer">✕</button>
+                        <button type="button" x-show="quickMenuSearch" @click="quickMenuSearch = ''" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-bold text-slate-400 hover:text-slate-600 cursor-pointer">âœ•</button>
                     </div>
                 </div>
 
@@ -1025,7 +1028,7 @@
                                     </div>
                                     <p class="text-xs font-black text-[#005ea2] mt-0.5">
                                         Rp <span x-text="formatNumber(prod.price)"></span>
-                                        <span class="text-[11px] font-semibold text-slate-400 ml-1.5" x-text="'• Sisa ' + prod.stock + ' porsi'"></span>
+                                        <span class="text-[11px] font-semibold text-slate-400 ml-1.5" x-text="'â€¢ Sisa ' + prod.stock + ' porsi'"></span>
                                     </p>
                                 </div>
 
@@ -1060,7 +1063,7 @@
                             <div x-show="activeVariantProductId === prod.id" x-cloak class="mt-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/90 space-y-3">
                                 <template x-for="(grp, gIdx) in (prod.variants || [])" :key="gIdx">
                                     <div>
-                                        <label class="block text-[11px] font-black text-slate-600 uppercase tracking-wider mb-1.5" x-text="'✨ ' + grp.label"></label>
+                                        <label class="block text-[11px] font-black text-slate-600 uppercase tracking-wider mb-1.5" x-text="'âœ¨ ' + grp.label"></label>
                                         <div class="flex flex-wrap gap-1.5">
                                             <template x-for="choice in grp.choices" :key="choice">
                                                 <button type="button"
@@ -1115,7 +1118,7 @@
             </div>
 
             <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-blue-50 text-[#005ea2] text-xs font-bold mb-3 border border-blue-100">
-                <span>✈️ Bandara Internasional Juanda</span>
+                <span>âœˆï¸ Bandara Internasional Juanda</span>
             </div>
 
             <h2 class="text-xl sm:text-3xl font-black text-slate-900 mb-2">Keranjang Belanja Anda Masih Kosong</h2>
@@ -1133,19 +1136,19 @@
                 <p class="text-[11px] sm:text-xs font-black text-slate-400 uppercase tracking-widest mb-3.5">Pilihan Kategori Favorit</p>
                 <div class="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-2 sm:gap-2.5 max-w-sm sm:max-w-none mx-auto">
                     <a href="{{ route('customer.menu', ['category' => 'cepat-saji']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🍔</span>
+                        <span class="text-sm">ðŸ”</span>
                         <span class="truncate">Cepat Saji</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'minuman']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">☕</span>
+                        <span class="text-sm">â˜•</span>
                         <span class="truncate">Kopi & Minuman</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'roti-kue']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🥐</span>
+                        <span class="text-sm">ðŸ¥</span>
                         <span class="truncate">Roti & Pastry</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'makanan-berat']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🍲</span>
+                        <span class="text-sm">ðŸ²</span>
                         <span class="truncate">Tradisional</span>
                     </a>
                 </div>
@@ -1154,17 +1157,17 @@
             <!-- 3 Highlights Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4 mt-8 pt-6 border-t border-slate-100 text-left">
                 <div class="bg-slate-50/80 p-4 rounded-2xl border border-slate-100">
-                    <span class="text-xl mb-1 block">⚡</span>
+                    <span class="text-xl mb-1 block">âš¡</span>
                     <h4 class="text-xs font-black text-slate-800">Pesan Cepat Tanpa Antre</h4>
                     <p class="text-[11px] text-slate-500 font-medium mt-0.5">Pesan langsung dari HP atau laptop saat menunggu jadwal boarding.</p>
                 </div>
                 <div class="bg-slate-50/80 p-4 rounded-2xl border border-slate-100">
-                    <span class="text-xl mb-1 block">🛵</span>
+                    <span class="text-xl mb-1 block">ðŸ›µ</span>
                     <h4 class="text-xs font-black text-slate-800">Layanan Antar ke Gate</h4>
                     <p class="text-[11px] text-slate-500 font-medium mt-0.5">Porter resmi bandara siap mengantarkan makanan ke ruang tunggu Anda.</p>
                 </div>
                 <div class="bg-slate-50/80 p-4 rounded-2xl border border-slate-100">
-                    <span class="text-xl mb-1 block">💳</span>
+                    <span class="text-xl mb-1 block">ðŸ’³</span>
                     <h4 class="text-xs font-black text-slate-800">QRIS & Transfer Instan</h4>
                     <p class="text-[11px] text-slate-500 font-medium mt-0.5">Mendukung semua bank dan e-wallet dengan struk digital otomatis.</p>
                 </div>
@@ -1221,11 +1224,11 @@
                 selectedBank: '{{ old('payment_method') && str_starts_with(old('payment_method'), 'transfer_') ? str_replace('transfer_', '', old('payment_method')) : 'bca' }}',
                 orderNotes: '{{ old('notes', '') }}',
                 quickChips: [
-                    { icon: '🧊', label: 'Kurangi Es' },
-                    { icon: '🍬', label: 'Kurangi Gula' },
-                    { icon: '🌶️', label: 'Sambal Dipisah' },
-                    { icon: '🍴', label: 'Tanpa Sendok Plastik' },
-                    { icon: '🛍️', label: 'Bungkus Kabin' }
+                    { icon: 'ðŸ§Š', label: 'Kurangi Es' },
+                    { icon: 'ðŸ¬', label: 'Kurangi Gula' },
+                    { icon: 'ðŸŒ¶ï¸', label: 'Sambal Dipisah' },
+                    { icon: 'ðŸ´', label: 'Tanpa Sendok Plastik' },
+                    { icon: 'ðŸ›ï¸', label: 'Bungkus Kabin' }
                 ],
                 loadingItemId: null,
                 isClearing: false,
@@ -1340,7 +1343,7 @@
                     else if (h >= 11 && h < 15) desc = 'Siang';
                     else if (h >= 15 && h < 18) desc = 'Sore';
                     else desc = 'Malam';
-                    return `${timeStr} WIB (${h12}:${m} ${period} • ${desc})`;
+                    return `${timeStr} WIB (${h12}:${m} ${period} â€¢ ${desc})`;
                 },
                 fetchLocations() {
                     if (!this.deliveryTerminal) {
@@ -1526,7 +1529,7 @@
                     const chosen = (prod.variants || [])
                         .map((_, idx) => this.modalVariantSelections[idx])
                         .filter(Boolean)
-                        .join(' • ');
+                        .join(' â€¢ ');
                     this.addFromModal(prod, chosen || null);
                 },
                 addFromModal(prod, variantsString = null) {

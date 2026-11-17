@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,9 @@
     <title>Pelacakan & Pembayaran Pesanan - {{ $order->order_code }} - FlyDine Juanda</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style nonce="{{ $cspNonce ?? '' }}">[x-cloak] { display: none !important; }</style>
+    <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
 </head>
 <body class="text-slate-800 min-h-screen selection:bg-[#005ea2] selection:text-white bg-slate-50/80 antialiased flex flex-col" x-data="{ mobileMenuOpen: false, copyToast: false }">
 
@@ -134,8 +137,8 @@
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-slate-200/80 gap-3 mb-8">
             <div>
                 <div class="flex items-center gap-2 text-xs font-extrabold text-[#005ea2] uppercase tracking-wider mb-1">
-                    <span>✈️ Bandara Internasional Juanda</span>
-                    <span class="text-slate-300">•</span>
+                    <span>âœˆï¸ Bandara Internasional Juanda</span>
+                    <span class="text-slate-300">â€¢</span>
                     <span>Terminal {{ $order->tenant->terminal ?? '1' }}</span>
                 </div>
                 <div class="flex flex-wrap items-center gap-3">
@@ -235,7 +238,7 @@
                                 </div>
 
                                 <h3 class="text-base font-black text-slate-800 tracking-tight mb-0.5">{{ strtoupper($order->tenant->name) }}</h3>
-                                <p class="text-[10px] text-slate-400 font-mono mb-4">NMID: ID1024398109283 • Bandara Juanda</p>
+                                <p class="text-[10px] text-slate-400 font-mono mb-4">NMID: ID1024398109283 â€¢ Bandara Juanda</p>
 
                                 <!-- QR Canvas Frame with Drop Shadow -->
                                 <div class="relative mx-auto w-56 h-56 flex items-center justify-center bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
@@ -508,7 +511,7 @@
                         @if(in_array($order->status, ['dibatalkan', 'ditolak']) && $order->is_paid)
                         <div class="mt-5 p-5 rounded-2xl bg-rose-50 border border-rose-200">
                             <h4 class="font-black text-rose-900 text-sm mb-1 flex items-center gap-1.5">
-                                <span>💸</span>
+                                <span>ðŸ’¸</span>
                                 <span>Informasi Pengembalian Dana (Refund 100%)</span>
                             </h4>
                             <p class="text-xs text-rose-700 font-medium leading-relaxed mb-3">
@@ -527,7 +530,7 @@
                     <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm">
                         <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
                             <h3 class="text-sm font-black text-slate-900 uppercase tracking-wider flex items-center gap-2">
-                                <span>🛫 Progres Pelayanan Bandara</span>
+                                <span>ðŸ›« Progres Pelayanan Bandara</span>
                             </h3>
                             <span class="text-xs font-extrabold text-[#005ea2] bg-blue-50 px-2.5 py-1 rounded-lg">
                                 FlyDine FastTrack
@@ -639,7 +642,7 @@
                     <!-- Top Airline / Pickup Accent Bar -->
                     <div class="bg-gradient-to-r from-[#002b49] via-[#00436d] to-[#005ea2] px-6 py-4 text-white flex items-center justify-between">
                         <div class="flex items-center gap-2.5">
-                            <span class="text-lg">{{ $hasFlight ? '✈️' : '🏪' }}</span>
+                            <span class="text-lg">{{ $hasFlight ? 'âœˆï¸' : 'ðŸª' }}</span>
                             <div>
                                 <span class="text-[10px] font-black uppercase tracking-widest text-blue-200 block">
                                     {{ $hasFlight ? 'Boarding Pass & Penerbangan' : 'Informasi Pengambilan' }}
@@ -723,21 +726,21 @@
                         <!-- Pickup / Delivery Info -->
                         <div class="pt-2">
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">
-                                {{ $order->pickup_method === 'diantar' ? '🛵 Titik Pengantaran Porter' : '🏪 Gerai Restoran Pengambilan' }}
+                                {{ $order->pickup_method === 'diantar' ? 'ðŸ›µ Titik Pengantaran Porter' : 'ðŸª Gerai Restoran Pengambilan' }}
                             </span>
                             @if($order->pickup_method === 'diantar' && $order->deliveryLocation)
                                 <p class="text-sm font-extrabold text-slate-800 leading-snug">
                                     {{ $order->deliveryLocation->name }}
                                 </p>
                                 <p class="text-xs font-semibold text-emerald-600 mt-0.5">
-                                    Terminal {{ $order->deliveryLocation->terminal }} • Diantar petugas ke lokasi
+                                    Terminal {{ $order->deliveryLocation->terminal }} â€¢ Diantar petugas ke lokasi
                                 </p>
                             @else
                                 <p class="text-sm font-extrabold text-slate-800 leading-snug">
                                     {{ $order->tenant->name }}
                                 </p>
                                 <p class="text-xs font-semibold text-slate-500 mt-0.5">
-                                    {{ $order->tenant->terminal ?? 'Terminal 1' }} • {{ $order->tenant->floor_location ?? 'Area Komersial' }}
+                                    {{ $order->tenant->terminal ?? 'Terminal 1' }} â€¢ {{ $order->tenant->floor_location ?? 'Area Komersial' }}
                                 </p>
                             @endif
                         </div>
@@ -745,7 +748,7 @@
                         @if($order->notes)
                         <div class="mt-3 pt-3 border-t border-slate-100">
                             <span class="text-[10px] font-bold text-amber-700 uppercase tracking-widest block mb-1">
-                                📝 Catatan Khusus Pesanan
+                                ðŸ“ Catatan Khusus Pesanan
                             </span>
                             <p class="text-xs font-bold text-slate-800 bg-amber-50/80 p-2.5 rounded-xl border border-amber-200/70 italic">
                                 "{{ $order->notes }}"
@@ -831,7 +834,7 @@
                                     </div>
                                     <p class="text-xs text-slate-600 font-medium italic line-clamp-2">&ldquo;{{ $c->description }}&rdquo;</p>
                                     @if($c->resolved_at)
-                                    <p class="text-[10px] text-emerald-600 font-bold mt-1">✓ Diselesaikan pada {{ $c->resolved_at->format('d M Y, H:i') }} WIB</p>
+                                    <p class="text-[10px] text-emerald-600 font-bold mt-1">âœ“ Diselesaikan pada {{ $c->resolved_at->format('d M Y, H:i') }} WIB</p>
                                     @endif
                                 </div>
                                 @endforeach

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,9 @@
     <title>FlyDine - Juanda International Airport</title>
     <!-- Vite Local Assets (Tailwind CSS, Alpine.js, & Animations) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
 </head>
 
 <body class="text-slate-800 flex flex-col min-h-screen selection:bg-[#005ea2] selection:text-white relative" x-data="{ mobileMenuOpen: false, lang: 'id' }">
@@ -233,10 +236,10 @@
                         <span class="w-2.5 h-2.5 rounded-full bg-[#005ea2] animate-pulse"></span>
                         <span class="text-xs font-bold text-slate-500" data-id="Kategori Aktif:" data-en="Active Category:">Kategori Aktif:</span>
                         <span class="text-xs font-black text-[#005ea2] bg-white px-3.5 py-1.5 rounded-full shadow-sm border border-blue-200/80 flex items-center gap-1.5">
-                            @if(stripos(request('category'), 'makanan') !== false || stripos(request('category'), 'indonesian') !== false) 🍲 
-                            @elseif(stripos(request('category'), 'cepat') !== false || stripos(request('category'), 'fast') !== false) 🍔
-                            @elseif(stripos(request('category'), 'roti') !== false || stripos(request('category'), 'bakery') !== false) 🥐
-                            @elseif(stripos(request('category'), 'minum') !== false || stripos(request('category'), 'beverage') !== false) ☕
+                            @if(stripos(request('category'), 'makanan') !== false || stripos(request('category'), 'indonesian') !== false) ðŸ² 
+                            @elseif(stripos(request('category'), 'cepat') !== false || stripos(request('category'), 'fast') !== false) ðŸ”
+                            @elseif(stripos(request('category'), 'roti') !== false || stripos(request('category'), 'bakery') !== false) ðŸ¥
+                            @elseif(stripos(request('category'), 'minum') !== false || stripos(request('category'), 'beverage') !== false) â˜•
                             @endif
                             <span>
                                 @if(stripos(request('category'), 'makanan') !== false || stripos(request('category'), 'indonesian') !== false) Makanan Berat (Indonesian Traditional)
@@ -250,7 +253,7 @@
                         <span class="text-xs font-semibold text-slate-400">({{ $tenants->total() }} restoran ditemukan)</span>
                     </div>
                     <button type="button" onclick="selectCategory('')" class="text-xs font-extrabold text-rose-500 hover:text-rose-700 bg-white hover:bg-rose-50 border border-rose-200/70 px-3.5 py-1.5 rounded-full transition-all shadow-sm active:scale-95 flex items-center gap-1.5 group">
-                        <span class="group-hover:rotate-90 transition-transform">✕</span>
+                        <span class="group-hover:rotate-90 transition-transform">âœ•</span>
                         <span data-id="Hapus Filter" data-en="Clear Filter">Hapus Filter</span>
                     </button>
                 </div>
@@ -324,7 +327,7 @@
                             @if($matchedProduct)
                                 <div class="mb-4">
                                     <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-800 bg-amber-50/90 border border-amber-200/90 px-2.5 py-1 rounded-lg shadow-2xs max-w-full">
-                                        <span class="shrink-0">🍽️</span>
+                                        <span class="shrink-0">ðŸ½ï¸</span>
                                         <span class="truncate">Menu cocok: <strong class="text-amber-950 font-black">{{ \Illuminate\Support\Str::limit($matchedProduct->name, 28) }}</strong></span>
                                     </span>
                                 </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -116,6 +116,9 @@
             }
         }
     </style>
+    <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
 </head>
 <body class="text-slate-800 min-h-screen selection:bg-[#005ea2] selection:text-white bg-slate-50/70 antialiased flex flex-col">
 
@@ -255,9 +258,9 @@
                                 <span class="text-slate-400 font-semibold text-[11px] uppercase tracking-wider shrink-0">Metode Ambil</span>
                                 <span class="font-bold text-right text-slate-800 text-xs">
                                     @if($order->pickup_method === 'diantar' && $order->deliveryLocation)
-                                        🛵 Diantar ke {{ $order->deliveryLocation->name }} (Terminal {{ $order->deliveryLocation->terminal }})
+                                        ðŸ›µ Diantar ke {{ $order->deliveryLocation->name }} (Terminal {{ $order->deliveryLocation->terminal }})
                                     @else
-                                        🏃 Ambil Sendiri di Counter {{ $order->tenant->name }}
+                                        ðŸƒ Ambil Sendiri di Counter {{ $order->tenant->name }}
                                     @endif
                                 </span>
                             </div>
@@ -277,7 +280,7 @@
                             @if($order->notes)
                             <div class="mt-2.5 p-2.5 bg-amber-50 rounded-xl border border-amber-200/90 text-xs">
                                 <span class="text-[10px] font-black uppercase tracking-wider text-amber-800 flex items-center gap-1 mb-0.5">
-                                    <span>📝</span>
+                                    <span>ðŸ“</span>
                                     <span>Catatan Pesanan:</span>
                                 </span>
                                 <p class="font-bold text-amber-950 italic leading-snug">"{{ $order->notes }}"</p>

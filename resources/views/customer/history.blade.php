@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Riwayat & Pelacakan Pesanan - FlyDine Juanda</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
 </head>
 <body class="text-slate-800 min-h-screen selection:bg-[#005ea2] selection:text-white bg-slate-50/60 antialiased flex flex-col" x-data="{ mobileMenuOpen: false }">
 
@@ -98,7 +101,7 @@
         
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-fade-up">
             <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-black uppercase tracking-wider mb-4 shadow-sm">
-                <span>✈️ Bandara Internasional Juanda Tracker</span>
+                <span>âœˆï¸ Bandara Internasional Juanda Tracker</span>
             </div>
             <h1 class="text-3xl sm:text-4xl font-black text-white drop-shadow-sm mb-3 tracking-tight">
                 Lacak & Riwayat Pesanan

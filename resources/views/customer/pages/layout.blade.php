@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,9 @@
     <title>@yield('title') - FlyDine</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <!-- FlyDine Official Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon-flydine.png') }}?v=1">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?v=1">
 </head>
 
 <body class="text-slate-800 flex flex-col min-h-screen relative" x-data="{ mobileMenuOpen: false }">
