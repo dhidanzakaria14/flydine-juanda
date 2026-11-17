@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Desain High-Fidelity FlyDine Juanda (Lengkap 28 Halaman)</title>
+  <link rel="icon" type="image/png" href="favicon-flydine.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    body {
+      background-color: #0b1120;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      width: 100%;
+      max-width: 1440px;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      padding: 24px 28px;
+      border-radius: 16px;
+      border: 1px solid #334155;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+    }
+    .header-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #334155;
+    }
+    .brand-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #0284c7, #38bdf8);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+    .instructions {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+    .folder-path {
+      background: #0f172a;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      color: #38bdf8;
+      border: 1px solid #334155;
+    }
+    .badge-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .badge-green {
+      color: #10b981;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .badge-blue {
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+    .badge-purple {
+      color: #a855f7;
+      background: rgba(168, 85, 247, 0.12);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
+    /* Category Nav */
+    .category-title {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 16px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tab-btn {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: #1e293b;
+      font-weight: 600;
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #cbd5e1;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      user-select: none;
+    }
+    .tab-btn:hover {
+      background: #334155;
+      color: #ffffff;
+      border-color: #475569;
+      transform: translateY(-1px);
+    }
+    .tab-btn.active {
+      color: #ffffff !important;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transform: translateY(-1px);
+    }
+    .tab-btn.customer-tab.active {
+      background: #0284c7;
+      border-color: #38bdf8;
+    }
+    .tab-btn.auth-tab.active {
+      background: #059669;
+      border-color: #34d399;
+    }
+    .tab-btn.admin-tab.active {
+      background: #4f46e5;
+      border-color: #818cf8;
+    }
+    .tab-btn.tenant-tab.active {
+      background: #d97706;
+      border-color: #fbbf24;
+    }
+    .tab-btn.legal-tab.active {
+      background: #64748b;
+      border-color: #94a3b8;
+    }
+
+    /* Meta Bar for Active Item */
+    .active-meta-bar {
+      margin-top: 20px;
+      padding: 14px 18px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid #334155;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+    .active-details h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .active-details p {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+    .active-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .action-btn {
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #38bdf8;
+      border: 1px solid #0284c7;
+    }
+    .btn-outline:hover {
+      background: rgba(2, 132, 199, 0.2);
+    }
+    .btn-solid {
+      background: #0284c7;
+      color: #ffffff;
+      border: 1px solid #38bdf8;
+    }
+    .btn-solid:hover {
+      background: #0369a1;
+    }
+    .view-mode-toggle {
+      display: flex;
+      background: #0f172a;
+      padding: 2px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+    }
+    .view-mode-btn {
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      border: none;
+      background: transparent;
+      color: #94a3b8;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .view-mode-btn.active {
+      background: #334155;
+      color: #ffffff;
+    }
+
+    /* Showcase Display Area */
+    .showcase-wrapper {
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    .showcase-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      transition: max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      width: 100%;
+    }
+    .showcase-card.desktop-mode {
+      max-width: 1440px;
+    }
+    .showcase-card.mobile-mode {
+      max-width: 520px;
+      border: 4px solid #334155;
+      border-radius: 32px;
+    }
+    .browser-mockup-header {
+      background: #0f172a;
+      padding: 10px 16px;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .traffic-lights {
+      display: flex;
+      gap: 6px;
+    }
+    .light {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .light-red { background: #ef4444; }
+    .light-yellow { background: #f59e0b; }
+    .light-green { background: #10b981; }
+    .browser-url-bar {
+      flex: 1;
+      background: #1e293b;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      color: #94a3b8;
+      border: 1px solid #334155;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .showcase-img-container {
+      width: 100%;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      min-height: 400px;
+      position: relative;
+    }
+    .showcase-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: opacity 0.2s ease;
+    }
+    
+    /* Footer */
+    footer {
+      width: 100%;
+      max-width: 1440px;
+      text-align: center;
+      padding: 24px;
+      color: #64748b;
+      font-size: 12px;
+      border-top: 1px solid #1e293b;
+      margin-top: auto;
+    }
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="brand-title">
+        <div class="brand-logo">✈️</div>
+        <div>
+          <h1>FlyDine Juanda — Galeri Desain High-Fidelity (Hi-Fi 100%)</h1>
+          <p class="instructions">
+            ✨ <strong>Mockup Produksi Beresolusi Tinggi (1440px):</strong> Tersedia di folder: 
+            <span class="folder-path">C:\Users\Dhidan\Downloads\High-Fidelity\</span>
+          </p>
+        </div>
+      </div>
+      <div class="badge-group">
+        <span class="badge badge-green">✓ 28 Halaman Lengkap (100%)</span>
+        <span class="badge badge-blue">📐 Resolusi HD 1440px</span>
+        <span class="badge badge-purple">🎯 Blade &amp; Tailwind CSS</span>
+      </div>
+    </div>
+
+    <!-- Category 1: Alur Transaksi & Pemesanan Pelanggan (Customer Journey) -->
+    <div class="category-title" style="color: #38bdf8;">
+      <span>🛒</span> 1. ALUR TRANSAKSI &amp; PEMESANAN PELANGGAN (CUSTOMER JOURNEY)
+    </div>
+    <div class="nav-tabs">
+      <button class="tab-btn customer-tab active" data-id="01" onclick="selectPage(0)">
+        🏠 01. Beranda &amp; Hero Banner
+      </button>
+      <button class="tab-btn customer-tab" data-id="02" onclick="selectPage(1)">
+        🏪 02. Katalog Lengkap Tenant &amp; Menu
+      </button>
+      <button class="tab-btn customer-tab" data-id="03" onclick="selectPage(2)">
+        🍽️ 03. Detail Tenant &amp; Menu Restoran
+      </button>
+      <button class="tab-btn customer-tab" data-id="04" onclick="selectPage(3)">
+        🛒 04. Keranjang &amp; Checkout Pesanan
+      </button>
+      <button class="tab-btn customer-tab" data-id="05" onclick="selectPage(4)">
+        🛵 05. Pelacakan Pesanan &amp; QRIS
+      </button>
+      <button class="tab-btn customer-tab" data-id="06" onclick="selectPage(5)">
+        🧾 06. Struk Pembelian Digital Sah
+      </button>
+      <button class="tab-btn customer-tab" data-id="07" onclick="selectPage(6)">
+        📱 07. Riwayat Pesanan Pelanggan
+      </button>
+    </div>
+
+    <!-- Category 2: Portal Restoran / Mitra Tenant (Kitchen & Operations) -->
+    <div class="category-title" style="color: #fbbf24;">
+      <span>🏪</span> 2. PORTAL RESTORAN / MITRA TENANT (OPERASIONAL &amp; DAPUR)
+    </div>
+    <div class="nav-tabs">
+      <button class="tab-btn tenant-tab" data-id="12" onclick="selectPage(7)">
+        📊 12. Dashboard Operasional Tenant
+      </button>
+      <button class="tab-btn tenant-tab" data-id="13" onclick="selectPage(8)">
+        🍳 13. Manajemen Pesanan Masuk (Kitchen Board)
+      </button>
+      <button class="tab-btn tenant-tab" data-id="14" onclick="selectPage(9)">
+        🍱 14. Katalog Produk &amp; Manajemen Stok
+      </button>
+      <button class="tab-btn tenant-tab" data-id="15" onclick="selectPage(10)">
+        ➕ 15. Formulir Tambah Menu / Produk Baru
+      </button>
+      <button class="tab-btn tenant-tab" data-id="16" onclick="selectPage(11)">
+        📜 16. Riwayat Penjualan &amp; Laporan Tenant
+      </button>
+      <button class="tab-btn tenant-tab" data-id="27" onclick="selectPage(12)">
+        👤 27. Pengaturan Akun &amp; Profil Pengguna
+      </button>
+    </div>
+
+    <!-- Category 3: Portal Admin Operasional Bandara (Management & Analytics) -->
+    <div class="category-title" style="color: #818cf8;">
+      <span>🛡️</span> 3. PORTAL ADMIN OPERASIONAL BANDARA (MANAGEMENT &amp; ANALYTICS)
+    </div>
+    <div class="nav-tabs">
+      <button class="tab-btn admin-tab" data-id="17" onclick="selectPage(13)">
+        📊 17. Dashboard Utama Admin Operasional
+      </button>
+      <button class="tab-btn admin-tab" data-id="18" onclick="selectPage(14)">
+        📈 18. Executive Dashboard &amp; Analitik Omzet
+      </button>
+      <button class="tab-btn admin-tab" data-id="19" onclick="selectPage(15)">
+        🏢 19. Manajemen Seluruh Tenant F&amp;B
+      </button>
+      <button class="tab-btn admin-tab" data-id="20" onclick="selectPage(16)">
+        ⚠️ 20. Layanan Helpdesk &amp; Resolusi Komplain
+      </button>
+      <button class="tab-btn admin-tab" data-id="21" onclick="selectPage(17)">
+        🔒 21. Monitoring Fraud &amp; Deteksi Pesanan Fiktif
+      </button>
+    </div>
+
+    <!-- Category 4: Autentikasi Pengguna & Portal Keamanan -->
+    <div class="category-title" style="color: #34d399;">
+      <span>🔑</span> 4. AUTENTIKASI PENGGUNA &amp; PORTAL KEAMANAN
+    </div>
+    <div class="nav-tabs">
+      <button class="tab-btn auth-tab" data-id="22" onclick="selectPage(18)">
+        🔐 22. Halaman Masuk Portal (Single-Portal Login)
+      </button>
+      <button class="tab-btn auth-tab" data-id="23" onclick="selectPage(19)">
+        🔑 23. Permintaan Pemulihan Kata Sandi
+      </button>
+      <button class="tab-btn auth-tab" data-id="24" onclick="selectPage(20)">
+        🔄 24. Formulir Reset Kata Sandi Baru
+      </button>
+    </div>
+
+    <!-- Category 5: Pusat Informasi, Panduan & Legalitas Layanan -->
+    <div class="category-title" style="color: #94a3b8;">
+      <span>📜</span> 5. PUSAT INFORMASI, PANDUAN &amp; LEGALITAS LAYANAN
+    </div>
+    <div class="nav-tabs">
+      <button class="tab-btn legal-tab" data-id="08" onclick="selectPage(21)">
+        🎁 08. Promosi Kolaborasi &amp; Maskapai
+      </button>
+      <button class="tab-btn legal-tab" data-id="09" onclick="selectPage(22)">
+        📖 09. Panduan Cara Pesan &amp; Layanan Porter
+      </button>
+      <button class="tab-btn legal-tab" data-id="10" onclick="selectPage(23)">
+        ❓ 10. Pusat Bantuan, FAQ &amp; Formulir Kendala
+      </button>
+      <button class="tab-btn legal-tab" data-id="11" onclick="selectPage(24)">
+        🤝 11. Direktori Tenant &amp; Pendaftaran Mitra
+      </button>
+      <button class="tab-btn legal-tab" data-id="28" onclick="selectPage(25)">
+        💼 28. Karir &amp; Rekrutmen InJourney Airports
+      </button>
+      <button class="tab-btn legal-tab" data-id="25" onclick="selectPage(26)">
+        📜 25. Syarat &amp; Ketentuan Layanan
+      </button>
+      <button class="tab-btn legal-tab" data-id="26" onclick="selectPage(27)">
+        🛡️ 26. Kebijakan Privasi Perlindungan Data
+      </button>
+    </div>
+
+    <!-- Active Mockup Information Bar -->
+    <div class="active-meta-bar">
+      <div class="active-details">
+        <h3 id="page-title">01. Customer Dashboard (Top Hero &amp; Quick Search)</h3>
+        <p id="page-desc">Halaman Beranda Pelanggan: Banner Shopping &amp; Dining Bandara Juanda, Filter Terminal &amp; Area, serta Rekomendasi Restoran Populer.</p>
+      </div>
+      <div class="active-controls">
+        <div class="view-mode-toggle">
+          <button id="btn-desktop" class="view-mode-btn active" onclick="setViewMode('desktop')">Desktop (1440px)</button>
+          <button id="btn-mobile" class="view-mode-btn" onclick="setViewMode('mobile')">Mobile Preview</button>
+        </div>
+        <a id="btn-open-tab" href="01-dashboard.png" target="_blank" class="action-btn btn-outline">
+          ↗ Buka Gambar HD
+        </a>
+        <a id="btn-download" href="01-dashboard.png" download class="action-btn btn-solid">
+          ⬇ Simpan Gambar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Showcase Display Card -->
+  <div class="showcase-wrapper">
+    <div id="showcase-card" class="showcase-card desktop-mode">
+      <div class="browser-mockup-header">
+        <div class="traffic-lights">
+          <div class="light light-red"></div>
+          <div class="light light-yellow"></div>
+          <div class="light light-green"></div>
+        </div>
+        <div id="browser-url" class="browser-url-bar">http://127.0.0.1:8000/</div>
+      </div>
+      <div class="showcase-img-container">
+        <img id="showcase-img" class="showcase-img" src="01-dashboard.png" alt="FlyDine Juanda High Fidelity">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>FlyDine Juanda &copy; 2026 PT Angkasa Pura Indonesia — Bandara Internasional Juanda Surabaya (SUB).</p>
+    <p style="margin-top: 4px;">Koleksi Mockup High-Fidelity UI/UX &amp; Implementasi Sistem Pemesanan Mandiri F&amp;B.</p>
+  </footer>
+
+  <script>
+    const pages = [
+      // 0-6: Customer Journey
+      {
+        id: "01",
+        file: "01-dashboard.png",
+        title: "01. Customer Dashboard (Top Hero & Quick Search)",
+        url: "http://127.0.0.1:8000/",
+        desc: "Halaman Beranda Pelanggan: Banner Shopping & Dining Bandara Juanda, Filter Terminal & Area, serta Rekomendasi Restoran Populer.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "02",
+        file: "02-customer-catalog-full.png",
+        title: "02. Customer Full Catalog & Merchant Directory",
+        url: "http://127.0.0.1:8000/",
+        desc: "Katalog Lengkap Pelanggan: Daftar seluruh gerai F&B Terminal 1 & 2, filter kategori cepat saji, minuman, makanan berat, dan status jam buka.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "03",
+        file: "03-customer-tenant-menu.png",
+        title: "03. Detail Tenant & Menu Restoran",
+        url: "http://127.0.0.1:8000/menu/1",
+        desc: "Halaman Menu Restoran: Daftar produk makanan & minuman, foto produk HD, harga, stok, waktu persiapan, dan tombol tambah ke keranjang.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "04",
+        file: "04-customer-cart.png",
+        title: "04. Keranjang Belanja & Formulir Checkout",
+        url: "http://127.0.0.1:8000/cart",
+        desc: "Keranjang & Checkout: Rincian pesanan, pemilihan metode ambil sendiri / diantar porter, data pemesan, nomor penerbangan, dan metode bayar.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "05",
+        file: "05-customer-tracking.png",
+        title: "05. Pelacakan Pesanan & Pembayaran QRIS",
+        url: "http://127.0.0.1:8000/tracking?order=ORD-GSMMIY",
+        desc: "Status Pelacakan Pesanan: Kode QRIS dinamis resmi, batas waktu bayar, estimasi persiapan dapur, dan timeline status pesanan real-time.",
+        defaultMode: "mobile"
+      },
+      {
+        id: "06",
+        file: "06-customer-receipt.png",
+        title: "06. Struk Pembelian Digital Resmi",
+        url: "http://127.0.0.1:8000/receipt/ORD-3UEVYC",
+        desc: "Struk Digital: Tanda bukti pembayaran sah berlogo Juanda & FlyDine, rincian subtotal, biaya porter, nomor order, dan barcode bukti ambil.",
+        defaultMode: "mobile"
+      },
+      {
+        id: "07",
+        file: "07-customer-history.png",
+        title: "07. Riwayat Pesanan Pelanggan",
+        url: "http://127.0.0.1:8000/history",
+        desc: "Riwayat Pesanan: Pencarian pesanan via nomor WhatsApp, daftar pesanan aktif, pesanan selesai, dan tombol akses struk digital kembali.",
+        defaultMode: "desktop"
+      },
+
+      // 7-12: Tenant Portal
+      {
+        id: "12",
+        file: "12-tenant-dashboard.png",
+        title: "12. Dashboard Operasional Tenant",
+        url: "http://127.0.0.1:8000/tenant/dashboard",
+        desc: "Portal Tenant: Ringkasan pesanan masuk, antrean masak, omzet hari ini, kendali jam operasional, dan toggle status layanan porter.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "13",
+        file: "13-tenant-orders.png",
+        title: "13. Manajemen Pesanan Masuk (Kitchen Live Order)",
+        url: "http://127.0.0.1:8000/tenant/orders",
+        desc: "Antrean Dapur: Live order board dengan status Menunggu, Dimasak, Siap Ambil, dan tombol aksi pembaruan status pesanan.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "14",
+        file: "14-tenant-products.png",
+        title: "14. Katalog Produk & Manajemen Stok Tenant",
+        url: "http://127.0.0.1:8000/tenant/products",
+        desc: "Manajemen Menu Tenant: Tabel daftar menu, harga, ketersediaan stok porsi, estimasi waktu masak, dan toggle aktif/nonaktif menu.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "15",
+        file: "15-tenant-create-product.png",
+        title: "15. Formulir Tambah Menu / Produk Baru",
+        url: "http://127.0.0.1:8000/tenant/products/create",
+        desc: "Formulir Menu Baru: Input nama hidangan, kategori, harga, upload foto hidangan beresolusi tinggi, stok awal, dan deskripsi menu.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "16",
+        file: "16-tenant-history.png",
+        title: "16. Riwayat Penjualan & Laporan Tenant",
+        url: "http://127.0.0.1:8000/tenant/orders/history",
+        desc: "Riwayat Penjualan: Rekapitulasi pesanan yang telah selesai disajikan, waktu transaksi, dan total pendapatan gerai.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "27",
+        file: "27-profile-settings.png",
+        title: "27. Pengaturan Akun & Profil Pengguna",
+        url: "http://127.0.0.1:8000/profile",
+        desc: "Manajemen Akun: Pembaruan nama penanggung jawab, email login, dan ganti kata sandi staff tenant atau admin.",
+        defaultMode: "desktop"
+      },
+
+      // 13-17: Admin Portal
+      {
+        id: "17",
+        file: "17-admin-dashboard.png",
+        title: "17. Dashboard Utama Admin Operasional",
+        url: "http://127.0.0.1:8000/admin/dashboard",
+        desc: "Portal Admin Bandara: Metrik 76 mitra F&B beroperasi, statistik pesanan terminal, resolusi komplain, dan audit trail aktivitas sistem.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "18",
+        file: "18-admin-executive-dashboard.png",
+        title: "18. Executive Dashboard & Analitik Finansial",
+        url: "http://127.0.0.1:8000/admin/executive-dashboard",
+        desc: "Analitik Eksekutif: Grafik omzet kotor, bagi hasil bandara (revenue share), breakdown tenant terlaris, dan kalkulator simulasi What-If.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "19",
+        file: "19-admin-tenants-management.png",
+        title: "19. Manajemen Seluruh Tenant F&B Bandara",
+        url: "http://127.0.0.1:8000/admin/tenants-management",
+        desc: "Kelola Tenant: Daftar seluruh merchant Terminal 1 & 2, lokasi lantai/gate, status aktif/tutup, jam operasional, dan modal tambah tenant.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "20",
+        file: "20-admin-complaints.png",
+        title: "20. Layanan Helpdesk & Resolusi Komplain",
+        url: "http://127.0.0.1:8000/admin/complaints",
+        desc: "Helpdesk Pengaduan: Manajemen tiket komplain pelanggan terkait pesanan, verifikasi nomor telepon, status investigasi, dan catatan solusi.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "21",
+        file: "21-admin-fraud-monitoring.png",
+        title: "21. Monitoring Fraud & Keamanan Pesanan",
+        url: "http://127.0.0.1:8000/admin/fraud-monitoring",
+        desc: "Fraud Monitoring: Deteksi pola pesanan fiktif, auto-cancel rate, daftar nomor pelanggan terblokir/spam, dan tombol unblock keamanan.",
+        defaultMode: "desktop"
+      },
+
+      // 18-20: Authentication
+      {
+        id: "22",
+        file: "22-auth-login.png",
+        title: "22. Halaman Masuk Portal (Single-Portal Login)",
+        url: "http://127.0.0.1:8000/login",
+        desc: "Autentikasi Pengguna: Form login single-portal untuk Admin Operasional Komersial dan Staff Mitra Tenant F&B.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "23",
+        file: "23-auth-forgot-password.png",
+        title: "23. Permintaan Pemulihan Kata Sandi",
+        url: "http://127.0.0.1:8000/forgot-password",
+        desc: "Pemulihan Akun: Form input email terdaftar untuk pengiriman tautan token pembaruan kata sandi portal.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "24",
+        file: "24-auth-reset-password.png",
+        title: "24. Formulir Pembaruan Kata Sandi Baru",
+        url: "http://127.0.0.1:8000/reset-password",
+        desc: "Reset Sandi: Form validasi kata sandi baru dengan konfirmasi keamanan sandi minimal 8 karakter.",
+        defaultMode: "desktop"
+      },
+
+      // 21-27: Information, FAQ & Legal
+      {
+        id: "08",
+        file: "08-customer-promosi.png",
+        title: "08. Halaman Promosi & Kolaborasi Maskapai",
+        url: "http://127.0.0.1:8000/promosi",
+        desc: "Halaman Promosi: Penawaran diskon boarding pass, voucher tenant bandara, cashback pembayaran QRIS, dan banner kolaborasi resmi.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "09",
+        file: "09-customer-cara-pesan.png",
+        title: "09. Panduan Cara Pesan & Layanan Porter",
+        url: "http://127.0.0.1:8000/cara-pesan",
+        desc: "Panduan Pengguna: Infografis langkah pemesanan mandiri dari scan QR meja/banner hingga makanan diantar porter langsung ke gate keberangkatan.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "10",
+        file: "10-customer-faq.png",
+        title: "10. Pusat Bantuan, FAQ & Pengaduan",
+        url: "http://127.0.0.1:8000/faq",
+        desc: "Pusat Bantuan: Tanya jawab seputar pemesanan bandara, SLA pengantaran, dan formulir pengaduan kendala transaksi pelanggan.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "11",
+        file: "11-customer-daftar-tenant.png",
+        title: "11. Direktori Tenant & Pendaftaran Mitra",
+        url: "http://127.0.0.1:8000/daftar-tenant",
+        desc: "Direktori & Registrasi Mitra: Informasi zona komersial Bandara Juanda dan formulir pengajuan kemitraan tenant F&B baru.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "28",
+        file: "28-customer-karir.png",
+        title: "28. Karir & Rekrutmen InJourney Airports",
+        url: "http://127.0.0.1:8000/karir-korporat",
+        desc: "Halaman Karir: Informasi peluang kerja di lingkungan PT Angkasa Pura Indonesia / InJourney Airports dan mitra operasional komersial.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "25",
+        file: "25-customer-terms.png",
+        title: "25. Syarat & Ketentuan Layanan Bandara",
+        url: "http://127.0.0.1:8000/syarat-ketentuan",
+        desc: "Legalitas Layanan: Ketentuan pemesanan makanan, batas waktu pengambilan, aturan zona steril airside, dan klausul pengembalian dana.",
+        defaultMode: "desktop"
+      },
+      {
+        id: "26",
+        file: "26-customer-privacy.png",
+        title: "26. Kebijakan Privasi & Perlindungan Data",
+        url: "http://127.0.0.1:8000/kebijakan-privasi",
+        desc: "Privasi Pelanggan: Pernyataan resmi kepatuhan perlindungan data pribadi nomor ponsel, identitas pemesan, dan data pembayaran.",
+        defaultMode: "desktop"
+      }
+    ];
+
+    let currentIndex = 0;
+
+    function selectPage(index) {
+      if (index < 0 || index >= pages.length) return;
+      currentIndex = index;
+      const p = pages[index];
+
+      // Update Active Tab
+      document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+
+      // Update Text Meta
+      document.getElementById('page-title').innerText = p.title;
+      document.getElementById('page-desc').innerText = p.desc;
+      document.getElementById('browser-url').innerText = p.url;
+
+      // Update Links & Image
+      const img = document.getElementById('showcase-img');
+      img.style.opacity = '0.3';
+      setTimeout(() => {
+        img.src = p.file;
+        img.style.opacity = '1';
+      }, 150);
+
+      document.getElementById('btn-open-tab').href = p.file;
+      document.getElementById('btn-download').href = p.file;
+      document.getElementById('btn-download').setAttribute('download', p.file);
+
+      // Set Mode
+      setViewMode(p.defaultMode);
+    }
+
+    function setViewMode(mode) {
+      const card = document.getElementById('showcase-card');
+      const btnDesk = document.getElementById('btn-desktop');
+      const btnMob = document.getElementById('btn-mobile');
+
+      if (mode === 'mobile') {
+        card.classList.remove('desktop-mode');
+        card.classList.add('mobile-mode');
+        btnDesk.classList.remove('active');
+        btnMob.classList.add('active');
+      } else {
+        card.classList.remove('mobile-mode');
+        card.classList.add('desktop-mode');
+        btnDesk.classList.add('active');
+        btnMob.classList.remove('active');
+      }
+    }
+
+    // Keyboard Arrow Navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        selectPage((currentIndex + 1) % pages.length);
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        selectPage((currentIndex - 1 + pages.length) % pages.length);
+      }
+    });
+
+    // Initial render
+    selectPage(0);
+  </script>
+</body>
+</html>

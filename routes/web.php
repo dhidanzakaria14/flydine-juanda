@@ -257,3 +257,37 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+if (app()->isLocal()) {
+    Route::get('/dev/screenshot-view', function (\Illuminate\Http\Request $request) {
+        $role = $request->query('role');
+        $path = $request->query('path', '/');
+        if ($role === 'admin') {
+            $user = \App\Models\User::where('role', 'admin_ops')->first();
+            if ($user) auth()->login($user);
+        } elseif ($role === 'tenant') {
+            $user = \App\Models\User::where('role', 'tenant_staff')->first();
+            if ($user) auth()->login($user);
+        }
+
+        if (str_starts_with($path, '/cart')) {
+            $p = \App\Models\Product::with('tenant')->find(6);
+            if ($p) {
+                session()->put('cart', [
+                    $p->id => [
+                        'id' => $p->id,
+                        'name' => $p->name,
+                        'price' => $p->price,
+                        'quantity' => 2,
+                        'tenant_id' => $p->tenant_id,
+                        'tenant_name' => $p->tenant->name ?? 'A&W',
+                        'image' => $p->image,
+                        'notes' => 'Saus sambal ekstra'
+                    ]
+                ]);
+            }
+        }
+
+        return redirect($path);
+    });
+}
+

@@ -1,3 +1,7 @@
+@if(request()->has('no_splash'))
+    @php return; @endphp
+@endif
+
 {{-- Skrip Inline Bernonce: Hindari kedipan (no-flicker) jika sesi sudah pernah melihat splash screen --}}
 <script nonce="{{ $cspNonce ?? '' }}">
     try {
