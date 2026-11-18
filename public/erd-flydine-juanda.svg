@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1700" width="2400" height="1700" style="background:#0F172A; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Filter Drop Shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    
+    <!-- Marker Crow Foot / Relasi -->
+    <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6">
+      <circle cx="5" cy="5" r="4" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+  </defs>
+
+  <!-- ================= HEADER DIAGRAM ================= -->
+  <g transform="translate(60, 40)">
+    <rect width="2280" height="90" rx="16" fill="#1E293B" stroke="#334155" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="30" y="42" fill="#38BDF8" font-size="24" font-weight="800" letter-spacing="-0.02em">✈️ ENTITY RELATIONSHIP DIAGRAM (ERD) — FLYDINE JUANDA</text>
+    <text x="30" y="70" fill="#94A3B8" font-size="14">Sistem Pemesanan Mandiri F&amp;B Bandara Internasional Juanda Surabaya (SUB) • Database: MySQL (flydine-juanda) • 12 Entitas Relasional</text>
+    
+    <g transform="translate(1800, 26)">
+      <rect width="440" height="40" rx="8" fill="#0F172A" stroke="#334155"/>
+      <circle cx="20" cy="20" r="6" fill="#10B981"/>
+      <text x="35" y="25" fill="#F8FAFC" font-size="12" font-weight="700">100% Normalized (3NF) • Crow's Foot Cardinality</text>
+    </g>
+  </g>
+
+  <!-- ================= BACKGROUND GROUPS (MODULE BOUNDARIES) ================= -->
+  <!-- 1. Modul Merchant & User -->
+  <rect x="60" y="160" width="760" height="740" rx="16" fill="#1E293B" fill-opacity="0.3" stroke="#38BDF8" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="80" y="195" fill="#38BDF8" font-size="14" font-weight="800" letter-spacing="0.05em">MODUL 1: MITRA TENANT &amp; MANAJEMEN PENGGUNA</text>
+
+  <!-- 2. Modul Produk & Varian Menu -->
+  <rect x="850" y="160" width="760" height="740" rx="16" fill="#1E293B" fill-opacity="0.3" stroke="#F59E0B" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="870" y="195" fill="#F59E0B" font-size="14" font-weight="800" letter-spacing="0.05em">MODUL 2: KATALOG PRODUK, STOK &amp; VARIAN MENU</text>
+
+  <!-- 3. Modul Transaksi & Pelanggan -->
+  <rect x="60" y="930" width="1550" height="720" rx="16" fill="#1E293B" fill-opacity="0.3" stroke="#10B981" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="80" y="965" fill="#10B981" font-size="14" font-weight="800" letter-spacing="0.05em">MODUL 3: PELANGGAN, TRANSAKSI PESANAN MANDIRI &amp; PORTER DELIVERY</text>
+
+  <!-- 4. Modul Helpdesk & Analitik -->
+  <rect x="1640" y="160" width="700" height="1490" rx="16" fill="#1E293B" fill-opacity="0.3" stroke="#A855F7" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="1660" y="195" fill="#A855F7" font-size="14" font-weight="800" letter-spacing="0.05em">MODUL 4: HELPDESK KOMPLAIN, AUDIT LOG &amp; ANALITIK REVENUE</text>
+
+  <!-- ================= GARIS RELASI (CONNECTORS) ================= -->
+  <!-- tenants -> users (1 to N) -->
+  <path d="M 410 460 L 410 520" fill="none" stroke="#38BDF8" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- tenants -> products (1 to N) -->
+  <path d="M 440 320 L 880 320" fill="none" stroke="#38BDF8" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- products -> product_variant_groups (1 to N) -->
+  <path d="M 1240 320 L 1280 320" fill="none" stroke="#F59E0B" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- product_variant_groups -> product_variant_options (1 to N) -->
+  <path d="M 1440 450 L 1440 550" fill="none" stroke="#F59E0B" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- tenants -> orders (1 to N) -->
+  <path d="M 260 460 L 260 990 L 520 1060" fill="none" stroke="#38BDF8" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- customers -> orders (1 to N) -->
+  <path d="M 410 1120 L 520 1120" fill="none" stroke="#10B981" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- delivery_locations -> orders (1 to N) -->
+  <path d="M 260 1420 L 520 1200" fill="none" stroke="#10B981" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- orders -> order_items (1 to N) -->
+  <path d="M 900 1120 L 1020 1120" fill="none" stroke="#10B981" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- products -> order_items (1 to N) -->
+  <path d="M 1060 620 L 1060 1020" fill="none" stroke="#F59E0B" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- orders -> complaints (1 to N) -->
+  <path d="M 900 1180 L 1680 500" fill="none" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 4" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- users -> complaints (1 to N handled_by) -->
+  <path d="M 760 620 L 1680 440" fill="none" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 4" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- users -> activity_logs (1 to N) -->
+  <path d="M 760 700 L 1680 820" fill="none" stroke="#A855F7" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+  <!-- tenants -> daily_tenant_summaries (1 to N) -->
+  <path d="M 440 260 L 1680 1250" fill="none" stroke="#A855F7" stroke-width="2" stroke-dasharray="6 6" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+
+  <!-- ================= ENTITAS TABEL ================= -->
+
+  <!-- 1. TENANTS TABLE -->
+  <g id="table-tenants" transform="translate(100, 220)">
+    <rect width="340" height="240" rx="10" fill="#1E293B" stroke="#0284C7" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="340" height="38" rx="10" fill="#0284C7"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">tenants (Mitra Restoran / F&amp;B)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="140" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#FBBF24" font-weight="700">UK  tenant_code</text> <text x="140" y="20" fill="#94A3B8">varchar(30)</text>
+      <text y="40" fill="#F8FAFC">    name</text> <text x="140" y="40" fill="#94A3B8">varchar(120)</text>
+      <text y="60" fill="#F8FAFC">    company_name</text> <text x="140" y="60" fill="#94A3B8">varchar(255)</text>
+      <text y="80" fill="#F8FAFC">    category</text> <text x="140" y="80" fill="#94A3B8">varchar(255)</text>
+      <text y="100" fill="#F8FAFC">    terminal</text> <text x="140" y="100" fill="#94A3B8">varchar(10)</text>
+      <text y="120" fill="#F8FAFC">    zone, floor</text> <text x="140" y="120" fill="#94A3B8">varchar</text>
+      <text y="140" fill="#F8FAFC">    opening, closing</text> <text x="140" y="140" fill="#94A3B8">time</text>
+      <text y="160" fill="#F8FAFC">    delivery_fee</text> <text x="140" y="160" fill="#94A3B8">decimal(12,2)</text>
+    </g>
+  </g>
+
+  <!-- 2. USERS TABLE -->
+  <g id="table-users" transform="translate(100, 520)">
+    <rect width="340" height="240" rx="10" fill="#1E293B" stroke="#0284C7" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="340" height="38" rx="10" fill="#0284C7"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">users (Staff Tenant &amp; Admin Ops)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="140" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#60A5FA" font-weight="700">FK  tenant_id</text> <text x="140" y="20" fill="#94A3B8">bigint unsigned (NULL)</text>
+      <text y="40" fill="#FBBF24" font-weight="700">UK  email</text> <text x="140" y="40" fill="#94A3B8">varchar(150)</text>
+      <text y="60" fill="#F8FAFC">    name</text> <text x="140" y="60" fill="#94A3B8">varchar(100)</text>
+      <text y="80" fill="#F8FAFC">    password</text> <text x="140" y="80" fill="#94A3B8">varchar(255)</text>
+      <text y="100" fill="#38BDF8">    role</text> <text x="140" y="100" fill="#94A3B8">enum(staff,admin)</text>
+      <text y="120" fill="#F8FAFC">    is_active</text> <text x="140" y="120" fill="#94A3B8">tinyint(1)</text>
+      <text y="140" fill="#F8FAFC">    is_blocked</text> <text x="140" y="140" fill="#94A3B8">tinyint(1)</text>
+      <text y="160" fill="#F8FAFC">    blocked_reason</text> <text x="140" y="160" fill="#94A3B8">text</text>
+    </g>
+  </g>
+
+  <!-- 3. PRODUCTS TABLE -->
+  <g id="table-products" transform="translate(880, 220)">
+    <rect width="360" height="260" rx="10" fill="#1E293B" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="360" height="38" rx="10" fill="#D97706"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">products (Katalog Makanan &amp; Minuman)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="150" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#60A5FA" font-weight="700">FK  tenant_id</text> <text x="150" y="20" fill="#94A3B8">bigint unsigned</text>
+      <text y="40" fill="#F8FAFC">    name</text> <text x="150" y="40" fill="#94A3B8">varchar(120)</text>
+      <text y="60" fill="#F8FAFC">    category</text> <text x="150" y="60" fill="#94A3B8">varchar(50)</text>
+      <text y="80" fill="#F8FAFC">    price</text> <text x="150" y="80" fill="#94A3B8">decimal(12,2)</text>
+      <text y="100" fill="#F8FAFC">    stock</text> <text x="150" y="100" fill="#94A3B8">int</text>
+      <text y="120" fill="#F8FAFC">    preparation_time</text> <text x="150" y="120" fill="#94A3B8">int (menit)</text>
+      <text y="140" fill="#F8FAFC">    is_available</text> <text x="150" y="140" fill="#94A3B8">tinyint(1)</text>
+      <text y="160" fill="#F8FAFC">    image, note</text> <text x="150" y="160" fill="#94A3B8">varchar, text</text>
+      <text y="180" fill="#F8FAFC">    deleted_at</text> <text x="150" y="180" fill="#94A3B8">timestamp (soft)</text>
+    </g>
+  </g>
+
+  <!-- 4. PRODUCT_VARIANT_GROUPS TABLE -->
+  <g id="table-variant-groups" transform="translate(1280, 220)">
+    <rect width="310" height="170" rx="10" fill="#1E293B" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="310" height="38" rx="10" fill="#D97706"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">product_variant_groups</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="140" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#60A5FA" font-weight="700">FK  product_id</text> <text x="140" y="20" fill="#94A3B8">bigint unsigned</text>
+      <text y="40" fill="#F8FAFC">    name</text> <text x="140" y="40" fill="#94A3B8">varchar(100)</text>
+      <text y="60" fill="#F8FAFC">    is_required</text> <text x="140" y="60" fill="#94A3B8">tinyint(1)</text>
+      <text y="80" fill="#F8FAFC">    created_at</text> <text x="140" y="80" fill="#94A3B8">timestamp</text>
+    </g>
+  </g>
+
+  <!-- 5. PRODUCT_VARIANT_OPTIONS TABLE -->
+  <g id="table-variant-options" transform="translate(1280, 550)">
+    <rect width="310" height="170" rx="10" fill="#1E293B" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="310" height="38" rx="10" fill="#D97706"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">product_variant_options</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="140" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#60A5FA" font-weight="700">FK  variant_group_id</text> <text x="140" y="20" fill="#94A3B8">bigint</text>
+      <text y="40" fill="#F8FAFC">    name</text> <text x="140" y="40" fill="#94A3B8">varchar(100)</text>
+      <text y="60" fill="#F8FAFC">    additional_price</text> <text x="140" y="60" fill="#94A3B8">decimal(12,2)</text>
+      <text y="80" fill="#F8FAFC">    created_at</text> <text x="140" y="80" fill="#94A3B8">timestamp</text>
+    </g>
+  </g>
+
+  <!-- 6. CUSTOMERS TABLE -->
+  <g id="table-customers" transform="translate(100, 1020)">
+    <rect width="310" height="230" rx="10" fill="#1E293B" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="310" height="38" rx="10" fill="#059669"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">customers (Pelanggan Bandara)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="140" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#FBBF24" font-weight="700">UK  phone_number</text> <text x="140" y="20" fill="#94A3B8">varchar(20)</text>
+      <text y="40" fill="#F8FAFC">    name</text> <text x="140" y="40" fill="#94A3B8">varchar(100)</text>
+      <text y="60" fill="#F8FAFC">    total_orders</text> <text x="140" y="60" fill="#94A3B8">int unsigned</text>
+      <text y="80" fill="#F8FAFC">    first_order_at</text> <text x="140" y="80" fill="#94A3B8">datetime</text>
+      <text y="100" fill="#F8FAFC">    last_order_at</text> <text x="140" y="100" fill="#94A3B8">datetime</text>
+      <text y="120" fill="#F8FAFC">    is_blocked</text> <text x="140" y="120" fill="#94A3B8">tinyint(1)</text>
+      <text y="140" fill="#F8FAFC">    blocked_reason</text> <text x="140" y="140" fill="#94A3B8">text</text>
+    </g>
+  </g>
+
+  <!-- 7. DELIVERY_LOCATIONS TABLE -->
+  <g id="table-delivery-locations" transform="translate(100, 1370)">
+    <rect width="310" height="150" rx="10" fill="#1E293B" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="310" height="38" rx="10" fill="#059669"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">delivery_locations (Gate/Area)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="140" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#F8FAFC">    terminal</text> <text x="140" y="20" fill="#94A3B8">enum('1','2')</text>
+      <text y="40" fill="#F8FAFC">    name</text> <text x="140" y="40" fill="#94A3B8">varchar(150)</text>
+      <text y="60" fill="#F8FAFC">    is_active</text> <text x="140" y="60" fill="#94A3B8">tinyint(1)</text>
+    </g>
+  </g>
+
+  <!-- 8. ORDERS TABLE -->
+  <g id="table-orders" transform="translate(520, 1020)">
+    <rect width="380" height="420" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="380" height="38" rx="10" fill="#10B981"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">orders (Header Transaksi Pesanan)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="170" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#FBBF24" font-weight="700">UK  order_code</text> <text x="170" y="20" fill="#94A3B8">varchar(40)</text>
+      <text y="40" fill="#60A5FA" font-weight="700">FK  tenant_id</text> <text x="170" y="40" fill="#94A3B8">bigint unsigned</text>
+      <text y="60" fill="#60A5FA" font-weight="700">FK  customer_id</text> <text x="170" y="60" fill="#94A3B8">bigint unsigned</text>
+      <text y="80" fill="#60A5FA" font-weight="700">FK  delivery_location_id</text> <text x="170" y="80" fill="#94A3B8">bigint unsigned (NULL)</text>
+      <text y="100" fill="#F8FAFC">    customer_name</text> <text x="170" y="100" fill="#94A3B8">varchar(100)</text>
+      <text y="120" fill="#F8FAFC">    flight_number, gate</text> <text x="170" y="120" fill="#94A3B8">varchar</text>
+      <text y="140" fill="#F8FAFC">    boarding_time</text> <text x="170" y="140" fill="#94A3B8">datetime</text>
+      <text y="160" fill="#38BDF8">    status</text> <text x="170" y="160" fill="#94A3B8">enum(5 status)</text>
+      <text y="180" fill="#F8FAFC">    payment_method</text> <text x="170" y="180" fill="#94A3B8">varchar (QRIS)</text>
+      <text y="200" fill="#F8FAFC">    is_paid</text> <text x="170" y="200" fill="#94A3B8">tinyint(1)</text>
+      <text y="220" fill="#F8FAFC">    pickup_method</text> <text x="170" y="220" fill="#94A3B8">enum(ambil,diantar)</text>
+      <text y="240" fill="#F8FAFC">    total_amount</text> <text x="170" y="240" fill="#94A3B8">decimal(12,2)</text>
+      <text y="260" fill="#F8FAFC">    delivery_fee</text> <text x="170" y="260" fill="#94A3B8">decimal(12,2)</text>
+      <text y="280" fill="#F8FAFC">    heading_to_tenant_at</text> <text x="170" y="280" fill="#94A3B8">datetime</text>
+      <text y="300" fill="#F8FAFC">    ready_at</text> <text x="170" y="300" fill="#94A3B8">datetime</text>
+      <text y="320" fill="#F8FAFC">    auto_cancel_at</text> <text x="170" y="320" fill="#94A3B8">datetime</text>
+      <text y="340" fill="#F8FAFC">    ordered_at</text> <text x="170" y="340" fill="#94A3B8">datetime</text>
+    </g>
+  </g>
+
+  <!-- 9. ORDER_ITEMS TABLE -->
+  <g id="table-order-items" transform="translate(1020, 1020)">
+    <rect width="360" height="230" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="360" height="38" rx="10" fill="#10B981"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">order_items (Rincian Item Pesanan)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="150" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#60A5FA" font-weight="700">FK  order_id</text> <text x="150" y="20" fill="#94A3B8">bigint unsigned</text>
+      <text y="40" fill="#60A5FA" font-weight="700">FK  product_id</text> <text x="150" y="40" fill="#94A3B8">bigint unsigned</text>
+      <text y="60" fill="#F8FAFC">    product_name_snapshot</text> <text x="150" y="60" fill="#94A3B8">varchar(120)</text>
+      <text y="80" fill="#F8FAFC">    quantity</text> <text x="150" y="80" fill="#94A3B8">smallint unsigned</text>
+      <text y="100" fill="#F8FAFC">    unit_price</text> <text x="150" y="100" fill="#94A3B8">decimal(12,2)</text>
+      <text y="120" fill="#F8FAFC">    subtotal</text> <text x="150" y="120" fill="#94A3B8">decimal(12,2)</text>
+      <text y="140" fill="#F8FAFC">    created_at</text> <text x="150" y="140" fill="#94A3B8">timestamp</text>
+    </g>
+  </g>
+
+  <!-- 10. COMPLAINTS TABLE -->
+  <g id="table-complaints" transform="translate(1680, 220)">
+    <rect width="360" height="270" rx="10" fill="#1E293B" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="360" height="38" rx="10" fill="#7C3AED"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">complaints (Helpdesk &amp; Komplain)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="150" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#FBBF24" font-weight="700">UK  complaint_code</text> <text x="150" y="20" fill="#94A3B8">varchar(40)</text>
+      <text y="40" fill="#60A5FA" font-weight="700">FK  order_id</text> <text x="150" y="40" fill="#94A3B8">bigint unsigned (NULL)</text>
+      <text y="60" fill="#60A5FA" font-weight="700">FK  handled_by_user_id</text> <text x="150" y="60" fill="#94A3B8">bigint unsigned (NULL)</text>
+      <text y="80" fill="#F8FAFC">    reporter_name</text> <text x="150" y="80" fill="#94A3B8">varchar(100)</text>
+      <text y="100" fill="#F8FAFC">    reporter_contact</text> <text x="150" y="100" fill="#94A3B8">varchar(50)</text>
+      <text y="120" fill="#F8FAFC">    category</text> <text x="150" y="120" fill="#94A3B8">enum(3 kategori)</text>
+      <text y="140" fill="#38BDF8">    status</text> <text x="150" y="140" fill="#94A3B8">enum(open..closed)</text>
+      <text y="160" fill="#F8FAFC">    description</text> <text x="150" y="160" fill="#94A3B8">text</text>
+      <text y="180" fill="#F8FAFC">    resolved_at</text> <text x="150" y="180" fill="#94A3B8">datetime</text>
+    </g>
+  </g>
+
+  <!-- 11. ACTIVITY_LOGS TABLE -->
+  <g id="table-activity-logs" transform="translate(1680, 600)">
+    <rect width="360" height="250" rx="10" fill="#1E293B" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="360" height="38" rx="10" fill="#7C3AED"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">activity_logs (Audit Trail Sistem)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="150" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#60A5FA" font-weight="700">FK  user_id</text> <text x="150" y="20" fill="#94A3B8">bigint unsigned (NULL)</text>
+      <text y="40" fill="#F8FAFC">    role</text> <text x="150" y="40" fill="#94A3B8">varchar(255)</text>
+      <text y="60" fill="#F8FAFC">    action</text> <text x="150" y="60" fill="#94A3B8">varchar(255)</text>
+      <text y="80" fill="#F8FAFC">    table_name</text> <text x="150" y="80" fill="#94A3B8">varchar(255)</text>
+      <text y="100" fill="#F8FAFC">    record_id</text> <text x="150" y="100" fill="#94A3B8">bigint unsigned</text>
+      <text y="120" fill="#F8FAFC">    ip_address</text> <text x="150" y="120" fill="#94A3B8">varchar(45)</text>
+      <text y="140" fill="#F8FAFC">    description</text> <text x="150" y="140" fill="#94A3B8">text</text>
+      <text y="160" fill="#F8FAFC">    created_at</text> <text x="150" y="160" fill="#94A3B8">timestamp</text>
+    </g>
+  </g>
+
+  <!-- 12. DAILY_TENANT_SUMMARIES TABLE -->
+  <g id="table-summaries" transform="translate(1680, 1020)">
+    <rect width="360" height="250" rx="10" fill="#1E293B" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="360" height="38" rx="10" fill="#7C3AED"/>
+    <text x="16" y="24" fill="#FFFFFF" font-size="14" font-weight="800">daily_tenant_summaries (Analitik Omzet)</text>
+    
+    <g transform="translate(16, 60)" font-size="12" font-family="monospace">
+      <text y="0" fill="#F87171" font-weight="700">PK  id</text> <text x="150" y="0" fill="#94A3B8">bigint unsigned</text>
+      <text y="20" fill="#60A5FA" font-weight="700">FK  tenant_id</text> <text x="150" y="20" fill="#94A3B8">bigint unsigned</text>
+      <text y="40" fill="#F8FAFC">    summary_date</text> <text x="150" y="40" fill="#94A3B8">date</text>
+      <text y="60" fill="#F8FAFC">    total_orders</text> <text x="150" y="60" fill="#94A3B8">int unsigned</text>
+      <text y="80" fill="#F8FAFC">    paid_orders</text> <text x="150" y="80" fill="#94A3B8">int unsigned</text>
+      <text y="100" fill="#F8FAFC">    cancelled_orders</text> <text x="150" y="100" fill="#94A3B8">int unsigned</text>
+      <text y="120" fill="#F8FAFC">    total_revenue</text> <text x="150" y="120" fill="#94A3B8">decimal(14,2)</text>
+      <text y="140" fill="#F8FAFC">    sla_compliant_orders</text> <text x="150" y="140" fill="#94A3B8">int unsigned</text>
+      <text y="160" fill="#F8FAFC">    avg_sla_minutes</text> <text x="150" y="160" fill="#94A3B8">decimal(8,2)</text>
+    </g>
+  </g>
+
+  <!-- ================= LEGENDA NOTASI ERD ================= -->
+  <g transform="translate(100, 1550)">
+    <rect width="1470" height="70" rx="10" fill="#1E293B" stroke="#334155"/>
+    <text x="24" y="28" fill="#F8FAFC" font-size="12" font-weight="800">KETERANGAN NOTASI ERD:</text>
+    <circle cx="200" cy="24" r="5" fill="#F87171"/>
+    <text x="212" y="28" fill="#94A3B8" font-size="12">PK = Primary Key</text>
+
+    <circle cx="360" cy="24" r="5" fill="#60A5FA"/>
+    <text x="372" y="28" fill="#94A3B8" font-size="12">FK = Foreign Key</text>
+
+    <circle cx="520" cy="24" r="5" fill="#FBBF24"/>
+    <text x="532" y="28" fill="#94A3B8" font-size="12">UK = Unique Key</text>
+
+    <line x1="680" y1="24" x2="720" y2="24" stroke="#38BDF8" stroke-width="2" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+    <text x="730" y="28" fill="#94A3B8" font-size="12">Relasi One-to-Many (1 : N)</text>
+
+    <line x1="940" y1="24" x2="980" y2="24" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 4" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+    <text x="990" y="28" fill="#94A3B8" font-size="12">Relasi Opsional / Nullable (0..1 : N)</text>
+
+    <text x="24" y="52" fill="#64748B" font-size="11">Dihasilkan langsung dari skema aktif basis data MySQL flydine-juanda • Format Standar Skripsi / Dokumentasi Sistem</text>
+  </g>
+
+</svg>
