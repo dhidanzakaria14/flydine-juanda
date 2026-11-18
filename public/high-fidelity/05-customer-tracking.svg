@@ -1,32 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1880" width="1440" height="1880" style="background:#F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
-    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#0369A1"/>
-    </linearGradient>
+    <!-- Brand Primary Gradients -->
     <linearGradient id="hero-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0369A1"/>
-      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="60%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="btn-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
       <stop offset="100%" stop-color="#0EA5E9"/>
     </linearGradient>
     <linearGradient id="sidebar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F172A"/>
       <stop offset="100%" stop-color="#1E293B"/>
     </linearGradient>
-    <linearGradient id="card-soft-1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EFF6FF"/>
-      <stop offset="100%" stop-color="#DBEAFE"/>
-    </linearGradient>
-    <linearGradient id="card-soft-2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Soft Background Banners -->
+    <linearGradient id="food-banner-1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FEF3C7"/>
       <stop offset="100%" stop-color="#FDE68A"/>
     </linearGradient>
-    <linearGradient id="card-soft-3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="food-banner-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <linearGradient id="food-banner-3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ECFDF5"/>
       <stop offset="100%" stop-color="#A7F3D0"/>
     </linearGradient>
+    <!-- Drop Shadows -->
     <filter id="soft-shadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.05"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.08"/>
     </filter>
   </defs>
 
@@ -37,8 +43,7 @@
   <!-- ========================================================================= -->
 
   <!-- 1. TOP NAVBAR (Sticky Header - baris 16-94) -->
-  <g id="Top-Navbar">
-    <rect x="0" y="0" width="1440" height="76" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" />
+  <g id="Top-Navbar"><rect x="0" y="0" width="1440" height="76" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/><g transform="translate(60, 18)"><rect width="180" height="40" rx="10" fill="#0284C7"/><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="#FFFFFF" transform="translate(10, 8) scale(0.9)"/><text x="44" y="25" fill="#FFFFFF" font-size="15" font-weight="800">FlyDine Juanda</text></g>
 
     <!-- A. Kiri: Logo FlyDine Juanda [X] -->
     <g transform="translate(60, 18)">
@@ -50,10 +55,7 @@
     <!-- B. Kanan: Switch Bahasa, Pesanan, Riwayat, Pelacakan Aktif (Highlight), Portal Login -->
     <g transform="translate(840, 20)">
       <!-- Switch Bahasa ID/EN -->
-      <rect x="0" y="0" width="90" height="36" rx="18" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.5" />
-      <rect x="3" y="3" width="42" height="30" rx="15" fill="#0284C7" />
-      <line x1="14" y1="18" x2="34" y2="18" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-      <line x1="56" y1="18" x2="76" y2="18" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+      <rect x="0" y="0" width="90" height="34" rx="17" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/><rect x="2" y="2" width="42" height="30" rx="15" fill="#0284C7"/><text x="16" y="22" fill="#FFFFFF" font-size="12" font-weight="700">ID</text><text x="58" y="22" fill="#64748B" font-size="12" font-weight="700">EN</text>
 
       <!-- Nav: Pesanan -->
       <g transform="translate(108, 0)">
@@ -69,7 +71,7 @@
 
       <!-- Nav: Pelacakan Aktif (Highlight Amber Pill - baris 43-50) -->
       <g transform="translate(312, 0)">
-        <rect width="138" height="36" rx="18" fill="#0284C7" stroke="#18181B" stroke-width="1.5" />
+        <rect width="138" height="36" rx="18" fill="#0284C7" stroke="#0F172A" stroke-width="1.5" />
         <circle cx="18" cy="18" r="4" fill="#FFFFFF" />
         <line x1="28" y1="18" x2="124" y2="18" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
       </g>
@@ -95,12 +97,12 @@
 
       <!-- Title & Order ID Pill -->
       <g transform="translate(0, 18)">
-        <line x1="0" y1="16" x2="290" y2="16" stroke="#18181B" stroke-width="10" stroke-linecap="round" />
+        <line x1="0" y1="16" x2="290" y2="16" stroke="#0F172A" stroke-width="10" stroke-linecap="round" />
         
         <!-- ID Pill: ORD-XXXXXXXX (baris 145-153) -->
         <g transform="translate(310, 0)">
           <rect width="180" height="32" rx="10" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
-          <line x1="16" y1="16" x2="130" y2="16" stroke="#18181B" stroke-width="4" stroke-linecap="round" />
+          <line x1="16" y1="16" x2="130" y2="16" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
           <!-- Copy Icon -->
           <rect x="146" y="9" width="14" height="14" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.5" />
         </g>
@@ -111,7 +113,7 @@
     <g transform="translate(1080, 16)">
       <rect width="200" height="38" rx="19" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.8" />
       <circle cx="20" cy="19" r="5" fill="#0284C7" />
-      <line x1="34" y1="19" x2="180" y2="19" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+      <line x1="34" y1="19" x2="180" y2="19" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
     </g>
   </g>
 
@@ -127,7 +129,7 @@
 
       <!-- CARD 1: SELESAIKAN PEMBAYARAN & MODUL QRIS FINTECH (baris 199-468) -->
       <g id="Card-Payment-Hero">
-        <rect width="740" height="880" rx="24" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="740" height="880" rx="24" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
 
         <!-- Header: Judul Pembayaran & Batas Waktu Countdown (baris 202-222) -->
         <g transform="translate(28, 24)">
@@ -137,15 +139,15 @@
           <line x1="20" y1="20" x2="24" y2="20" stroke="#0284C7" stroke-width="2" stroke-linecap="round" />
 
           <g transform="translate(52, 4)">
-            <line x1="0" y1="10" x2="240" y2="10" stroke="#18181B" stroke-width="7" stroke-linecap="round" />
+            <line x1="0" y1="10" x2="240" y2="10" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
             <line x1="0" y1="26" x2="300" y2="26" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
           </g>
 
           <!-- Countdown Timer Pill (Kanan Atas) -->
           <g transform="translate(540, 2)">
-            <line x1="10" y1="0" x2="130" y2="0" stroke="#A1A1AA" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="10" y1="0" x2="130" y2="0" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" />
             <rect y="8" width="144" height="32" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.5" />
-            <line x1="20" y1="24" x2="124" y2="24" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+            <line x1="20" y1="24" x2="124" y2="24" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
           </g>
         </g>
 
@@ -158,8 +160,8 @@
           <!-- QRIS Header Bar -->
           <g transform="translate(24, 20)">
             <!-- QRIS Brand Text -->
-            <line x1="0" y1="12" x2="60" y2="12" stroke="#18181B" stroke-width="7" stroke-linecap="round" />
-            <line x1="72" y1="12" x2="180" y2="12" stroke="#A1A1AA" stroke-width="3" stroke-linecap="round" />
+            <line x1="0" y1="12" x2="60" y2="12" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
+            <line x1="72" y1="12" x2="180" y2="12" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
 
             <!-- GPN Badge -->
             <rect x="280" y="0" width="48" height="22" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.2" />
@@ -170,7 +172,7 @@
 
           <!-- Tenant & NMID Title -->
           <g transform="translate(0, 68)">
-            <line x1="90" y1="8" x2="290" y2="8" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+            <line x1="90" y1="8" x2="290" y2="8" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
             <line x1="60" y1="24" x2="320" y2="24" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
           </g>
 
@@ -226,7 +228,7 @@
             <rect width="332" height="60" rx="16" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
             <g transform="translate(16, 12)">
               <line x1="0" y1="8" x2="90" y2="8" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
-              <line x1="0" y1="26" x2="150" y2="26" stroke="#18181B" stroke-width="7" stroke-linecap="round" />
+              <line x1="0" y1="26" x2="150" y2="26" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
             </g>
             <!-- Tombol Salin -->
             <g transform="translate(254, 14)">
@@ -238,7 +240,7 @@
           <!-- E-Wallet & Bank Badges (baris 264-275) -->
           <g transform="translate(24, 442)">
             
-            <line x1="30" y1="18" x2="302" y2="18" stroke="#A1A1AA" stroke-width="3" stroke-linecap="round" />
+            <line x1="30" y1="18" x2="302" y2="18" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
             
             <g transform="translate(0, 32)">
               <rect x="0" y="0" width="60" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
@@ -265,7 +267,7 @@
         <!-- CTA Buttons: Konfirmasi Bayar & Batal (baris 450-466) -->
         <g transform="translate(180, 710)">
           <!-- Primary CTA Button: Konfirmasi Saya Sudah Bayar -->
-          <rect width="380" height="54" rx="16" fill="#0284C7" stroke="#18181B" stroke-width="2" />
+          <rect width="380" height="54" rx="16" fill="#0284C7" stroke="#0F172A" stroke-width="2" />
           <line x1="70" y1="27" x2="310" y2="27" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
 
           <!-- Secondary Link: Batalkan Pesanan Ini -->
@@ -277,11 +279,11 @@
 
       <!-- CARD 2: TIMELINE STEPPER PROGRES PELAYANAN BANDARA (baris 527-620) -->
       <g id="Card-Timeline-Progress" transform="translate(0, 910)">
-        <rect width="740" height="420" rx="24" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="740" height="420" rx="24" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
 
         <!-- Header: Judul + FlyDine FastTrack Pill -->
         <g transform="translate(28, 24)">
-          <line x1="0" y1="12" x2="280" y2="12" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="12" x2="280" y2="12" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
           
           <g transform="translate(540, 0)">
             <rect width="144" height="28" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
@@ -299,10 +301,10 @@
 
           <!-- Step 1: Pesanan Diterima & Lunas (Aktif/Selesai) -->
           <g transform="translate(0, 0)">
-            <circle cx="20" cy="20" r="16" fill="#0284C7" stroke="#18181B" stroke-width="2" />
+            <circle cx="20" cy="20" r="16" fill="#0284C7" stroke="#0F172A" stroke-width="2" />
             <path d="M14 20 L18 24 L26 16" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
             <g transform="translate(52, 6)">
-              <line x1="0" y1="8" x2="210" y2="8" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+              <line x1="0" y1="8" x2="210" y2="8" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
               <line x1="0" y1="24" x2="420" y2="24" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
@@ -312,7 +314,7 @@
             <circle cx="20" cy="20" r="16" fill="#F1F5F9" stroke="#0284C7" stroke-width="2" />
             <circle cx="20" cy="20" r="6" fill="#0284C7" />
             <g transform="translate(52, 6)">
-              <line x1="0" y1="8" x2="230" y2="8" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+              <line x1="0" y1="8" x2="230" y2="8" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
               <line x1="0" y1="24" x2="460" y2="24" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
@@ -323,7 +325,7 @@
             <circle cx="20" cy="20" r="4" fill="#A1A1AA" />
             <g transform="translate(52, 6)">
               <line x1="0" y1="8" x2="250" y2="8" stroke="#94A3B8" stroke-width="4.5" stroke-linecap="round" />
-              <line x1="0" y1="24" x2="440" y2="24" stroke="#A1A1AA" stroke-width="3" stroke-linecap="round" />
+              <line x1="0" y1="24" x2="440" y2="24" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
 
@@ -333,7 +335,7 @@
             <circle cx="20" cy="20" r="4" fill="#A1A1AA" />
             <g transform="translate(52, 6)">
               <line x1="0" y1="8" x2="220" y2="8" stroke="#94A3B8" stroke-width="4.5" stroke-linecap="round" />
-              <line x1="0" y1="24" x2="400" y2="24" stroke="#A1A1AA" stroke-width="3" stroke-linecap="round" />
+              <line x1="0" y1="24" x2="400" y2="24" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
         </g>
@@ -348,7 +350,7 @@
 
       <!-- CARD 1: AIRPORT DIGITAL BOARDING PASS / ORDER INFO (baris 637-756) -->
       <g id="Card-Boarding-Pass">
-        <rect width="510" height="390" rx="24" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="510" height="390" rx="24" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
 
         <!-- Top Accent Bar: Pesawat & Judul Bandara -->
         <g transform="translate(0, 0)">
@@ -370,22 +372,22 @@
           <!-- Row 1: Nama Pemesan & No Penerbangan -->
           <g transform="translate(0, 0)">
             
-            <line x1="0" y1="18" x2="180" y2="18" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+            <line x1="0" y1="18" x2="180" y2="18" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
             <g transform="translate(240, 0)">
               
-              <line x1="0" y1="18" x2="140" y2="18" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+              <line x1="0" y1="18" x2="140" y2="18" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
             </g>
           </g>
 
           <!-- Row 2: Titik Antar/Gate & Waktu Boarding -->
           <g transform="translate(0, 56)">
             
-            <line x1="0" y1="18" x2="190" y2="18" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+            <line x1="0" y1="18" x2="190" y2="18" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
             <g transform="translate(240, 0)">
               
-              <line x1="0" y1="18" x2="130" y2="18" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+              <line x1="0" y1="18" x2="130" y2="18" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
             </g>
           </g>
         </g>
@@ -402,25 +404,25 @@
         <!-- Titik Pengantaran & Catatan Pesanan (baris 725-754) -->
         <g transform="translate(28, 230)">
           
-          <line x1="0" y1="18" x2="320" y2="18" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+          <line x1="0" y1="18" x2="320" y2="18" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
           <line x1="0" y1="34" x2="260" y2="34" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
 
           <!-- Catatan Khusus Box -->
           <g transform="translate(0, 52)">
             <rect width="454" height="48" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
             <line x1="16" y1="16" x2="140" y2="16" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
-            <line x1="16" y1="32" x2="380" y2="32" stroke="#18181B" stroke-width="3.5" stroke-linecap="round" />
+            <line x1="16" y1="32" x2="380" y2="32" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
           </g>
         </g>
       </g>
 
       <!-- CARD 2: RINCIAN MENU PESANAN & BILLING (baris 759-863) -->
       <g id="Card-Billing-Detail" transform="translate(0, 414)">
-        <rect width="510" height="660" rx="24" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="510" height="660" rx="24" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
 
         <!-- Header: Judul + Item Count -->
         <g transform="translate(28, 24)">
-          <line x1="0" y1="12" x2="180" y2="12" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="12" x2="180" y2="12" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
           <g transform="translate(400, 0)">
             <line x1="0" y1="12" x2="54" y2="12" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
           </g>
@@ -432,18 +434,18 @@
         <g transform="translate(28, 80)">
           <!-- Item 1 -->
           <g transform="translate(0, 0)">
-            <line x1="0" y1="8" x2="220" y2="8" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+            <line x1="0" y1="8" x2="220" y2="8" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
             <line x1="0" y1="24" x2="120" y2="24" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
-            <line x1="360" y1="16" x2="454" y2="16" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+            <line x1="360" y1="16" x2="454" y2="16" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
           </g>
 
           <line x1="0" y1="44" x2="454" y2="44" stroke="#F4F4F5" stroke-width="1" />
 
           <!-- Item 2 -->
           <g transform="translate(0, 56)">
-            <line x1="0" y1="8" x2="200" y2="8" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+            <line x1="0" y1="8" x2="200" y2="8" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
             <line x1="0" y1="24" x2="110" y2="24" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
-            <line x1="370" y1="16" x2="454" y2="16" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+            <line x1="370" y1="16" x2="454" y2="16" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
           </g>
         </g>
 
@@ -454,13 +456,13 @@
           <!-- Biaya Layanan Porter -->
           <g transform="translate(0, 0)">
             <line x1="0" y1="6" x2="150" y2="6" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
-            <line x1="380" y1="6" x2="454" y2="6" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+            <line x1="380" y1="6" x2="454" y2="6" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
           </g>
 
           <!-- Total Belanja (Highlight) -->
           <g transform="translate(0, 32)">
-            <line x1="0" y1="14" x2="120" y2="14" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-            <line x1="320" y1="14" x2="454" y2="14" stroke="#18181B" stroke-width="9" stroke-linecap="round" />
+            <line x1="0" y1="14" x2="120" y2="14" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+            <line x1="320" y1="14" x2="454" y2="14" stroke="#0F172A" stroke-width="9" stroke-linecap="round" />
           </g>
         </g>
 
@@ -471,7 +473,7 @@
           <!-- Header: Status Komplain Pesanan + Link Pusat Bantuan -->
           <g transform="translate(18, 16)">
             <circle cx="6" cy="6" r="4" fill="#0284C7" />
-            <line x1="16" y1="6" x2="180" y2="6" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+            <line x1="16" y1="6" x2="180" y2="6" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
             
             <g transform="translate(320, 0)">
               <line x1="0" y1="6" x2="80" y2="6" stroke="#0284C7" stroke-width="3" stroke-linecap="round" />
@@ -485,7 +487,7 @@
             
             <!-- Code Ticket CMP-XXXXXX & Status Badge -->
             <g transform="translate(14, 14)">
-              <line x1="0" y1="8" x2="120" y2="8" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+              <line x1="0" y1="8" x2="120" y2="8" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
               
               <!-- Badge: Sedang Diproses Operasional -->
               <g transform="translate(220, 0)">
@@ -508,7 +510,7 @@
           <!-- Button 1: Buka / Cetak Struk Digital (Full Width) -->
           <rect width="454" height="48" rx="14" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.5" />
           <circle cx="150" cy="24" r="6" fill="none" stroke="#0284C7" stroke-width="1.5" />
-          <line x1="166" y1="24" x2="310" y2="24" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+          <line x1="166" y1="24" x2="310" y2="24" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
 
           <!-- Row 2: Laporkan Kendala & Katalog Menu (2 Kolom) -->
           <g transform="translate(0, 60)">
@@ -533,7 +535,7 @@
   <g id="Footer" transform="translate(0, 1780)">
     <rect width="1440" height="100" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" />
     <g transform="translate(80, 35)">
-      <line x1="0" y1="15" x2="160" y2="15" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+      <line x1="0" y1="15" x2="160" y2="15" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
       <line x1="400" y1="15" x2="800" y2="15" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
       <line x1="1100" y1="15" x2="1280" y2="15" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
     </g>

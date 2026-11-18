@@ -1,32 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1140" width="1440" height="1140" style="background:#F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
-    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#0369A1"/>
-    </linearGradient>
+    <!-- Brand Primary Gradients -->
     <linearGradient id="hero-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0369A1"/>
-      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="60%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="btn-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
       <stop offset="100%" stop-color="#0EA5E9"/>
     </linearGradient>
     <linearGradient id="sidebar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F172A"/>
       <stop offset="100%" stop-color="#1E293B"/>
     </linearGradient>
-    <linearGradient id="card-soft-1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EFF6FF"/>
-      <stop offset="100%" stop-color="#DBEAFE"/>
-    </linearGradient>
-    <linearGradient id="card-soft-2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Soft Background Banners -->
+    <linearGradient id="food-banner-1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FEF3C7"/>
       <stop offset="100%" stop-color="#FDE68A"/>
     </linearGradient>
-    <linearGradient id="card-soft-3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="food-banner-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <linearGradient id="food-banner-3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ECFDF5"/>
       <stop offset="100%" stop-color="#A7F3D0"/>
     </linearGradient>
+    <!-- Drop Shadows -->
     <filter id="soft-shadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.05"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.08"/>
     </filter>
   </defs>
 
@@ -37,8 +43,7 @@
   <!-- ========================================================================= -->
 
   <!-- 1. SIDEBAR TENANT -->
-  <g id="Sidebar">
-    <rect x="0" y="0" width="260" height="1140" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" />
+  <g id="Sidebar"><rect x="0" y="0" width="260" height="1060" fill="url(#sidebar-grad)"/>
 
     <!-- Logo Area -->
     <g transform="translate(24, 24)">
@@ -48,7 +53,7 @@
     </g>
 
     <!-- Menu Utama Label -->
-    <line x1="24" y1="112" x2="110" y2="112" stroke="#A1A1AA" stroke-width="4" stroke-linecap="round" />
+    <line x1="24" y1="112" x2="110" y2="112" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" />
 
     <!-- Nav 1: Dashboard -->
     <g transform="translate(16, 130)">
@@ -88,9 +93,8 @@
   </g>
 
   <!-- 2. TOP HEADER -->
-  <g id="Top-Header">
-    <rect x="260" y="0" width="1180" height="88" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" />
-    <line x1="292" y1="44" x2="520" y2="44" stroke="#18181B" stroke-width="9" stroke-linecap="round" />
+  <g id="Top-Header"><rect x="260" y="0" width="1180" height="88" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="292" y1="44" x2="520" y2="44" stroke="#0F172A" stroke-width="9" stroke-linecap="round" />
 
     <!-- Tenant Profile Card -->
     <g transform="translate(1220, 20)">
@@ -98,7 +102,7 @@
       <line x1="14" y1="24" x2="34" y2="24" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
       <circle cx="44" cy="44" r="5" fill="#0284C7" />
       <g transform="translate(58, 10)">
-        <line x1="0" y1="8" x2="110" y2="8" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+        <line x1="0" y1="8" x2="110" y2="8" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
         <line x1="0" y1="22" x2="80" y2="22" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
       </g>
     </g>
@@ -113,7 +117,7 @@
       
       <!-- Title & Subtitle -->
       <g transform="translate(24, 24)">
-        <line x1="0" y1="14" x2="180" y2="14" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+        <line x1="0" y1="14" x2="180" y2="14" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
         <line x1="0" y1="34" x2="360" y2="34" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" />
       </g>
 
@@ -156,11 +160,11 @@
           <line x1="168" y1="9" x2="214" y2="9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
 
           <!-- Nama Produk -->
-          <line x1="0" y1="32" x2="200" y2="32" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-          <line x1="0" y1="46" x2="140" y2="46" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="32" x2="200" y2="32" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="46" x2="140" y2="46" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
           <!-- Harga & Variant Pill -->
-          <line x1="0" y1="70" x2="110" y2="70" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+          <line x1="0" y1="70" x2="110" y2="70" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
           <rect x="120" y="60" width="102" height="18" rx="5" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="128" y1="69" x2="214" y2="69" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round" />
 
@@ -194,11 +198,11 @@
           <rect x="160" y="0" width="62" height="18" rx="4" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="168" y1="9" x2="214" y2="9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
 
-          <line x1="0" y1="32" x2="180" y2="32" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-          <line x1="0" y1="46" x2="120" y2="46" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="32" x2="180" y2="32" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="46" x2="120" y2="46" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
           <!-- Harga & Variant Pill -->
-          <line x1="0" y1="70" x2="100" y2="70" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+          <line x1="0" y1="70" x2="100" y2="70" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
           <rect x="120" y="60" width="102" height="18" rx="5" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="128" y1="69" x2="214" y2="69" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round" />
 
@@ -229,10 +233,10 @@
           <rect x="160" y="0" width="62" height="18" rx="4" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="168" y1="9" x2="214" y2="9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
 
-          <line x1="0" y1="32" x2="190" y2="32" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-          <line x1="0" y1="46" x2="150" y2="46" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="32" x2="190" y2="32" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="46" x2="150" y2="46" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
-          <line x1="0" y1="72" x2="120" y2="72" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+          <line x1="0" y1="72" x2="120" y2="72" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
 
           <rect x="0" y="92" width="222" height="32" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
           <line x1="60" y1="108" x2="160" y2="108" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
@@ -294,10 +298,10 @@
           <rect x="160" y="0" width="62" height="18" rx="4" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="168" y1="9" x2="214" y2="9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
 
-          <line x1="0" y1="32" x2="190" y2="32" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-          <line x1="0" y1="46" x2="130" y2="46" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="32" x2="190" y2="32" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="46" x2="130" y2="46" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
-          <line x1="0" y1="72" x2="105" y2="72" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+          <line x1="0" y1="72" x2="105" y2="72" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
 
           <rect x="0" y="92" width="222" height="32" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
           <line x1="60" y1="108" x2="160" y2="108" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
@@ -326,10 +330,10 @@
           <rect x="160" y="0" width="62" height="18" rx="4" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="168" y1="9" x2="214" y2="9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
 
-          <line x1="0" y1="32" x2="210" y2="32" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-          <line x1="0" y1="46" x2="140" y2="46" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="32" x2="210" y2="32" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="46" x2="140" y2="46" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
-          <line x1="0" y1="72" x2="115" y2="72" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+          <line x1="0" y1="72" x2="115" y2="72" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
 
           <rect x="0" y="92" width="222" height="32" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
           <line x1="60" y1="108" x2="160" y2="108" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
@@ -358,10 +362,10 @@
           <rect x="160" y="0" width="62" height="18" rx="4" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="168" y1="9" x2="214" y2="9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
 
-          <line x1="0" y1="32" x2="170" y2="32" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-          <line x1="0" y1="46" x2="120" y2="46" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="32" x2="170" y2="32" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="46" x2="120" y2="46" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
-          <line x1="0" y1="72" x2="110" y2="72" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+          <line x1="0" y1="72" x2="110" y2="72" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
 
           <rect x="0" y="92" width="222" height="32" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
           <line x1="60" y1="108" x2="160" y2="108" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
@@ -390,10 +394,10 @@
           <rect x="160" y="0" width="62" height="18" rx="4" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
           <line x1="168" y1="9" x2="214" y2="9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
 
-          <line x1="0" y1="32" x2="190" y2="32" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
-          <line x1="0" y1="46" x2="140" y2="46" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="32" x2="190" y2="32" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+          <line x1="0" y1="46" x2="140" y2="46" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
 
-          <line x1="0" y1="72" x2="130" y2="72" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+          <line x1="0" y1="72" x2="130" y2="72" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
 
           <rect x="0" y="92" width="222" height="32" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
           <line x1="60" y1="108" x2="160" y2="108" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
@@ -419,11 +423,11 @@
     <rect x="-520" y="-120" width="1440" height="1140" fill="#0F172A" opacity="0.45" />
 
     <!-- Modal Box -->
-    <rect width="680" height="880" rx="24" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2.5" />
+    <rect width="680" height="880" rx="24" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2.5" />
 
     <!-- Header: Judul + Close Button -->
     <g transform="translate(32, 28)">
-      <line x1="0" y1="12" x2="200" y2="12" stroke="#18181B" stroke-width="8" stroke-linecap="round" />
+      <line x1="0" y1="12" x2="200" y2="12" stroke="#0F172A" stroke-width="8" stroke-linecap="round" />
       <line x1="0" y1="32" x2="340" y2="32" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" />
       <!-- Close (X) -->
       <g transform="translate(580, 0)">
@@ -439,12 +443,12 @@
     <g transform="translate(32, 104)">
       <line x1="0" y1="8" x2="90" y2="8" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
       <rect y="18" width="370" height="42" rx="10" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
-      <line x1="16" y1="39" x2="180" y2="39" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+      <line x1="16" y1="39" x2="180" y2="39" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
 
       <g transform="translate(390, 0)">
         <line x1="0" y1="8" x2="70" y2="8" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
         <rect y="18" width="226" height="42" rx="10" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
-        <line x1="16" y1="39" x2="110" y2="39" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+        <line x1="16" y1="39" x2="110" y2="39" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
       </g>
     </g>
 
@@ -452,12 +456,12 @@
     <g transform="translate(32, 184)">
       <line x1="0" y1="8" x2="80" y2="8" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
       <rect y="18" width="290" height="42" rx="10" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
-      <line x1="16" y1="39" x2="140" y2="39" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+      <line x1="16" y1="39" x2="140" y2="39" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
 
       <g transform="translate(310, 0)">
         <line x1="0" y1="8" x2="90" y2="8" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
         <rect y="18" width="306" height="42" rx="10" fill="#F1F5F9" stroke="#0284C7" stroke-width="1.2" />
-        <line x1="16" y1="39" x2="80" y2="39" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+        <line x1="16" y1="39" x2="80" y2="39" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
       </g>
     </g>
 
@@ -474,12 +478,12 @@
       
       <!-- Sub-header & Tombol Tambah Varian -->
       <g transform="translate(20, 16)">
-        <line x1="0" y1="10" x2="260" y2="10" stroke="#18181B" stroke-width="6" stroke-linecap="round" />
+        <line x1="0" y1="10" x2="260" y2="10" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
         <line x1="0" y1="28" x2="380" y2="28" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round" />
 
         <!-- Tombol + Buat Varian Sendiri -->
         <g transform="translate(416, 2)">
-          <rect width="160" height="32" rx="8" fill="#0284C7" stroke="#18181B" stroke-width="1.2" />
+          <rect width="160" height="32" rx="8" fill="#0284C7" stroke="#0F172A" stroke-width="1.2" />
           <line x1="16" y1="16" x2="28" y2="16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
           <line x1="22" y1="10" x2="22" y2="22" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
           <line x1="36" y1="16" x2="144" y2="16" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
@@ -510,12 +514,12 @@
 
       <!-- Varian Card 1: Pilihan Suhu -->
       <g transform="translate(20, 102)">
-        <rect width="576" height="140" rx="12" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="1.2" />
+        <rect width="576" height="140" rx="12" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="1.2" />
         <g transform="translate(16, 14)">
           <!-- Label Input -->
           <line x1="0" y1="6" x2="120" y2="6" stroke="#0284C7" stroke-width="3.5" stroke-linecap="round" />
           <rect y="14" width="480" height="36" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
-          <line x1="14" y1="32" x2="160" y2="32" stroke="#18181B" stroke-width="4" stroke-linecap="round" />
+          <line x1="14" y1="32" x2="160" y2="32" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
 
           <!-- Tombol Hapus Varian (Trash) -->
           <g transform="translate(500, 14)">
@@ -528,18 +532,18 @@
           <g transform="translate(0, 60)">
             <line x1="0" y1="6" x2="180" y2="6" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             <rect y="14" width="536" height="36" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
-            <line x1="14" y1="32" x2="220" y2="32" stroke="#18181B" stroke-width="3.5" stroke-linecap="round" />
+            <line x1="14" y1="32" x2="220" y2="32" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
           </g>
         </g>
       </g>
 
       <!-- Varian Card 2: Level Pedas -->
       <g transform="translate(20, 256)">
-        <rect width="576" height="140" rx="12" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="1.2" />
+        <rect width="576" height="140" rx="12" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="1.2" />
         <g transform="translate(16, 14)">
           <line x1="0" y1="6" x2="100" y2="6" stroke="#0284C7" stroke-width="3.5" stroke-linecap="round" />
           <rect y="14" width="480" height="36" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
-          <line x1="14" y1="32" x2="140" y2="32" stroke="#18181B" stroke-width="4" stroke-linecap="round" />
+          <line x1="14" y1="32" x2="140" y2="32" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
 
           <g transform="translate(500, 14)">
             <rect width="36" height="36" rx="8" fill="#FFF1F2" stroke="#EF4444" stroke-width="1" />
@@ -550,7 +554,7 @@
           <g transform="translate(0, 60)">
             <line x1="0" y1="6" x2="180" y2="6" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             <rect y="14" width="536" height="36" rx="8" fill="#F1F5F9" stroke="#0284C7" stroke-width="1" />
-            <line x1="14" y1="32" x2="240" y2="32" stroke="#18181B" stroke-width="3.5" stroke-linecap="round" />
+            <line x1="14" y1="32" x2="240" y2="32" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
           </g>
         </g>
       </g>
@@ -564,7 +568,7 @@
         <line x1="28" y1="21" x2="82" y2="21" stroke="#0284C7" stroke-width="4" stroke-linecap="round" />
 
         <g transform="translate(122, 0)">
-          <rect width="138" height="42" rx="10" fill="#0284C7" stroke="#18181B" stroke-width="1.5" />
+          <rect width="138" height="42" rx="10" fill="#0284C7" stroke="#0F172A" stroke-width="1.5" />
           <line x1="24" y1="21" x2="114" y2="21" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
         </g>
       </g>

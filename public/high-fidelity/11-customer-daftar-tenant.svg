@@ -1,32 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 2320" width="1440" height="2320" style="background:#F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
-    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#0369A1"/>
-    </linearGradient>
+    <!-- Brand Primary Gradients -->
     <linearGradient id="hero-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0369A1"/>
-      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="60%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="btn-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
       <stop offset="100%" stop-color="#0EA5E9"/>
     </linearGradient>
     <linearGradient id="sidebar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F172A"/>
       <stop offset="100%" stop-color="#1E293B"/>
     </linearGradient>
-    <linearGradient id="card-soft-1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EFF6FF"/>
-      <stop offset="100%" stop-color="#DBEAFE"/>
-    </linearGradient>
-    <linearGradient id="card-soft-2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Soft Background Banners -->
+    <linearGradient id="food-banner-1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FEF3C7"/>
       <stop offset="100%" stop-color="#FDE68A"/>
     </linearGradient>
-    <linearGradient id="card-soft-3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="food-banner-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <linearGradient id="food-banner-3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ECFDF5"/>
       <stop offset="100%" stop-color="#A7F3D0"/>
     </linearGradient>
+    <!-- Drop Shadows -->
     <filter id="soft-shadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.05"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.08"/>
     </filter>
   </defs>
 
@@ -71,7 +77,7 @@
       </g>
 
       <!-- Judul "Daftar Menjadi Tenant" -->
-      <line x1="0" y1="80" x2="520" y2="80" stroke="#18181B" stroke-width="12" stroke-linecap="round" />
+      <line x1="0" y1="80" x2="520" y2="80" stroke="#0F172A" stroke-width="12" stroke-linecap="round" />
 
       <!-- Subtitle Deskripsi -->
       <line x1="0" y1="112" x2="720" y2="112" stroke="#94A3B8" stroke-width="4.5" stroke-linecap="round" />
@@ -94,7 +100,7 @@
         <!-- Stat 3: Cepat Siap -->
         <g transform="translate(260, 0)">
           <rect width="120" height="84" rx="16" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
-          <line x1="20" y1="32" x2="100" y2="32" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+          <line x1="20" y1="32" x2="100" y2="32" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
           <line x1="20" y1="52" x2="100" y2="52" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
         </g>
       </g>
@@ -111,11 +117,11 @@
       
       <!-- Card Navigasi Kemitraan Tenant -->
       <g id="Tenant-Nav-Card">
-        <rect width="340" height="300" rx="24" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="340" height="300" rx="24" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
         
         <g transform="translate(24, 24)">
           <circle cx="10" cy="10" r="7" fill="none" stroke="#005EA2" stroke-width="2" />
-          <line x1="26" y1="10" x2="190" y2="10" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+          <line x1="26" y1="10" x2="190" y2="10" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
         </g>
         <line x1="24" y1="52" x2="316" y2="52" stroke="#E2E8F0" stroke-width="1.5" />
 
@@ -148,7 +154,7 @@
 
       <!-- Card Bantuan Kemitraan CTA -->
       <g id="Partner-Help-Card" transform="translate(0, 320)">
-        <rect width="340" height="170" rx="24" fill="#0284C7" stroke="#18181B" stroke-width="2" />
+        <rect width="340" height="170" rx="24" fill="#0284C7" stroke="#0F172A" stroke-width="2" />
         <g transform="translate(24, 24)">
           <line x1="0" y1="8" x2="150" y2="8" stroke="#93C5FD" stroke-width="3" stroke-linecap="round" />
           <line x1="0" y1="28" x2="230" y2="28" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
@@ -169,11 +175,11 @@
 
       <!-- SECTION 01: KEUNTUNGAN KEMITRAAN (4 CARDS GRID) -->
       <g id="Section-Keuntungan">
-        <rect width="880" height="340" rx="28" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="880" height="340" rx="28" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
         <g transform="translate(28, 24)">
           <rect width="32" height="32" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
           <line x1="10" y1="16" x2="22" y2="16" stroke="#005EA2" stroke-width="3" stroke-linecap="round" />
-          <line x1="44" y1="16" x2="310" y2="16" stroke="#18181B" stroke-width="7" stroke-linecap="round" />
+          <line x1="44" y1="16" x2="310" y2="16" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
         </g>
         <line x1="28" y1="68" x2="852" y2="68" stroke="#E2E8F0" stroke-width="1.5" />
 
@@ -183,7 +189,7 @@
             <rect width="398" height="100" rx="16" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
             <g transform="translate(18, 18)">
               <circle cx="14" cy="14" r="12" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
-              <line x1="38" y1="14" x2="200" y2="14" stroke="#18181B" stroke-width="5.5" stroke-linecap="round" />
+              <line x1="38" y1="14" x2="200" y2="14" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round" />
               <line x1="0" y1="42" x2="350" y2="42" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
               <line x1="0" y1="58" x2="280" y2="58" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
             </g>
@@ -193,7 +199,7 @@
             <rect width="398" height="100" rx="16" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
             <g transform="translate(18, 18)">
               <circle cx="14" cy="14" r="12" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
-              <line x1="38" y1="14" x2="190" y2="14" stroke="#18181B" stroke-width="5.5" stroke-linecap="round" />
+              <line x1="38" y1="14" x2="190" y2="14" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round" />
               <line x1="0" y1="42" x2="350" y2="42" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
               <line x1="0" y1="58" x2="290" y2="58" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
             </g>
@@ -203,7 +209,7 @@
             <rect width="398" height="100" rx="16" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
             <g transform="translate(18, 18)">
               <circle cx="14" cy="14" r="12" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
-              <line x1="38" y1="14" x2="210" y2="14" stroke="#18181B" stroke-width="5.5" stroke-linecap="round" />
+              <line x1="38" y1="14" x2="210" y2="14" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round" />
               <line x1="0" y1="42" x2="350" y2="42" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
               <line x1="0" y1="58" x2="270" y2="58" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
             </g>
@@ -213,7 +219,7 @@
             <rect width="398" height="100" rx="16" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
             <g transform="translate(18, 18)">
               <circle cx="14" cy="14" r="12" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
-              <line x1="38" y1="14" x2="220" y2="14" stroke="#18181B" stroke-width="5.5" stroke-linecap="round" />
+              <line x1="38" y1="14" x2="220" y2="14" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round" />
               <line x1="0" y1="42" x2="350" y2="42" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
               <line x1="0" y1="58" x2="300" y2="58" stroke="#94A3B8" stroke-width="3.2" stroke-linecap="round" />
             </g>
@@ -223,11 +229,11 @@
 
       <!-- SECTION 02: SYARAT & KUALIFIKASI GERAI -->
       <g id="Section-Syarat" transform="translate(0, 360)">
-        <rect width="880" height="240" rx="28" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="880" height="240" rx="28" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
         <g transform="translate(28, 24)">
           <rect width="32" height="32" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
           <line x1="10" y1="16" x2="22" y2="16" stroke="#005EA2" stroke-width="3" stroke-linecap="round" />
-          <line x1="44" y1="16" x2="340" y2="16" stroke="#18181B" stroke-width="7" stroke-linecap="round" />
+          <line x1="44" y1="16" x2="340" y2="16" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
         </g>
         <line x1="28" y1="68" x2="852" y2="68" stroke="#E2E8F0" stroke-width="1.5" />
 
@@ -236,23 +242,23 @@
           <g transform="translate(0, 0)">
             <rect width="824" height="52" rx="14" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
             <circle cx="20" cy="26" r="6" fill="#005EA2" />
-            <line x1="38" y1="26" x2="420" y2="26" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+            <line x1="38" y1="26" x2="420" y2="26" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
           </g>
           <g transform="translate(0, 64)">
             <rect width="824" height="52" rx="14" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
             <circle cx="20" cy="26" r="6" fill="#D97706" />
-            <line x1="38" y1="26" x2="480" y2="26" stroke="#18181B" stroke-width="4.5" stroke-linecap="round" />
+            <line x1="38" y1="26" x2="480" y2="26" stroke="#0F172A" stroke-width="4.5" stroke-linecap="round" />
           </g>
         </g>
       </g>
 
       <!-- SECTION 03: ALUR PENDAFTARAN & AKTIVASI (4 STEPS) -->
       <g id="Section-Alur" transform="translate(0, 620)">
-        <rect width="880" height="250" rx="28" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="880" height="250" rx="28" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
         <g transform="translate(28, 24)">
           <rect width="32" height="32" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
           <line x1="10" y1="16" x2="22" y2="16" stroke="#005EA2" stroke-width="3" stroke-linecap="round" />
-          <line x1="44" y1="16" x2="350" y2="16" stroke="#18181B" stroke-width="7" stroke-linecap="round" />
+          <line x1="44" y1="16" x2="350" y2="16" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
         </g>
         <line x1="28" y1="68" x2="852" y2="68" stroke="#E2E8F0" stroke-width="1.5" />
 
@@ -263,7 +269,7 @@
             <g transform="translate(16, 16)">
               <circle cx="14" cy="14" r="12" fill="#0284C7" />
               <line x1="10" y1="14" x2="18" y2="14" stroke="#FFFFFF" stroke-width="2" />
-              <line x1="0" y1="42" x2="140" y2="42" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+              <line x1="0" y1="42" x2="140" y2="42" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
               <line x1="0" y1="60" x2="160" y2="60" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
@@ -273,7 +279,7 @@
             <g transform="translate(16, 16)">
               <circle cx="14" cy="14" r="12" fill="#0284C7" />
               <line x1="10" y1="14" x2="18" y2="14" stroke="#FFFFFF" stroke-width="2" />
-              <line x1="0" y1="42" x2="130" y2="42" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+              <line x1="0" y1="42" x2="130" y2="42" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
               <line x1="0" y1="60" x2="150" y2="60" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
@@ -283,7 +289,7 @@
             <g transform="translate(16, 16)">
               <circle cx="14" cy="14" r="12" fill="#0284C7" />
               <line x1="10" y1="14" x2="18" y2="14" stroke="#FFFFFF" stroke-width="2" />
-              <line x1="0" y1="42" x2="140" y2="42" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+              <line x1="0" y1="42" x2="140" y2="42" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
               <line x1="0" y1="60" x2="155" y2="60" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
@@ -293,7 +299,7 @@
             <g transform="translate(16, 16)">
               <circle cx="14" cy="14" r="12" fill="#0284C7" />
               <line x1="10" y1="14" x2="18" y2="14" stroke="#FFFFFF" stroke-width="2" />
-              <line x1="0" y1="42" x2="135" y2="42" stroke="#18181B" stroke-width="5" stroke-linecap="round" />
+              <line x1="0" y1="42" x2="135" y2="42" stroke="#0F172A" stroke-width="5" stroke-linecap="round" />
               <line x1="0" y1="60" x2="150" y2="60" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
             </g>
           </g>
@@ -302,12 +308,12 @@
 
       <!-- SECTION 04: FORMULIR PENGAJUAN KEMITRAAN TENANT -->
       <g id="Section-Form-Tenant" transform="translate(0, 890)">
-        <rect width="880" height="540" rx="28" fill="#FFFFFF" rx="12" filter="url(#soft-shadow)" stroke="#0284C7" stroke-width="2" />
+        <rect width="880" height="540" rx="28" fill="#FFFFFF" rx="12" filter="url(#card-shadow)" stroke="#E2E8F0" stroke-width="1" stroke="#0284C7" stroke-width="2" />
 
         <g transform="translate(28, 24)">
           <rect width="32" height="32" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
           <line x1="10" y1="16" x2="22" y2="16" stroke="#005EA2" stroke-width="3" stroke-linecap="round" />
-          <line x1="44" y1="16" x2="380" y2="16" stroke="#18181B" stroke-width="7" stroke-linecap="round" />
+          <line x1="44" y1="16" x2="380" y2="16" stroke="#0F172A" stroke-width="7" stroke-linecap="round" />
         </g>
         <line x1="28" y1="68" x2="852" y2="68" stroke="#E2E8F0" stroke-width="1.5" />
 
@@ -351,7 +357,7 @@
 
           <!-- Row 4: Tombol Ajukan Kemitraan -->
           <g transform="translate(0, 314)">
-            <rect width="824" height="52" rx="16" fill="#0284C7" stroke="#18181B" stroke-width="2" />
+            <rect width="824" height="52" rx="16" fill="#0284C7" stroke="#0F172A" stroke-width="2" />
             <line x1="310" y1="26" x2="514" y2="26" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
             <path d="M530 26 L544 26 M538 20 L544 26 L538 32" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
           </g>
