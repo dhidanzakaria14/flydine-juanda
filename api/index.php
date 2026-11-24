@@ -1,17 +1,42 @@
 <?php
 
-// Forward Vercel serverless requests to public/index.php
-// Ensure /tmp writable directories exist for serverless environment
+use Illuminate\Foundation\Application;
+use Illuminate\Http\Request;
+
+define('LARAVEL_START', microtime(true));
+
+// Setup writable /tmp storage directories for Vercel Serverless
+$tmpStorage = '/tmp/storage';
 $dirs = [
-    '/tmp/views',
-    '/tmp/cache',
-    '/tmp/sessions'
+    $tmpStorage,
+    $tmpStorage . '/framework',
+    $tmpStorage . '/framework/views',
+    $tmpStorage . '/framework/cache',
+    $tmpStorage . '/framework/cache/data',
+    $tmpStorage . '/framework/sessions',
+    $tmpStorage . '/logs',
+    $tmpStorage . '/app',
+    $tmpStorage . '/app/public',
 ];
 
 foreach ($dirs as $dir) {
     if (!is_dir($dir)) {
-        @mkdir($dir, 0755, true);
+        @mkdir($dir, 0777, true);
     }
 }
 
-require __DIR__ . '/../public/index.php';
+// Maintenance mode check
+if (file_exists($maintenance = __DIR__ . '/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
+
+// Autoloader
+require __DIR__ . '/../vendor/autoload.php';
+
+// Bootstrap Laravel
+/** @var Application $app */
+$app = require_once __DIR__ . '/../bootstrap/app.php';
+
+$app->useStoragePath($tmpStorage);
+
+$app->handleRequest(Request::capture());
