@@ -154,23 +154,23 @@
                         <!-- Terminal Badge -->
                         <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/15 backdrop-blur-md border border-white/20 text-white shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-sky-300" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-                            <span>{{ $tenant->terminal ?? 'T1' }} â€¢ {{ $tenant->floor_location ?? 'Area Komersial' }}</span>
+                            <span>{{ $tenant->terminal ?? 'T1' }} • {{ $tenant->floor_location ?? 'Area Komersial' }}</span>
                         </span>
 
                         <!-- Zone Badge (Airside vs Landside) -->
                         @if($tenant->isAirside())
                             <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-400/20 backdrop-blur-md border border-amber-300/35 text-amber-100 shadow-sm">
-                                <span>ðŸ›« Airside â€¢ Boarding Gate</span>
+                                <span>🛫 Airside • Boarding Gate</span>
                             </span>
                         @else
                             <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-sky-400/20 backdrop-blur-md border border-sky-300/30 text-sky-100 shadow-sm">
-                                <span>ðŸ¢ Landside â€¢ Area Publik</span>
+                                <span>🏢 Landside • Area Publik</span>
                             </span>
                         @endif
 
                         <!-- Category Badge -->
                         <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/15 backdrop-blur-md border border-white/20 text-blue-100 shadow-sm">
-                            <span>ðŸ½ï¸ {{ $tenant->category ?? 'Fast Food & Restaurant' }}</span>
+                            <span>🍽️ {{ $tenant->category ?? 'Fast Food & Restaurant' }}</span>
                         </span>
 
                         <!-- Live Status Badge -->
@@ -189,7 +189,7 @@
 
                         <!-- SLA Guarantee Pill -->
                         <span class="inline-flex items-center space-x-1 px-3 py-1 rounded-full text-xs font-bold bg-amber-400/20 text-amber-200 border border-amber-300/30">
-                            <span>âš¡ Standar SLA â‰¤ 15 Menit</span>
+                            <span>⚡ Standar SLA ≤ 15 Menit</span>
                         </span>
                     </div>
 
@@ -204,17 +204,17 @@
                     <!-- Compact Quick Meta Info -->
                     <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs font-semibold text-blue-100/90 pt-3 border-t border-white/10">
                         <div class="flex items-center space-x-1.5">
-                            <span class="text-sky-300">ðŸ´</span>
+                            <span class="text-sky-300">🍴</span>
                             <span>{{ $tenant->products->count() }} Pilihan Menu</span>
                         </div>
                         <span class="text-white/20 hidden sm:inline">&bull;</span>
                         <div class="flex items-center space-x-1.5">
-                            <span class="text-amber-300">â±ï¸</span>
-                            <span>Estimasi Siap 10â€“15 Mnt</span>
+                            <span class="text-amber-300">⏱️</span>
+                            <span>Estimasi Siap 10–15 Mnt</span>
                         </div>
                         <span class="text-white/20 hidden sm:inline">&bull;</span>
                         <div class="flex items-center space-x-1.5">
-                            <span class="text-emerald-300">ðŸ›ï¸</span>
+                            <span class="text-emerald-300">🛍️</span>
                             <span>Ambil Cepat / Antar Gate</span>
                         </div>
                     </div>
@@ -235,7 +235,7 @@
                     <h2 class="text-xl sm:text-2xl font-black text-slate-800 tracking-tight" data-id="Daftar Menu" data-en="Menu List">Daftar Menu</h2>
                     <p class="text-xs sm:text-sm text-slate-400 font-medium">
                         <span data-id="Pilih hidangan untuk ditambahkan ke pesanan Anda" data-en="Select dishes to add to your order">Pilih hidangan untuk ditambahkan ke pesanan Anda</span>
-                        <span id="menu-counter-text" class="text-slate-400"> â€¢ <strong id="menu-counter-num" class="text-[#005ea2] font-bold">{{ $tenant->products->count() }}</strong> menu tersedia</span>
+                        <span id="menu-counter-text" class="text-slate-400"> • <strong id="menu-counter-num" class="text-[#005ea2] font-bold">{{ $tenant->products->count() }}</strong> menu tersedia</span>
                     </p>
                 </div>
 
@@ -289,15 +289,15 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#005ea2] shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
                         <span>{{ $terminalShortLabel }}</span>
                     </span>
-                    <span class="text-slate-300">â€¢</span>
+                    <span class="text-slate-300">•</span>
                     <span class="font-bold text-slate-600">{{ $tenant->floor_location ?? 'Area Komersial' }}</span>
                     @if($tenant->isAirside())
                         <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-amber-50 text-amber-800 border border-amber-200">
-                            <span>ðŸ›« Zona Airside (Boarding Lounge)</span>
+                            <span>🛫 Zona Airside (Boarding Lounge)</span>
                         </span>
                     @else
                         <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                            <span>ðŸ¢ Zona Landside (Area Publik)</span>
+                            <span>🏢 Zona Landside (Area Publik)</span>
                         </span>
                     @endif
                 </div>
@@ -305,10 +305,10 @@
                 <div class="text-[11px] font-semibold flex items-center gap-1.5 {{ $tenant->isAirside() ? 'text-amber-700' : 'text-slate-500' }}">
                     @if($tenant->isAirside())
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-amber-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        <span>Pastikan di gedung <strong>{{ $terminalCode }}</strong> â€¢ Khusus <strong>Penumpang (Wajib Boarding Pass)</strong></span>
+                        <span>Pastikan di gedung <strong>{{ $terminalCode }}</strong> • Khusus <strong>Penumpang (Wajib Boarding Pass)</strong></span>
                     @else
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-slate-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        <span>Pastikan berada di gedung <strong>{{ $terminalCode }}</strong> â€¢ Bebas akses Penumpang &amp; Pengunjung</span>
+                        <span>Pastikan berada di gedung <strong>{{ $terminalCode }}</strong> • Bebas akses Penumpang &amp; Pengunjung</span>
                     @endif
                 </div>
             </div>
@@ -323,7 +323,7 @@
                     <div>
                         <h4 class="text-xs sm:text-sm font-black uppercase tracking-wider text-amber-950">Restoran Sedang Tutup Sementara</h4>
                         <p class="text-xs text-amber-800 font-medium mt-0.5">
-                            Jam operasional: <strong>{{ substr($tenant->opening_time ?? '06:00', 0, 5) }} â€“ {{ substr($tenant->closing_time ?? '22:00', 0, 5) }} WIB</strong>. Pemesanan menu ditutup sementara dan akan dibuka kembali saat jam operasional gerai.
+                            Jam operasional: <strong>{{ substr($tenant->opening_time ?? '06:00', 0, 5) }} – {{ substr($tenant->closing_time ?? '22:00', 0, 5) }} WIB</strong>. Pemesanan menu ditutup sementara dan akan dibuka kembali saat jam operasional gerai.
                         </p>
                     </div>
                 </div>
@@ -463,7 +463,7 @@
                         <div class="flex flex-wrap gap-1 mb-3">
                             @foreach($productVariantGroups as $vGrp)
                                 <span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-md text-[10px] font-bold bg-sky-50 text-[#005ea2] border border-sky-100">
-                                    <span>âœ¨</span>
+                                    <span>✨</span>
                                     <span>{{ $vGrp['label'] }}</span>
                                 </span>
                             @endforeach
@@ -797,7 +797,7 @@
                     data.variant_groups.forEach(vGrp => {
                         const span = document.createElement('span');
                         span.className = 'inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-50 text-[#005ea2] border border-sky-100';
-                        span.textContent = `âœ¨ ${vGrp.label}: ${vGrp.choices.join(', ')}`;
+                        span.textContent = `✨ ${vGrp.label}: ${vGrp.choices.join(', ')}`;
                         variantsList.appendChild(span);
                     });
                     variantsWrap.classList.remove('hidden');
@@ -942,7 +942,7 @@
                     const groupDiv = document.createElement('div');
                     const labelEl = document.createElement('label');
                     labelEl.className = 'block text-xs font-black text-slate-700 uppercase tracking-wider mb-2';
-                    labelEl.textContent = `âœ¨ ${grp.label}`;
+                    labelEl.textContent = `✨ ${grp.label}`;
                     groupDiv.appendChild(labelEl);
 
                     const choicesWrap = document.createElement('div');
@@ -990,7 +990,7 @@
             const chosenList = ctx.variantGroups
                 .map((_, idx) => ctx.selections[idx])
                 .filter(Boolean);
-            const variantsString = chosenList.join(' â€¢ ');
+            const variantsString = chosenList.join(' • ');
             closeVariantModal();
             addToCart(ctx.productId, ctx.tenantId, ctx.btnElement, 0, variantsString);
         }
