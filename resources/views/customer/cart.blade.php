@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -982,7 +982,7 @@
                         <span class="truncate">Roti & Pastry</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'makanan-berat']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🍜</span>
+                        <span class="text-sm">🍲</span>
                         <span class="truncate">Tradisional</span>
                     </a>
                 </div>
@@ -1148,7 +1148,7 @@
                         <span class="truncate">Roti & Pastry</span>
                     </a>
                     <a href="{{ route('customer.menu', ['category' => 'makanan-berat']) }}" class="px-2.5 py-2.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-full bg-slate-50 hover:bg-blue-50 hover:text-[#005ea2] hover:border-blue-200 border border-slate-200/90 text-[11px] sm:text-xs font-bold text-slate-700 transition-all text-center flex items-center justify-center gap-1.5 shadow-2xs hover:shadow-xs active:scale-[0.98]">
-                        <span class="text-sm">🍜</span>
+                        <span class="text-sm">🍲</span>
                         <span class="truncate">Tradisional</span>
                     </a>
                 </div>

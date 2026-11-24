@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -280,7 +280,7 @@
                             @if($order->notes)
                             <div class="mt-2.5 p-2.5 bg-amber-50 rounded-xl border border-amber-200/90 text-xs">
                                 <span class="text-[10px] font-black uppercase tracking-wider text-amber-800 flex items-center gap-1 mb-0.5">
-                                    <span>📌</span>
+                                    <span>📝</span>
                                     <span>Catatan Pesanan:</span>
                                 </span>
                                 <p class="font-bold text-amber-950 italic leading-snug">"{{ $order->notes }}"</p>

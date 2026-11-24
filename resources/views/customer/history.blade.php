@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -101,7 +101,7 @@
         
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-fade-up">
             <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-black uppercase tracking-wider mb-4 shadow-sm">
-                <span>✈️ï¸ Bandara Internasional Juanda Tracker</span>
+                <span>✈️ Bandara Internasional Juanda Tracker</span>
             </div>
             <h1 class="text-3xl sm:text-4xl font-black text-white drop-shadow-sm mb-3 tracking-tight">
                 Lacak & Riwayat Pesanan

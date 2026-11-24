@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -236,7 +236,7 @@
                         <span class="w-2.5 h-2.5 rounded-full bg-[#005ea2] animate-pulse"></span>
                         <span class="text-xs font-bold text-slate-500" data-id="Kategori Aktif:" data-en="Active Category:">Kategori Aktif:</span>
                         <span class="text-xs font-black text-[#005ea2] bg-white px-3.5 py-1.5 rounded-full shadow-sm border border-blue-200/80 flex items-center gap-1.5">
-                            @if(stripos(request('category'), 'makanan') !== false || stripos(request('category'), 'indonesian') !== false) 🍜 
+                            @if(stripos(request('category'), 'makanan') !== false || stripos(request('category'), 'indonesian') !== false) 🍲 
                             @elseif(stripos(request('category'), 'cepat') !== false || stripos(request('category'), 'fast') !== false) 🍔
                             @elseif(stripos(request('category'), 'roti') !== false || stripos(request('category'), 'bakery') !== false) 🥐
                             @elseif(stripos(request('category'), 'minum') !== false || stripos(request('category'), 'beverage') !== false) ☕

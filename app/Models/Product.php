@@ -80,9 +80,31 @@ class Product extends Model
             return [];
         }
 
+        // Proteksi defensif: pastikan varian minuman (temperature, size, milk, sugar, ice)
+        // tidak pernah muncul pada produk roti / makanan / pastry.
+        $lowerName = strtolower($this->name ?? '');
+        $isBakeryOrFood = false;
+        $foodKeywords = [
+            'roti', 'bun', 'bread', 'puff', 'pie', 'pastry', 'croissant', 'crombo', 
+            'cake', 'donut', 'toast', 'waffle', 'danish', 'cookie', 'cookies', 'bagel', 
+            'bolu', 'tart', 'brownies', 'muffin', 'steak', 'sandwich', 'burger', 'sub', 
+            'wrap', 'stix', 'kopiko', 'platter', 'cream cheese'
+        ];
+        foreach ($foodKeywords as $kw) {
+            if (str_contains($lowerName, $kw) && !str_contains($lowerName, 'latte')) {
+                $isBakeryOrFood = true;
+                break;
+            }
+        }
+
+        $drinkPresets = ['temperature', 'size', 'milk', 'sugar', 'ice'];
+
         $groups = [];
         foreach ($raw as $entry) {
             if (is_string($entry) && isset(self::CUSTOMIZATION_PRESETS[$entry])) {
+                if ($isBakeryOrFood && in_array($entry, $drinkPresets, true)) {
+                    continue;
+                }
                 $preset = self::CUSTOMIZATION_PRESETS[$entry];
                 $groups[] = [
                     'label' => $preset['label'],
