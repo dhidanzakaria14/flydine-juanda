@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // Hanya jalankan pada driver MySQL / MariaDB
+        // Hanya jalankan pada driver MySQL / MariaDB (abaikan jika DBMS seperti TiDB Cloud tidak mendukung Trigger)
         if (in_array(DB::getDriverName(), ['mysql', 'mariadb'])) {
-            
-            // 1. Drop trigger lama jika ada (Idempotent)
-            DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_item_insert_potong_stok;');
-            DB::unprepared('DROP TRIGGER IF EXISTS trg_before_order_update_sla_guard;');
-            DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_status_update;');
-            DB::unprepared('DROP PROCEDURE IF EXISTS sp_ringkasan_transaksi_harian;');
+            try {
+                // 1. Drop trigger lama jika ada (Idempotent)
+                DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_item_insert_potong_stok;');
+                DB::unprepared('DROP TRIGGER IF EXISTS trg_before_order_update_sla_guard;');
+                DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_status_update;');
+                DB::unprepared('DROP PROCEDURE IF EXISTS sp_ringkasan_transaksi_harian;');
 
             // -------------------------------------------------------------
             // TRIGGER 1: trg_after_order_item_insert_potong_stok
@@ -192,6 +192,9 @@ return new class extends Migration
                     WHERE DATE(o.ordered_at) = p_tanggal;
                 END;
             ");
+            } catch (\Throwable $e) {
+                // TiDB Cloud does not support MySQL Triggers or Stored Procedures.
+            }
         }
     }
 
@@ -201,10 +204,14 @@ return new class extends Migration
     public function down(): void
     {
         if (in_array(DB::getDriverName(), ['mysql', 'mariadb'])) {
-            DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_item_insert_potong_stok;');
-            DB::unprepared('DROP TRIGGER IF EXISTS trg_before_order_update_sla_guard;');
-            DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_status_update;');
-            DB::unprepared('DROP PROCEDURE IF EXISTS sp_ringkasan_transaksi_harian;');
+            try {
+                DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_item_insert_potong_stok;');
+                DB::unprepared('DROP TRIGGER IF EXISTS trg_before_order_update_sla_guard;');
+                DB::unprepared('DROP TRIGGER IF EXISTS trg_after_order_status_update;');
+                DB::unprepared('DROP PROCEDURE IF EXISTS sp_ringkasan_transaksi_harian;');
+            } catch (\Throwable $e) {
+                // Ignore
+            }
         }
     }
 };
